@@ -36,6 +36,14 @@ the page recover from nested missing URLs on the intended root-level site.
 | `index.html` | Page content, navigation, metadata, project links, and the existing workflow illustration |
 | `404.html` | Missing-page explanation, project-directory recovery link, and indexing exclusion |
 | `style.css` | Responsive layout, system fonts, focus indicators, and print styles |
+| `robots.txt` | Crawl guidance and the sitemap location |
+| `sitemap.xml` | The canonical homepage URL for this repository |
+
+The intended public URL is `https://hamanakam1.github.io/`. Keep the homepage's
+canonical link, Open Graph URL, sitemap entry, and robots sitemap location in
+sync if that address changes. The sitemap covers this homepage; the linked
+projects maintain their own documentation. These files describe the intended
+address and do not establish that hosting is active.
 
 The architecture illustration is conceptual. It is not evidence that the tools
 are deployed together or that a particular integration is implemented. Keep this
@@ -75,7 +83,12 @@ Keep those properties intact unless a future change explicitly calls for them.
    a local preview does not establish hosted routing.
 8. Check project destinations when changing links. A successful response confirms
    reachability, not the accuracy of a project's feature claims.
-9. Run `git diff --check` for tracked changes. Review new files separately because
+9. Check that the canonical link and `og:url` occur once in the homepage head and
+   match the sole URL in `sitemap.xml`. Confirm `robots.txt` advertises the sitemap
+   without blocking the homepage, stylesheet, or linked project documentation.
+   Keep the missing-page document's `noindex` directive and omit it from the
+   sitemap. Add a `lastmod` date only when it reflects a verified content update.
+10. Run `git diff --check` for tracked changes. Review new files separately because
    Git does not include untracked files in that check.
 
 Automated checks complement keyboard, visual, and screen-reader testing; they do
