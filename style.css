@@ -1,0 +1,683 @@
+/* Local assets only: system fonts, CSS decoration, and accessible native links. */
+:root {
+    color-scheme: dark;
+    --ink: #091719;
+    --surface: #102326;
+    --surface-raised: #163034;
+    --text: #edf5f3;
+    --muted: #b5cbc7;
+    --accent: #86e8cc;
+    --line: #34545a;
+    --focus: #ffe296;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--ink);
+    scroll-padding-block-start: 1.5rem;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    background: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+h1, h2, h3, p {
+    margin-block: 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+a {
+    color: var(--accent);
+    text-underline-offset: 0.22em;
+    text-decoration-thickness: 0.08em;
+}
+
+a:hover {
+    text-decoration-thickness: 0.14em;
+}
+
+:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 5px;
+}
+
+::selection {
+    color: var(--ink);
+    background: var(--accent);
+}
+
+.container {
+    width: min(100% - 3rem, 76rem);
+    margin-inline: auto;
+}
+
+.skip-link {
+    position: absolute;
+    z-index: 10;
+    inset-block-start: 1rem;
+    inset-inline-start: 1rem;
+    padding: 0.75rem 1rem;
+    color: var(--ink);
+    background: var(--focus);
+    border-radius: 0.3rem;
+    font-weight: 700;
+    transform: translateY(calc(-100% - 2rem));
+}
+
+.skip-link:focus {
+    transform: none;
+}
+
+.header {
+    padding-block: clamp(3.5rem, 8vw, 7rem) clamp(2.5rem, 6vw, 5rem);
+    border-block-start: 5px solid var(--accent);
+    background: radial-gradient(ellipse at 95% 0%, #173c3c 0, transparent 65%);
+}
+
+.eyebrow {
+    margin-block-end: 1.25rem;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.logo {
+    max-width: 19ch;
+    font-size: 3.5rem;
+    font-weight: 750;
+    letter-spacing: -0.05em;
+    line-height: 1.04;
+}
+
+.subtitle {
+    max-width: 42ch;
+    margin-block-start: 1.75rem;
+    color: var(--text);
+    font-size: 1.25rem;
+    line-height: 1.45;
+}
+
+.tagline {
+    max-width: 65ch;
+    margin-block-start: 1rem;
+    color: var(--muted);
+}
+
+.hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-block-start: 2rem;
+}
+
+.hero-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 44px;
+    padding: 0.7rem 1.15rem;
+    border: 1px solid var(--accent);
+    border-radius: 0.35rem;
+    color: var(--accent);
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.hero-link:first-child {
+    color: var(--ink);
+    background: var(--accent);
+}
+
+.hero-link:hover {
+    color: var(--ink);
+    background: var(--text);
+    border-color: var(--text);
+    text-decoration: underline;
+}
+
+.nav {
+    border-block: 1px solid var(--line);
+    background: var(--surface);
+}
+
+.nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    padding-block: 0.5rem;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.5rem 0.25rem;
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.section {
+    padding-block: clamp(3.5rem, 7vw, 6rem);
+    scroll-margin-block-start: 1.5rem;
+}
+
+.section-dark {
+    background: var(--surface);
+    border-block: 1px solid var(--line);
+}
+
+.section-title {
+    max-width: 28ch;
+    font-size: 2.25rem;
+    letter-spacing: -0.035em;
+}
+
+.section-description,
+.section-intro {
+    max-width: 72ch;
+    margin-block-start: 1.25rem;
+    color: var(--muted);
+    font-size: 1.0625rem;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 44px;
+    padding: 0.5rem 0.25rem;
+    font-weight: 600;
+}
+
+.flow-diagram {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 2.5rem 0 0;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    background: var(--surface);
+    list-style: none;
+}
+
+.flow-step {
+    flex: 1 1 6.5rem;
+    min-width: 0;
+    max-width: 13rem;
+    text-align: center;
+}
+
+.flow-node {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.25rem;
+    padding: 0.65rem 0.55rem;
+    border: 1px solid var(--line);
+    border-radius: 0.35rem;
+    background: var(--surface-raised);
+    color: var(--accent);
+    font-size: 0.875rem;
+    font-weight: 650;
+    line-height: 1.35;
+}
+
+.flow-label {
+    margin-block-start: 0.65rem;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+}
+
+.flow-arrow {
+    flex: 0 0 auto;
+    color: var(--accent);
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.diagram-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-block-start: 2.5rem;
+}
+
+.diagram-card {
+    min-width: 0;
+    margin: 0;
+    padding: clamp(1rem, 3vw, 2rem);
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    background: var(--ink);
+}
+
+.diagram-card h3 {
+    font-size: 1.125rem;
+}
+
+.diagram-content {
+    margin-block-start: 1.5rem;
+}
+
+.diagram-content svg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.diagram-content svg text {
+    fill: var(--text);
+    /* Keep long labels inside the existing fixed-width diagram nodes. */
+    font-family: var(--font-sans);
+}
+
+.diagram-caption {
+    max-width: 75ch;
+    margin-block-start: 1.25rem;
+    color: var(--muted);
+    font-size: 0.9375rem;
+}
+
+.project-shortcuts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 0.5rem 2rem;
+    margin-block: 1.5rem 0;
+    padding-inline-start: 1.25rem;
+}
+
+.project-shortcuts li::marker {
+    color: var(--accent);
+}
+
+.project-shortcuts a,
+.repo-links a {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 44px;
+    padding: 0.5rem 0.25rem;
+    font-weight: 600;
+}
+
+.repos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    gap: 1.25rem;
+    margin-block-start: 2.5rem;
+}
+
+.repo-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    scroll-margin-block-start: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+}
+
+.repo-card:focus-within,
+.repo-card:target {
+    border-color: var(--accent);
+}
+
+.repo-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.repo-header h3 {
+    flex: 1 1 14rem;
+    min-width: 0;
+    color: var(--accent);
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+.repo-badge {
+    padding: 0.2rem 0.55rem;
+    border: 1px solid var(--line);
+    border-radius: 0.25rem;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    line-height: 1.5;
+}
+
+.repo-description {
+    margin-block: 1.25rem 1.5rem;
+    color: var(--muted);
+    font-size: 0.9375rem;
+}
+
+.repo-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-block-start: auto;
+}
+
+.repo-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+    margin-block-start: 1rem;
+    padding-block-start: 1rem;
+    border-block-start: 1px solid var(--line);
+    font-size: 0.9375rem;
+}
+
+.tag {
+    padding: 0.25rem 0.55rem;
+    border-radius: 0.25rem;
+    background: var(--surface-raised);
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    line-height: 1.5;
+}
+
+.footer {
+    padding-block: 2rem;
+    border-block-start: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 2rem;
+}
+
+.footer a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-block: 0.5rem;
+}
+
+@media (max-width: 47.99rem) {
+    .container {
+        width: calc(100% - 2rem);
+    }
+
+    .nav .container {
+        gap: 0.25rem 1rem;
+    }
+
+    .flow-diagram {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0.85rem;
+    }
+
+    .flow-step {
+        flex: none;
+        width: min(100%, 20rem);
+        max-width: none;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+
+    .repo-card {
+        padding: 1.25rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+@media (forced-colors: active) {
+    .repo-card,
+    .flow-node,
+    .hero-link,
+    .diagram-card {
+        border-color: ButtonText;
+    }
+
+    .repo-card:focus-within,
+    .repo-card:target {
+        border-color: Highlight;
+    }
+
+    .diagram-content {
+        background: Canvas;
+    }
+
+    .diagram-content svg rect {
+        fill: Canvas;
+        stroke: CanvasText;
+    }
+
+    .diagram-content svg text,
+    .diagram-content svg marker polygon {
+        fill: CanvasText;
+    }
+
+    .diagram-content svg line,
+    .diagram-content svg path {
+        stroke: CanvasText;
+    }
+
+    :focus-visible {
+        outline-color: Highlight;
+    }
+}
+
+@media print {
+    :root {
+        color-scheme: light;
+        --ink: #ffffff;
+        --surface: #ffffff;
+        --surface-raised: #f2f2f2;
+        --text: #111111;
+        --muted: #333333;
+        --accent: #145447;
+        --line: #888888;
+    }
+
+    body {
+        font-size: 10pt;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header,
+    .section,
+    .footer {
+        padding-block: 1.5rem;
+        background: none;
+    }
+
+    .logo {
+        font-size: 30pt;
+    }
+
+    .section-title {
+        font-size: 18pt;
+    }
+
+    h1, h2, h3,
+    .section-description,
+    .section-intro {
+        break-after: avoid;
+    }
+
+    .section-description,
+    .section-intro {
+        margin-block-start: 6pt;
+        font-size: 10pt;
+    }
+
+    .nav,
+    .skip-link,
+    .hero-links,
+    .project-shortcuts {
+        display: none;
+    }
+
+    .repo-card,
+    .diagram-card,
+    .flow-step,
+    #overview,
+    #architecture {
+        break-inside: avoid;
+    }
+
+    .repos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10pt;
+        margin-block-start: 12pt;
+    }
+
+    .repo-card {
+        padding: 10pt;
+    }
+
+    .repo-header h3 {
+        font-size: 12pt;
+    }
+
+    .repo-description {
+        margin-block: 6pt 8pt;
+        font-size: 10pt;
+    }
+
+    .repo-links {
+        display: block;
+        margin-block-start: 8pt;
+        padding-block-start: 6pt;
+        font-size: 9pt;
+    }
+
+    .repo-links a {
+        display: block;
+        min-height: 0;
+        padding: 3pt 0;
+    }
+
+    /* Make repository and documentation destinations usable on paper. */
+    .repo-links a[href^="https://"]::after {
+        display: block;
+        content: attr(href);
+        font-size: 8.5pt;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .flow-diagram {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8pt;
+        margin-block-start: 12pt;
+        padding: 8pt;
+        break-inside: avoid;
+        counter-reset: workflow-stage;
+    }
+
+    .flow-step {
+        width: auto;
+        max-width: none;
+        counter-increment: workflow-stage;
+    }
+
+    .flow-node {
+        min-height: 0;
+        padding: 6pt;
+        font-size: 9pt;
+    }
+
+    .flow-node::before {
+        content: counter(workflow-stage) ".\00a0";
+    }
+
+    .flow-label {
+        margin-block-start: 4pt;
+        font-size: 8pt;
+    }
+
+    .flow-arrow {
+        display: none;
+    }
+
+    .diagram-grid {
+        margin-block-start: 12pt;
+    }
+
+    /* Keep the diagram legible even when printed backgrounds are disabled. */
+    .diagram-content {
+        background: none;
+    }
+
+    .diagram-content svg rect {
+        fill: #ffffff;
+        stroke: #111111;
+    }
+
+    .diagram-content svg text,
+    .diagram-content svg marker polygon {
+        fill: #111111;
+    }
+
+    .diagram-content svg line,
+    .diagram-content svg path {
+        stroke: #111111;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
