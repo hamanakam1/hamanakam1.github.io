@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hamanakam1.github.io/">
     <meta property="og:title" content="Hamanaka Software Factory | Project atlas">
-    <meta property="og:description" content="Local-first tools for capturing intent, coordinating AI work, and checking results. Explore eight public projects and their roles.">
+    <meta property="og:description" content="Local-first tools for capturing intent, coordinating AI work, and checking results. Find project guides, source code, and desktop downloads.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23091719'/%3E%3Cpath d='M18 16v32m28-32v32M18 32h28' fill='none' stroke='%2386e8cc' stroke-width='8'/%3E%3C/svg%3E">
 </head>
@@ -46,6 +46,7 @@
                 <ul class="project-shortcuts" aria-label="Choose a starting point">
                     <li><a href="#project-panther-intent-capture">Capture browser intent</a></li>
                     <li><a href="#project-taskrivet">Coordinate AI sessions</a></li>
+                    <li><a href="#project-panther-companion">Understand work evidence</a></li>
                     <li><a href="#project-fluxrecord">Understand the ticket format</a></li>
                 </ul>
                 <div class="repos-grid">
@@ -85,27 +86,79 @@
 
                     <article id="project-taskrivet" class="repo-card" aria-labelledby="title-taskrivet">
                         <div class="repo-header">
-                            <h3 id="title-taskrivet"><span aria-hidden="true">🔧</span> taskrivet</h3>
-                            <span class="repo-badge">Core</span>
+                            <h3 id="title-taskrivet"><img class="project-mark" src="assets/taskrivet-mark.svg" alt="" width="28" height="28"> Taskrivet</h3>
+                            <span class="repo-badge">Desktop alpha</span>
                         </div>
-                        <p class="repo-description">Local-first coordination core for AI CLI sessions with bounded context, explicit ownership, and evidence trails.</p>
+                        <p class="repo-description">A desktop workspace for AI coding agents with persistent terminals, bounded task context, and reviewable evidence. Check the release notes for each preview's supported behavior.</p>
                         <div class="repo-tags">
-                            <span class="tag">CLI</span>
-                            <span class="tag">SQLite</span>
+                            <span class="tag">Terminals</span>
+                            <span class="tag">macOS</span>
                             <span class="tag">Local-First</span>
                         </div>
                         <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/taskrivet">TaskRivet source</a>
-                            <a href="https://hamanakam1.github.io/taskrivet/">TaskRivet docs</a>
+                            <a href="https://github.com/hamanakam1/taskrivet/releases">Taskrivet downloads</a>
+                            <a href="https://hamanakam1.github.io/taskrivet/">Taskrivet guide</a>
+                            <a href="https://github.com/hamanakam1/taskrivet">Taskrivet source</a>
+                        </div>
+                    </article>
+
+                    <article id="project-panther-companion" class="repo-card" aria-labelledby="title-panther-companion">
+                        <div class="repo-header">
+                            <h3 id="title-panther-companion"><span aria-hidden="true">🐾</span> Panther Companion</h3>
+                            <span class="repo-badge">Evidence</span>
+                        </div>
+                        <p class="repo-description">A local desktop and browser workspace that explains selected evidence in the context of your goal. Start with pasted text, a completed terminal result, or a reviewed intent bundle.</p>
+                        <div class="repo-tags">
+                            <span class="tag">Local-First</span>
+                            <span class="tag">Explanations</span>
+                            <span class="tag">Human Control</span>
+                        </div>
+                        <div class="repo-links">
+                            <a href="https://github.com/hamanakam1/panther-companion#start">Companion setup</a>
+                            <a href="https://github.com/hamanakam1/panther-companion">Companion source</a>
+                        </div>
+                    </article>
+
+                    <article id="project-osprey" class="repo-card" aria-labelledby="title-osprey">
+                        <div class="repo-header">
+                            <h3 id="title-osprey"><span aria-hidden="true">🪶</span> Osprey</h3>
+                            <span class="repo-badge">Pre-release</span>
+                        </div>
+                        <p class="repo-description">A Mac supervisor for selected Taskrivet terminal output and app builds. It proposes checkpoint and failure records; a person approves each ledger write.</p>
+                        <div class="repo-tags">
+                            <span class="tag">Swift</span>
+                            <span class="tag">Local Evidence</span>
+                            <span class="tag">Review</span>
+                        </div>
+                        <div class="repo-links">
+                            <a href="https://github.com/hamanakam1/osprey#quick-start">Osprey setup</a>
+                            <a href="https://github.com/hamanakam1/osprey">Osprey source</a>
+                        </div>
+                    </article>
+
+                    <article id="project-el-hidratador" class="repo-card" aria-labelledby="title-el-hidratador">
+                        <div class="repo-header">
+                            <h3 id="title-el-hidratador"><span aria-hidden="true">💧</span> El Hidratador</h3>
+                            <span class="repo-badge">Staging</span>
+                        </div>
+                        <p class="repo-description">Expands approved ticket intent into bounded context, ordered steps, and a proposed execution environment. Its scratch-ledger demo shows the lifecycle; acceptance stays an explicit operator decision.</p>
+                        <div class="repo-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Context</span>
+                            <span class="tag">Coordination</span>
+                        </div>
+                        <div class="repo-links">
+                            <a href="https://github.com/hamanakam1/el-hidratador/blob/main/docs/getting-started.md">El Hidratador setup</a>
+                            <a href="https://github.com/hamanakam1/el-hidratador">El Hidratador source</a>
                         </div>
                     </article>
 
                     <article id="project-the-tower" class="repo-card" aria-labelledby="title-the-tower">
                         <div class="repo-header">
                             <h3 id="title-the-tower"><span aria-hidden="true">🗼</span> the-tower</h3>
-                            <span class="repo-badge">ATC</span>
+                            <span class="repo-badge">Prototype</span>
                         </div>
-                        <p class="repo-description">Hardware Air Traffic Control for autonomous AI mesh - thermal/power/memory monitoring and guardrailed dispatch.</p>
+                        <p class="repo-description">Prototype hardware monitoring and dispatch planning for thermal, power, and memory constraints. Advisory defaults keep operational decisions under explicit control.</p>
                         <div class="repo-tags">
                             <span class="tag">Hardware</span>
                             <span class="tag">ATC</span>
@@ -139,7 +192,7 @@
                             <h3 id="title-el-verificador"><span aria-hidden="true">✅</span> el-verificador</h3>
                             <span class="repo-badge">QA</span>
                         </div>
-                        <p class="repo-description">Autonomous gatekeeper for independent intent verification, guardrailed retry loops, and proof-of-work commits.</p>
+                        <p class="repo-description">Independent intent checks, bounded retry loops, and proof-of-work records that help distinguish written code from verified results.</p>
                         <div class="repo-tags">
                             <span class="tag">Testing</span>
                             <span class="tag">Verification</span>
@@ -171,9 +224,9 @@
                     <article id="project-horizon-broker" class="repo-card" aria-labelledby="title-horizon-broker">
                         <div class="repo-header">
                             <h3 id="title-horizon-broker"><span aria-hidden="true">🌅</span> horizon-broker</h3>
-                            <span class="repo-badge">Queue</span>
+                            <span class="repo-badge">Alpha</span>
                         </div>
-                        <p class="repo-description">Asynchronous inference queue and fault-tolerance manager for heterogeneous edge fleet.</p>
+                        <p class="repo-description">An alpha asynchronous inference queue with retries and failover for an edge fleet. Its real ledger adapter remains unfinished.</p>
                         <div class="repo-tags">
                             <span class="tag">Queue</span>
                             <span class="tag">Fault-Tolerance</span>

@@ -382,6 +382,20 @@ a:hover {
     line-height: 1.5;
 }
 
+.project-mark {
+    display: inline-block;
+    width: 1.6em;
+    height: 1.6em;
+    vertical-align: middle;
+    margin-inline-end: 0.2em;
+}
+
+@media print {
+    .project-mark {
+        filter: brightness(0);
+    }
+}
+
 .repo-description {
     margin-block: 1.25rem 1.5rem;
     color: var(--muted);

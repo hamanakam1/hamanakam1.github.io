@@ -5,8 +5,9 @@ tools for intent capture, AI session coordination, verification, memory, and edg
 infrastructure, and links directly to their repositories.
 
 The project directory comes first. Task shortcuts jump to intent capture,
-session coordination, and the ticket standard. Each project has separate,
-descriptive links to its source and documentation; the conceptual workflow
+session coordination, evidence explanations, and the ticket standard. Each project
+has separate, descriptive links to its source and setup or documentation;
+Taskrivet also links to its desktop release downloads. The conceptual workflow
 follows the directory.
 
 ## Preview locally
@@ -38,6 +39,7 @@ the page recover from nested missing URLs on the intended root-level site.
 | `style.css` | Responsive layout, system fonts, focus indicators, and print styles |
 | `robots.txt` | Crawl guidance and the sitemap location |
 | `sitemap.xml` | The canonical homepage URL for this repository |
+| `assets/` | Local project artwork and its upstream license/provenance |
 
 The intended public URL is `https://hamanakam1.github.io/`. Keep the homepage's
 canonical link, Open Graph URL, sitemap entry, and robots sitemap location in
@@ -99,8 +101,9 @@ not establish complete accessibility conformance.
 Use descriptive link text, a single page heading, and ordered section headings.
 Keep the skip target, section IDs, and navigation fragments in sync. Treat emoji
 and arrows as decorative, and preserve the text alternative for the workflow SVG.
-Keep each project card as an article with a named heading and two independent
-links. Avoid making the entire card a link, nesting links, or adding click
+Keep each project card as an article with a named heading and independent source
+and setup links. Add a release link when it helps someone try the project.
+Avoid making the entire card a link, nesting links, or adding click
 handlers to the article. Keep the SVG's short title as its accessible name and
 its longer explanation as its description.
 
