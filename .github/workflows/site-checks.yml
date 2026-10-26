@@ -1,0 +1,30 @@
+name: Site checks
+
+on:
+  pull_request:
+  push:
+    branches: [codex/f07-site-quality]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Local site checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+      - name: Check local navigation and assets
+        run: python3 scripts/check_site.py
+      - name: Check patch whitespace
+        run: git diff --check HEAD^ HEAD

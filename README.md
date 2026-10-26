@@ -40,6 +40,8 @@ the page recover from nested missing URLs on the intended root-level site.
 | `robots.txt` | Crawl guidance and the sitemap location |
 | `sitemap.xml` | The canonical homepage URL for this repository |
 | `assets/` | Local project artwork and its upstream license/provenance |
+| `scripts/check_site.py` | Offline checks for local destinations, navigation targets, and basic HTML invariants |
+| `.github/` | Pull-request checks and weekly GitHub Actions dependency updates |
 
 The intended public URL is `https://hamanakam1.github.io/`. Keep the homepage's
 canonical link, Open Graph URL, sitemap entry, and robots sitemap location in
@@ -56,6 +58,19 @@ The page needs no JavaScript, analytics, web fonts, or third-party asset request
 Keep those properties intact unless a future change explicitly calls for them.
 
 ## Check a change
+
+With Python 3.9 or newer, run `python3 scripts/check_site.py` before opening a pull
+request. GitHub Actions
+runs the same offline check on every pull request and default-branch push. It
+checks local `href`/`src` files and fragments, duplicate IDs, `aria-labelledby`
+and `aria-describedby` targets, one `h1` per page, and image alternative-text
+attributes. HTML `src` URLs and stylesheet/icon links must be local. It does not
+fetch external project links, inspect `srcset`, preload or CSS references,
+validate all HTML, or establish accessibility conformance. Keep the manual
+checks below for those concerns.
+
+The checkout action is pinned to an immutable commit. Dependabot proposes grouped
+GitHub Actions updates weekly; updates still need review and passing checks.
 
 1. Preview the page and confirm the browser reports no missing assets.
 2. Use `Tab` from the top of the page. The first link should reveal **Skip to main
