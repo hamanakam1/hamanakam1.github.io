@@ -1,6 +1,40 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The entire workshop — ecosystem map</title><meta name="description" content="Explore every public and private repository in the Hamanaka Software Factory ecosystem, with project roles and ways to contribute."><link rel="canonical" href="https://hamanakam1.github.io/ecosystem.html"><link rel="stylesheet" href="style.css"><link rel="icon" href="assets/favicon.svg"><script src="assets/ecosystem-viewer.js" defer></script></head>
-<body class="map-page"><a class="skip-link" href="#main">Skip to map</a><header class="map-header"><a href="index.html">← Back to the atlas</a><h1>The entire workshop</h1><p>32 repositories, seven areas, one ecosystem. Select a project to explore its role and contribution opportunities.</p></header>
-<main id="main" tabindex="-1" class="map-layout">
-<div id="map-viewport" class="map-viewport" tabindex="0" role="region" aria-label="Scrollable ecosystem diagram"><div id="map-stage"></div><noscript><p><a href="assets/ecosystem-map.svg">Open the full static diagram</a> or <a href="index.html#repos">browse the text atlas</a>.</p></noscript></div>
-<aside id="map-controls" class="map-controls" aria-label="Map controls and project details"><p class="eyebrow">Explore the ecosystem</p><div class="zoom-controls"><button id="zoom-out" type="button" aria-label="Zoom out">−</button><output id="zoom-level" aria-live="polite">81%</output><button id="zoom-in" type="button" aria-label="Zoom in">+</button><button id="reset-map" type="button">Reset view</button></div><p class="map-hint">Starts two zoom steps out, aligned left. Controls have their own space. Scroll the drawing to explore.</p><label for="project-finder">Jump to a repository</label><select id="project-finder"><option value="">Choose a project</option></select><div id="project-detail" aria-live="polite"><h2>AI Dashboard is the hub</h2><p>Most systems work comes together in the private integration console. The public repositories offer focused tools and open contribution surfaces around it.</p><a href="index.html#project-ai-dashboard">Read about the hub →</a></div><hr><p class="map-hint">Branches show repository roles, not runtime calls or deployment status. Public/private indicates source access, not ecosystem membership.</p><a href="index.html#contribute">Find a way to contribute →</a><a href="assets/ecosystem-map.svg">Open full vector diagram</a></aside></main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Software Factory · Mike Hamanaka</title>
+  <meta name="description" content="Step onto the factory floor. Explore 32 software projects, find your next experiment, and see how the workshop fits together.">
+  <meta name="color-scheme" content="dark"><link rel="canonical" href="https://hamanakam1.github.io/ecosystem.html">
+  <link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="assets/ecosystem.css">
+  <script src="assets/ecosystem-viewer.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to factory</a>
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">H<span>↗</span></span><span>HAMANAKA <b>SOFTWARE FACTORY</b></span></a><nav aria-label="Main navigation"><a href="index.html#repos">Text atlas</a><a href="https://github.com/hamanakam1">GitHub ↗</a></nav></header>
+<main id="main" tabindex="-1">
+  <section class="intro" aria-labelledby="page-title"><div><p class="eyebrow"><span class="spark" aria-hidden="true"></span> AN INDEPENDENT SOFTWARE WORKSHOP</p><h1 id="page-title">Small tools. <span>Big possibilities.</span></h1><p>Step onto the factory floor. Find a project. Make something useful.</p></div><div class="inventory" aria-label="Repository inventory"><strong id="total-count">32</strong><span>repositories<br><b id="access-count">17 public · 15 private</b></span></div></section>
+  <div class="toolbar" aria-label="Factory controls">
+    <label class="search"><span aria-hidden="true">⌕</span><input disabled id="project-search" type="search" placeholder="Find a project, capability, or idea…" aria-label="Search projects"><kbd aria-hidden="true">/</kbd></label>
+    <label class="access-filter"><span class="sr-only">Source access</span><select disabled id="access-filter"><option value="all">All source access</option><option value="public">Public projects</option><option value="private">Private projects</option></select></label>
+    <button disabled id="surprise" type="button">✧ Surprise me</button><button disabled id="tour-start" class="primary" type="button">Take a tour <span aria-hidden="true">→</span></button>
+  </div>
+  <p id="selection-status" class="sr-only" role="status"></p>
+  <div id="load-status" role="status">Opening the workshop…</div>
+  <div id="factory" class="workspace" hidden>
+    <section class="floor-panel" aria-labelledby="floor-title">
+      <div class="panel-heading"><div><span class="eyebrow">01 / EXPLORE</span><h2 id="floor-title">The factory floor</h2></div><button id="motion" class="quiet" type="button" aria-pressed="true">Motion on</button></div>
+      <div id="stations" class="stations" aria-label="Factory areas"></div>
+      <div class="floor-caption"><span><span class="legend-dot" aria-hidden="true"></span> Select an area to explore its projects</span><span>Role map · editorial inventory</span></div>
+      <div class="project-heading"><div><span class="eyebrow">02 / DISCOVER</span><h2 id="list-title">Factory core</h2></div><button id="show-all" class="quiet" type="button">View all projects</button></div>
+      <p id="results-status" class="results-status" role="status"></p>
+      <div id="project-list" class="project-list" aria-label="Matching projects"></div>
+      <div id="empty-state" class="empty-state" hidden><strong>No projects found.</strong><p>Try “evidence”, “terminal”, or another source-access filter.</p><button id="clear-filters" type="button">Clear filters</button></div>
+    </section>
+    <aside class="inspector" aria-label="Selected project"><div class="panel-heading"><span class="eyebrow">03 / OPEN THE HOOD</span><span class="inspector-dot" aria-hidden="true"></span></div><div id="project-detail"></div></aside>
+  </div>
+  <section id="tour" class="tour" aria-label="Guided factory tour" hidden><div><span id="tour-step" class="eyebrow"></span><h2 id="tour-title" aria-live="polite"></h2><p id="tour-description"></p></div><div class="tour-actions"><button id="tour-inspect" class="tour-inspect" type="button">Inspect project</button><button id="tour-prev" type="button" aria-label="Previous tour stop">←</button><button id="tour-next" type="button">Next stop →</button><button id="tour-close" class="quiet" type="button">End tour</button></div></section>
+  <footer><p>Built by Mike Hamanaka. Open tools, private systems, room to experiment.</p><div><span id="inventory-date">Inventory: 28 Oct 2026</span><a href="assets/factory-overview.svg">Overview ↗</a><a href="assets/ecosystem-map.svg">Full diagram ↗</a><a href="index.html#contribute">Join the workshop ↗</a></div><p class="provenance">Areas describe project roles. Motion is illustrative; this page does not report live jobs or prove deployed integrations.</p></footer>
+  <noscript><style>.toolbar,#load-status{display:none}</style><p class="fallback">The interactive floor needs JavaScript. <a href="index.html#repos">Browse all projects in the text atlas</a> or <a href="assets/ecosystem-map.svg">open the static map</a>.</p></noscript>
+</main>
+<dialog id="project-dialog" aria-label="Project details"><button id="close-dialog" class="dialog-close" type="button">Close details ×</button><div id="mobile-detail"></div></dialog>
+</body></html>

@@ -1,0 +1,37 @@
+{
+  "artifact_id": "c05d955fbc194ed9ab35216a05e68075",
+  "original_html_sha256": "f9ca5e9fff51d9b00bf2d329eeebaee94f626e59abfd524dc313be50c2da8da1",
+  "canonical_specification_sha256": "1a7d06cf6ab6a45900d77d17aaa39ced023f93a9acb33836152da48b5e493c31",
+  "public_svg_sha256": "69cd47b314aee53bcfa955058b615988c39ddf0a5786915f03f2ec7cd2199d2b",
+  "source": {
+    "repository": "https://github.com/hamanakam1/hamanakam1.github.io",
+    "revision": "df8403bc919f2cbcdcca9d7149328c6bf9c80f90",
+    "paths": [
+      "scripts/build_atlas.py",
+      "assets/repositories.json"
+    ],
+    "kind": "Owner-described public editorial inventory; not source-verified runtime architecture"
+  },
+  "derivation": "Canonical geometry retained; public theme and larger static labels added. Button semantics removed for static SVG. Original canonical HTML retained in local dashboard.",
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "evidence_scope": "Automated validation and browser checks cover canonical HTML. Public SVG and independent explorer require separate visual/browser checks.",
+  "visual_review": {
+    "canonical_html": "1440x900 dark screenshot inspected; all seven areas readable with no overlap",
+    "public_svg": "1280x720 browser screenshot inspected; labels and counts fit all cards",
+    "profile_preview": "960x380 SVG rendered in browser and screenshot inspected; all text and seven tiles readable",
+    "automated_visual_check": "passed; source dashboard retains full receipts and screenshots"
+  }
+}

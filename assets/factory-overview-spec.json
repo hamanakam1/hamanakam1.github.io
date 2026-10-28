@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Software Factory \u2014 seven areas of the workshop",
+    "subtitle": "Owner-described repository roles from the public atlas; not runtime integrations.",
+    "output": "factory-overview.html",
+    "quality_profile": "showcase",
+    "locale": "en",
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "components": [
+    {
+      "id": "hub",
+      "type": "external",
+      "icon": "none",
+      "label": "Factory core",
+      "sublabel": "AI Dashboard and private engines",
+      "tag": "3 repositories",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        920,
+        86
+      ]
+    },
+    {
+      "id": "work",
+      "type": "external",
+      "icon": "none",
+      "label": "Intent & delivery",
+      "sublabel": "Capture, context and agent sessions",
+      "tag": "5 repositories",
+      "pos": [
+        40,
+        170
+      ],
+      "size": [
+        280,
+        86
+      ]
+    },
+    {
+      "id": "proof",
+      "type": "external",
+      "icon": "none",
+      "label": "Evidence & memory",
+      "sublabel": "Contracts, checks and retained lessons",
+      "tag": "6 repositories",
+      "pos": [
+        360,
+        170
+      ],
+      "size": [
+        280,
+        86
+      ]
+    },
+    {
+      "id": "edge",
+      "type": "external",
+      "icon": "none",
+      "label": "Machines & inference",
+      "sublabel": "Resources, queues and edge experiments",
+      "tag": "4 repositories",
+      "pos": [
+        680,
+        170
+      ],
+      "size": [
+        280,
+        86
+      ]
+    },
+    {
+      "id": "lab",
+      "type": "external",
+      "icon": "none",
+      "label": "Simulation lab",
+      "sublabel": "Fictional fixtures and product experiments",
+      "tag": "7 repositories",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        280,
+        86
+      ]
+    },
+    {
+      "id": "surface",
+      "type": "external",
+      "icon": "none",
+      "label": "Publishing & entry",
+      "sublabel": "Web surfaces and public orientation",
+      "tag": "5 repositories",
+      "pos": [
+        360,
+        300
+      ],
+      "size": [
+        280,
+        86
+      ]
+    },
+    {
+      "id": "upstream",
+      "type": "external",
+      "icon": "none",
+      "label": "Upstream collaborations",
+      "sublabel": "Diagrams and sandbox workshops",
+      "tag": "2 repositories",
+      "pos": [
+        680,
+        300
+      ],
+      "size": [
+        280,
+        86
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "A place to build",
+      "items": [
+        "32 repositories: 17 public and 15 private, inventoried on 28 October 2026.",
+        "The owner identifies AI Dashboard as the integration hub."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "How to read this overview",
+      "items": [
+        "Areas describe responsibility, not data flow, deployment status or execution authority.",
+        "Each public project has its own contribution surface; private source still requires access."
+      ]
+    }
+  ]
+}
