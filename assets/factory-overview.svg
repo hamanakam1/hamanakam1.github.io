@@ -55,7 +55,7 @@
           <title>Factory core · AI Dashboard and private engines · Architecture component · 3 repositories</title>
           <rect x="40" y="40" width="920" height="86" rx="8" class="c-mask"/>
           <rect x="40" y="40" width="920" height="86" rx="8" class="c-external" data-animate="node" style="--step:0" stroke-width="1.5"/>
-          
+
           <text data-node-label="" data-detail-anchor="" x="500" y="81" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Factory core</text>
         <text data-detail="context" x="500" y="97" class="t-muted" font-size="9" text-anchor="middle">AI Dashboard and private engines</text>
         <text data-detail="fine" x="500" y="118" class="t-external" font-size="7" text-anchor="middle">3 repositories</text>
@@ -65,7 +65,7 @@
           <title>Intent &amp; delivery · Capture, context and agent sessions · Architecture component · 5 repositories</title>
           <rect x="40" y="170" width="280" height="86" rx="8" class="c-mask"/>
           <rect x="40" y="170" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:1" stroke-width="1.5"/>
-          
+
           <text data-node-label="" data-detail-anchor="" x="180" y="211" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Intent &amp; delivery</text>
         <text data-detail="context" x="180" y="227" class="t-muted" font-size="9" text-anchor="middle">Capture, context and agent sessions</text>
         <text data-detail="fine" x="180" y="248" class="t-external" font-size="7" text-anchor="middle">5 repositories</text>
@@ -75,7 +75,7 @@
           <title>Evidence &amp; memory · Contracts, checks and retained lessons · Architecture component · 6 repositories</title>
           <rect x="360" y="170" width="280" height="86" rx="8" class="c-mask"/>
           <rect x="360" y="170" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:2" stroke-width="1.5"/>
-          
+
           <text data-node-label="" data-detail-anchor="" x="500" y="211" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Evidence &amp; memory</text>
         <text data-detail="context" x="500" y="227" class="t-muted" font-size="9" text-anchor="middle">Contracts, checks and retained lessons</text>
         <text data-detail="fine" x="500" y="248" class="t-external" font-size="7" text-anchor="middle">6 repositories</text>
@@ -85,7 +85,7 @@
           <title>Machines &amp; inference · Resources, queues and edge experiments · Architecture component · 4 repositories</title>
           <rect x="680" y="170" width="280" height="86" rx="8" class="c-mask"/>
           <rect x="680" y="170" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:3" stroke-width="1.5"/>
-          
+
           <text data-node-label="" data-detail-anchor="" x="820" y="211" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Machines &amp; inference</text>
         <text data-detail="context" x="820" y="227" class="t-muted" font-size="9" text-anchor="middle">Resources, queues and edge experiments</text>
         <text data-detail="fine" x="820" y="248" class="t-external" font-size="7" text-anchor="middle">4 repositories</text>
@@ -95,7 +95,7 @@
           <title>Simulation lab · Fictional fixtures and product experiments · Architecture component · 7 repositories</title>
           <rect x="40" y="300" width="280" height="86" rx="8" class="c-mask"/>
           <rect x="40" y="300" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:4" stroke-width="1.5"/>
-          
+
           <text data-node-label="" data-detail-anchor="" x="180" y="341" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Simulation lab</text>
         <text data-detail="context" x="180" y="357" class="t-muted" font-size="9" text-anchor="middle">Fictional fixtures and product experiments</text>
         <text data-detail="fine" x="180" y="378" class="t-external" font-size="7" text-anchor="middle">7 repositories</text>
@@ -105,7 +105,7 @@
           <title>Publishing &amp; entry · Web surfaces and public orientation · Architecture component · 5 repositories</title>
           <rect x="360" y="300" width="280" height="86" rx="8" class="c-mask"/>
           <rect x="360" y="300" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:5" stroke-width="1.5"/>
-          
+
           <text data-node-label="" data-detail-anchor="" x="500" y="341" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Publishing &amp; entry</text>
         <text data-detail="context" x="500" y="357" class="t-muted" font-size="9" text-anchor="middle">Web surfaces and public orientation</text>
         <text data-detail="fine" x="500" y="378" class="t-external" font-size="7" text-anchor="middle">5 repositories</text>
@@ -115,7 +115,7 @@
           <title>Upstream collaborations · Diagrams and sandbox workshops · Architecture component · 2 repositories</title>
           <rect x="680" y="300" width="280" height="86" rx="8" class="c-mask"/>
           <rect x="680" y="300" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:6" stroke-width="1.5"/>
-          
+
           <text data-node-label="" data-detail-anchor="" x="820" y="341" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Upstream collaborations</text>
         <text data-detail="context" x="820" y="357" class="t-muted" font-size="9" text-anchor="middle">Diagrams and sandbox workshops</text>
         <text data-detail="fine" x="820" y="378" class="t-external" font-size="7" text-anchor="middle">2 repositories</text>
