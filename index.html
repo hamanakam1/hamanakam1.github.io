@@ -1,372 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike Hamanaka | Local-first AI tools and project atlas</title>
-    <meta name="description" content="Explore Mike Hamanaka's local-first tools for browser intent capture, AI session coordination, verification, memory, and edge infrastructure.">
-    <meta name="color-scheme" content="dark light">
-    <meta name="theme-color" content="#091719">
-    <link rel="canonical" href="https://hamanakam1.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hamanakam1.github.io/">
-    <meta property="og:title" content="Hamanaka Software Factory | Project atlas">
-    <meta property="og:description" content="Local-first tools for capturing intent, coordinating AI work, and checking results. Find project guides, source code, and desktop downloads.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23091719'/%3E%3Cpath d='M18 16v32m28-32v32M18 32h28' fill='none' stroke='%2386e8cc' stroke-width='8'/%3E%3C/svg%3E">
-</head>
-<body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <header class="header">
-        <div class="container">
-            <p class="eyebrow">Mike Hamanaka · Open-source tools</p>
-            <h1 class="logo">Hamanaka Software Factory</h1>
-            <p class="subtitle">Local tools. Visible evidence. Human control.</p>
-            <p class="tagline">Explore tools for capturing intent, coordinating AI coding sessions, and verifying the work.</p>
-            <div class="hero-links">
-                <a class="hero-link" href="#repos">Explore the projects <span aria-hidden="true">↗</span></a>
-                <a class="text-link" href="https://github.com/hamanakam1">Mike on GitHub <span aria-hidden="true">↗</span></a>
-            </div>
-        </div>
-    </header>
-
-    <nav class="nav" aria-label="On this page">
-        <div class="container">
-            <a href="#repos" class="nav-link">Projects</a>
-            <a href="#overview" class="nav-link">Workflow</a>
-            <a href="#architecture" class="nav-link">Conceptual architecture</a>
-        </div>
-    </nav>
-
-    <main id="main" tabindex="-1">
-        <section id="repos" class="section">
-            <div class="container">
-                <h2 class="section-title">Public repositories</h2>
-                <p class="section-description">Explore a project's source or read its documentation. Each repository describes its supported workflows, setup, license, and current status.</p>
-                <ul class="project-shortcuts" aria-label="Choose a starting point">
-                    <li><a href="#project-panther-intent-capture">Capture browser intent</a></li>
-                    <li><a href="#project-taskrivet">Coordinate AI sessions</a></li>
-                    <li><a href="#project-panther-companion">Understand work evidence</a></li>
-                    <li><a href="#project-fluxrecord">Understand the ticket format</a></li>
-                </ul>
-                <div class="repos-grid">
-                    <article id="project-panther-intent-capture" class="repo-card" aria-labelledby="title-panther-intent-capture">
-                        <div class="repo-header">
-                            <h3 id="title-panther-intent-capture"><span aria-hidden="true">🐾</span> panther-intent-capture</h3>
-                            <span class="repo-badge">Extension</span>
-                        </div>
-                        <p class="repo-description">Local-first browser intent capture with visible controls, evidence-linked proposals, portable JSON, and opt-in verified ticket delivery.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Manifest V3</span>
-                            <span class="tag">Local-First</span>
-                            <span class="tag">Privacy</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/panther-intent-capture">Panther source</a>
-                            <a href="https://hamanakam1.github.io/panther-intent-capture/">Panther docs</a>
-                        </div>
-                    </article>
-
-                    <article id="project-fluxrecord" class="repo-card" aria-labelledby="title-fluxrecord">
-                        <div class="repo-header">
-                            <h3 id="title-fluxrecord"><span aria-hidden="true">⚡</span> fluxrecord</h3>
-                            <span class="repo-badge">Standard</span>
-                        </div>
-                        <p class="repo-description">Ticket standard for local-first, evidence-driven coordination with bounded context and visible failures.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Standard</span>
-                            <span class="tag">Coordination</span>
-                            <span class="tag">Evidence</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/fluxrecord">FluxRecord source</a>
-                            <a href="https://hamanakam1.github.io/fluxrecord/">FluxRecord docs</a>
-                        </div>
-                    </article>
-
-                    <article id="project-taskrivet" class="repo-card" aria-labelledby="title-taskrivet">
-                        <div class="repo-header">
-                            <h3 id="title-taskrivet"><img class="project-mark" src="assets/taskrivet-mark.svg" alt="" width="28" height="28"> Taskrivet</h3>
-                            <span class="repo-badge">Desktop alpha</span>
-                        </div>
-                        <p class="repo-description">A desktop workspace for AI coding agents with persistent terminals, bounded task context, and reviewable evidence. Check the release notes for each preview's supported behavior.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Terminals</span>
-                            <span class="tag">macOS</span>
-                            <span class="tag">Local-First</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/taskrivet/releases">Taskrivet downloads</a>
-                            <a href="https://hamanakam1.github.io/taskrivet/">Taskrivet guide</a>
-                            <a href="https://github.com/hamanakam1/taskrivet">Taskrivet source</a>
-                        </div>
-                    </article>
-
-                    <article id="project-panther-companion" class="repo-card" aria-labelledby="title-panther-companion">
-                        <div class="repo-header">
-                            <h3 id="title-panther-companion"><span aria-hidden="true">🐾</span> Panther Companion</h3>
-                            <span class="repo-badge">Evidence</span>
-                        </div>
-                        <p class="repo-description">A local desktop and browser workspace that explains selected evidence in the context of your goal. Start with pasted text, a completed terminal result, or a reviewed intent bundle.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Local-First</span>
-                            <span class="tag">Explanations</span>
-                            <span class="tag">Human Control</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/panther-companion#start">Companion setup</a>
-                            <a href="https://github.com/hamanakam1/panther-companion">Companion source</a>
-                        </div>
-                    </article>
-
-                    <article id="project-osprey" class="repo-card" aria-labelledby="title-osprey">
-                        <div class="repo-header">
-                            <h3 id="title-osprey"><span aria-hidden="true">🪶</span> Osprey</h3>
-                            <span class="repo-badge">Pre-release</span>
-                        </div>
-                        <p class="repo-description">A Mac supervisor for selected Taskrivet terminal output and app builds. It proposes checkpoint and failure records; a person approves each ledger write.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Swift</span>
-                            <span class="tag">Local Evidence</span>
-                            <span class="tag">Review</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/osprey#quick-start">Osprey setup</a>
-                            <a href="https://github.com/hamanakam1/osprey">Osprey source</a>
-                        </div>
-                    </article>
-
-                    <article id="project-el-hidratador" class="repo-card" aria-labelledby="title-el-hidratador">
-                        <div class="repo-header">
-                            <h3 id="title-el-hidratador"><span aria-hidden="true">💧</span> El Hidratador</h3>
-                            <span class="repo-badge">Staging</span>
-                        </div>
-                        <p class="repo-description">Expands approved ticket intent into bounded context, ordered steps, and a proposed execution environment. Its scratch-ledger demo shows the lifecycle; acceptance stays an explicit operator decision.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Context</span>
-                            <span class="tag">Coordination</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/el-hidratador/blob/main/docs/getting-started.md">El Hidratador setup</a>
-                            <a href="https://github.com/hamanakam1/el-hidratador">El Hidratador source</a>
-                        </div>
-                    </article>
-
-                    <article id="project-the-tower" class="repo-card" aria-labelledby="title-the-tower">
-                        <div class="repo-header">
-                            <h3 id="title-the-tower"><span aria-hidden="true">🗼</span> the-tower</h3>
-                            <span class="repo-badge">Prototype</span>
-                        </div>
-                        <p class="repo-description">Prototype hardware monitoring and dispatch planning for thermal, power, and memory constraints. Advisory defaults keep operational decisions under explicit control.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Hardware</span>
-                            <span class="tag">ATC</span>
-                            <span class="tag">Monitoring</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/the-tower">The Tower source</a>
-                            <a href="https://hamanakam1.github.io/the-tower/">The Tower docs</a>
-                        </div>
-                    </article>
-
-                    <article id="project-the-surveyor" class="repo-card" aria-labelledby="title-the-surveyor">
-                        <div class="repo-header">
-                            <h3 id="title-the-surveyor"><span aria-hidden="true">🔍</span> the-surveyor</h3>
-                            <span class="repo-badge">Mapping</span>
-                        </div>
-                        <p class="repo-description">Open Edge Topology mapping - empirical infrastructure discovery, diffing, and self-documentation.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Topology</span>
-                            <span class="tag">OET</span>
-                            <span class="tag">Documentation</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/the-surveyor">The Surveyor source</a>
-                            <a href="https://hamanakam1.github.io/the-surveyor/">The Surveyor docs</a>
-                        </div>
-                    </article>
-
-                    <article id="project-el-verificador" class="repo-card" aria-labelledby="title-el-verificador">
-                        <div class="repo-header">
-                            <h3 id="title-el-verificador"><span aria-hidden="true">✅</span> el-verificador</h3>
-                            <span class="repo-badge">QA</span>
-                        </div>
-                        <p class="repo-description">Independent intent checks, bounded retry loops, and proof-of-work records that help distinguish written code from verified results.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Testing</span>
-                            <span class="tag">Verification</span>
-                            <span class="tag">CI/CD</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/el-verificador">El Verificador source</a>
-                            <a href="https://hamanakam1.github.io/el-verificador/">El Verificador docs</a>
-                        </div>
-                    </article>
-
-                    <article id="project-the-chronicler" class="repo-card" aria-labelledby="title-the-chronicler">
-                        <div class="repo-header">
-                            <h3 id="title-the-chronicler"><span aria-hidden="true">📜</span> the-chronicler</h3>
-                            <span class="repo-badge">Memory</span>
-                        </div>
-                        <p class="repo-description">Local-first memory core - extracts failure heuristics via local Ollama and commits hardened rules.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Memory</span>
-                            <span class="tag">Learning</span>
-                            <span class="tag">Ollama</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/the-chronicler">The Chronicler source</a>
-                            <a href="https://hamanakam1.github.io/the-chronicler/">The Chronicler docs</a>
-                        </div>
-                    </article>
-
-                    <article id="project-horizon-broker" class="repo-card" aria-labelledby="title-horizon-broker">
-                        <div class="repo-header">
-                            <h3 id="title-horizon-broker"><span aria-hidden="true">🌅</span> horizon-broker</h3>
-                            <span class="repo-badge">Alpha</span>
-                        </div>
-                        <p class="repo-description">An alpha asynchronous inference queue with retries and failover for an edge fleet. Its real ledger adapter remains unfinished.</p>
-                        <div class="repo-tags">
-                            <span class="tag">Queue</span>
-                            <span class="tag">Fault-Tolerance</span>
-                            <span class="tag">Edge</span>
-                        </div>
-                        <div class="repo-links">
-                            <a href="https://github.com/hamanakam1/horizon-broker">Horizon Broker source</a>
-                            <a href="https://hamanakam1.github.io/horizon-broker/">Horizon Broker docs</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="overview" class="section">
-            <div class="container">
-                <h2 class="section-title">System Overview</h2>
-                <p class="section-description">
-                    These projects explore how local-first tools can turn intent into reviewable work.
-                    Each component has a focused role; permissions, execution, and acceptance remain explicit decisions.
-                </p>
-                <p class="section-intro">The sequence below is a conceptual workflow, not a deployment or integration status report. Use the project directory above to find each public repository.</p>
-                <div class="flow-diagram" role="list" aria-label="Conceptual workflow stages">
-                    <div class="flow-step" role="listitem">
-                        <div class="flow-node">Panther</div>
-                        <div class="flow-label">Capture</div>
-                    </div>
-                    <div class="flow-arrow" aria-hidden="true">→</div>
-                    <div class="flow-step" role="listitem">
-                        <div class="flow-node">El Destilador</div>
-                        <div class="flow-label">Distill</div>
-                    </div>
-                    <div class="flow-arrow" aria-hidden="true">→</div>
-                    <div class="flow-step" role="listitem">
-                        <div class="flow-node">Ticket Board</div>
-                        <div class="flow-label">Triage</div>
-                    </div>
-                    <div class="flow-arrow" aria-hidden="true">→</div>
-                    <div class="flow-step" role="listitem">
-                        <div class="flow-node">El Hidratador</div>
-                        <div class="flow-label">Sandbox</div>
-                    </div>
-                    <div class="flow-arrow" aria-hidden="true">→</div>
-                    <div class="flow-step" role="listitem">
-                        <div class="flow-node">The Tower</div>
-                        <div class="flow-label">ATC</div>
-                    </div>
-                    <div class="flow-arrow" aria-hidden="true">→</div>
-                    <div class="flow-step" role="listitem">
-                        <div class="flow-node">Taskrivet</div>
-                        <div class="flow-label">Execute</div>
-                    </div>
-                    <div class="flow-arrow" aria-hidden="true">→</div>
-                    <div class="flow-step" role="listitem">
-                        <div class="flow-node">El Verificador</div>
-                        <div class="flow-label">Verify</div>
-                    </div>
-                    <div class="flow-arrow" aria-hidden="true">→</div>
-                    <div class="flow-step" role="listitem">
-                        <div class="flow-node">EdgeRecord</div>
-                        <div class="flow-label">Ledger</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="architecture" class="section section-dark">
-            <div class="container">
-                <h2 class="section-title">Conceptual architecture</h2>
-                <p class="section-description">An illustration of the intended workflow and verification feedback. Consult each repository for implemented behavior.</p>
-
-                <div class="diagram-grid">
-                    <div class="diagram-card">
-                        <h3>From intent to verification</h3>
-                        <div class="diagram-content">
-                            <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="workflow-title" aria-describedby="workflow-description">
-                                <title id="workflow-title">Conceptual software workflow with verification feedback</title>
-                                <desc id="workflow-description">Panther captures intent, El Destilador distills it, the Ticket Board triages it, El Hidratador prepares a sandbox, The Tower coordinates hardware, Taskrivet coordinates execution, El Verificador checks the work, and EdgeRecord records it. A proposed retry path leads from verification back to triage. This illustration does not establish deployed integrations or grant execution permission.</desc>
-                                <defs>
-                                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                                        <polygon points="0 0, 10 3.5, 0 7" fill="#06b6d4" />
-                                    </marker>
-                                </defs>
-                                <!-- Nodes -->
-                                <rect x="10" y="50" width="80" height="40" rx="5" fill="#1a1a1a" stroke="#06b6d4" stroke-width="2"/>
-                                <text x="50" y="75" text-anchor="middle" fill="#06b6d4" font-size="10" font-family="JetBrains Mono">Panther</text>
-
-                                <rect x="110" y="50" width="80" height="40" rx="5" fill="#1a1a1a" stroke="#10b981" stroke-width="2"/>
-                                <text x="150" y="75" text-anchor="middle" fill="#10b981" font-size="10" font-family="JetBrains Mono">El Destilador</text>
-
-                                <rect x="210" y="50" width="80" height="40" rx="5" fill="#1a1a1a" stroke="#fbbf24" stroke-width="2"/>
-                                <text x="250" y="75" text-anchor="middle" fill="#fbbf24" font-size="10" font-family="JetBrains Mono">Ticket Board</text>
-
-                                <rect x="310" y="50" width="80" height="40" rx="5" fill="#1a1a1a" stroke="#a855f7" stroke-width="2"/>
-                                <text x="350" y="75" text-anchor="middle" fill="#a855f7" font-size="10" font-family="JetBrains Mono">El Hidratador</text>
-
-                                <rect x="410" y="50" width="80" height="40" rx="5" fill="#1a1a1a" stroke="#ef4444" stroke-width="2"/>
-                                <text x="450" y="75" text-anchor="middle" fill="#ef4444" font-size="10" font-family="JetBrains Mono">The Tower</text>
-
-                                <rect x="510" y="50" width="80" height="40" rx="5" fill="#1a1a1a" stroke="#06b6d4" stroke-width="2"/>
-                                <text x="550" y="75" text-anchor="middle" fill="#06b6d4" font-size="10" font-family="JetBrains Mono">Taskrivet</text>
-
-                                <rect x="610" y="50" width="80" height="40" rx="5" fill="#1a1a1a" stroke="#10b981" stroke-width="2"/>
-                                <text x="650" y="75" text-anchor="middle" fill="#10b981" font-size="10" font-family="JetBrains Mono">El Verificador</text>
-
-                                <rect x="710" y="50" width="80" height="40" rx="5" fill="#1a1a1a" stroke="#fbbf24" stroke-width="2"/>
-                                <text x="750" y="75" text-anchor="middle" fill="#fbbf24" font-size="10" font-family="JetBrains Mono">EdgeRecord</text>
-
-                                <!-- Arrows -->
-                                <line x1="90" y1="70" x2="110" y2="70" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <line x1="190" y1="70" x2="210" y2="70" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <line x1="290" y1="70" x2="310" y2="70" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <line x1="390" y1="70" x2="410" y2="70" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <line x1="490" y1="70" x2="510" y2="70" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <line x1="590" y1="70" x2="610" y2="70" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <line x1="690" y1="70" x2="710" y2="70" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowhead)"/>
-
-                                <!-- Feedback loop -->
-                                <path d="M 650 90 Q 650 130 450 130 Q 250 130 250 90" stroke="#ef4444" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
-                                <text x="450" y="150" text-anchor="middle" fill="#ef4444" font-size="10" font-family="JetBrains Mono">Guardrailed Retry Loop</text>
-
-                                <!-- Labels -->
-                                <text x="400" y="200" text-anchor="middle" fill="#e5e5e5" font-size="12" font-family="JetBrains Mono">Hardware ATC • Local-First • Evidence-Driven</text>
-                                <text x="400" y="220" text-anchor="middle" fill="#666" font-size="10" font-family="JetBrains Mono">Autonomous Coding Factory Ecosystem</text>
-                            </svg>
-                        </div>
-                        <p class="diagram-caption">Read the workflow as: capture → distill → triage → sandbox → coordinate hardware → execute → verify → record. Proposed retries return to triage for review.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Mike Hamanaka · Hamanaka Software Factory.</p>
-            <p><a href="https://github.com/hamanakam1">Mike Hamanaka on GitHub</a> · <a href="https://hamanakam1.github.io/taskrivet/">TaskRivet documentation</a> · <a href="#repos">Back to projects</a></p>
-        </div>
-    </footer>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hamanaka Software Factory — the whole ecosystem</title>
+<meta name="description" content="One software factory, many entry points. Explore all 32 public and private projects, experimental systems, and opportunities to contribute."><meta name="color-scheme" content="dark light"><link rel="canonical" href="https://hamanakam1.github.io/"><meta property="og:url" content="https://hamanakam1.github.io/"><meta property="og:title" content="Hamanaka Software Factory — ecosystem atlas"><link rel="stylesheet" href="style.css"><link rel="icon" href="assets/favicon.svg"></head><body>
+<a class="skip-link" href="#main">Skip to main content</a><header class="header"><div class="container"><p class="eyebrow">Mike Hamanaka · An open invitation into the workshop</p><h1 class="logo">One factory.<br>Many ways in.</h1><p class="subtitle">A living ecosystem of tools, experiments and a private integration hub.</p><p class="tagline">Most of my systems work comes together in <a href="https://github.com/hamanakam1/ai-dashboard">ai-dashboard</a>. These repositories are the entry points: some useful on their own, some experimental, some private. This atlas connects the dots and shows where other people can help the system grow.</p><div class="hero-links"><a class="hero-link" href="ecosystem.html">Explore the full interactive map ↗</a><a class="hero-link" href="#contribute">Find a way to contribute</a></div><p class="inventory-count">32 repositories · 17 public · 15 private · inventory checked 28 October 2026</p></div></header>
+<nav class="nav" aria-label="Ecosystem areas"><div class="container"><a class="nav-link" href="#hub">Factory core</a><a class="nav-link" href="#work">Workflows</a><a class="nav-link" href="#proof">Evidence</a><a class="nav-link" href="#edge">Edge systems</a><a class="nav-link" href="#lab">Experiments</a><a class="nav-link" href="#surface">Front doors</a><a class="nav-link" href="#upstream">Upstream</a><a class="nav-link" href="#contribute">Contribute</a></div></nav>
+<main id="main" tabindex="-1"><section id="repos" class="section section-dark"><div class="container"><h2 class="section-title">The whole workshop, in view.</h2><p class="section-description">Public and private describe source access. They do not decide whether a project belongs in the ecosystem. Private links require permission; their names and roles can still be discussed here. Experiments get a place on the map, with their maturity visible.</p><div class="hub-callout"><p class="eyebrow">The integration hub</p><h3>ai-dashboard</h3><p>Agents, inference, work boards, spend, machine health, evidence and review come together in one local operator surface. The surrounding repositories expose focused tools and seams that can evolve independently, then be considered for integration.</p><a class="text-link" href="ecosystem.html">Explore all repository roles →</a></div><p class="section-description">The map groups responsibilities and contribution opportunities. The owner identifies AI Dashboard as the integrated hub; individual cross-repository adapters and deployments still need their own evidence. A place on the map is not a claim that every experiment is already connected.</p></div></section>
+<section class="section" id="hub"><div class="container"><h2 class="section-title">The factory core</h2><p class="section-description">The private workshop where most integration happens.</p><div class="repos-grid"><article id="project-ai-dashboard" class="repo-card" aria-labelledby="title-ai-dashboard">
+<div class="repo-header"><h3 id="title-ai-dashboard">ai-dashboard</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">The local command center where I bring agents, inference, tickets, spend, evidence and machine health together.</p><p class="maturity">Integration hub</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss operator experience, adapter contracts, observability and useful experiments through the public atlas.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/ai-dashboard">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-cofoundry" class="repo-card" aria-labelledby="title-cofoundry">
+<div class="repo-header"><h3 id="title-cofoundry">cofoundry</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">Packaged supervisor, job dispatch, local execution, readiness and audited controls.</p><p class="maturity">Private engine</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss portable supervisor contracts and reproducible integration examples.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/cofoundry">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-edgerecord-ai" class="repo-card" aria-labelledby="title-edgerecord-ai">
+<div class="repo-header"><h3 id="title-edgerecord-ai">edgerecord-ai</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">Local AI stack workspace and durable agent handoffs.</p><p class="maturity">Private workspace</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss source-bound handoffs and recovery contracts.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/edgerecord-ai">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article></div></div></section><section class="section" id="work"><div class="container"><h2 class="section-title">Intent, sessions & delivery</h2><p class="section-description">Public tools for turning an idea into reviewable work.</p><div class="repos-grid"><article id="project-panther-intent-capture" class="repo-card" aria-labelledby="title-panther-intent-capture">
+<div class="repo-header"><h3 id="title-panther-intent-capture">panther-intent-capture</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Capture browser intent into reviewed proposals and portable context.</p><p class="maturity">Browser extension</p>
+<p class="contribution"><strong>Where you could help:</strong> Try browser compatibility, accessible capture controls and export/import edge cases.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/panther-intent-capture">Source & contribution guidance</a><a href="https://hamanakam1.github.io/panther-intent-capture/">Project guide / site</a><a href="https://github.com/hamanakam1/panther-intent-capture/issues">Issues & ideas</a></div></article>
+<article id="project-panther-companion" class="repo-card" aria-labelledby="title-panther-companion">
+<div class="repo-header"><h3 id="title-panther-companion">panther-companion</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Explain selected evidence in the context of a current goal.</p><p class="maturity">Desktop companion</p>
+<p class="contribution"><strong>Where you could help:</strong> Improve evidence explanations, keyboard workflows and intent-bundle handoffs.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/panther-companion">Source & contribution guidance</a><a href="https://github.com/hamanakam1/panther-companion/issues">Issues & ideas</a></div></article>
+<article id="project-taskrivet" class="repo-card" aria-labelledby="title-taskrivet">
+<div class="repo-header"><h3 id="title-taskrivet">taskrivet</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Persistent agent terminals, bounded task context and reviewable results.</p><p class="maturity">Desktop alpha</p>
+<p class="contribution"><strong>Where you could help:</strong> Test terminal recovery, session continuity, accessibility and bounded context adapters.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/taskrivet">Source & contribution guidance</a><a href="https://hamanakam1.github.io/taskrivet/">Project guide / site</a><a href="https://github.com/hamanakam1/taskrivet/issues">Issues & ideas</a></div></article>
+<article id="project-osprey" class="repo-card" aria-labelledby="title-osprey">
+<div class="repo-header"><h3 id="title-osprey">osprey</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">A Mac supervisor for selected Taskrivet output and reviewed work records.</p><p class="maturity">Prerelease</p>
+<p class="contribution"><strong>Where you could help:</strong> Exercise output redaction, checkpoint capture and macOS build/recovery flows.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/osprey">Source & contribution guidance</a><a href="https://github.com/hamanakam1/osprey/issues">Issues & ideas</a></div></article>
+<article id="project-el-hidratador" class="repo-card" aria-labelledby="title-el-hidratador">
+<div class="repo-header"><h3 id="title-el-hidratador">el-hidratador</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Expand a ticket into bounded context and reviewable execution preparation.</p><p class="maturity">Staging experiment</p>
+<p class="contribution"><strong>Where you could help:</strong> Build synthetic context fixtures and test dependency ordering and cancellation.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/el-hidratador">Source & contribution guidance</a><a href="https://hamanakam1.github.io/el-hidratador/">Project guide / site</a><a href="https://github.com/hamanakam1/el-hidratador/issues">Issues & ideas</a></div></article></div></div></section><section class="section" id="proof"><div class="container"><h2 class="section-title">Evidence & institutional memory</h2><p class="section-description">Contracts, independent checks, retained records and lessons.</p><div class="repos-grid"><article id="project-fluxrecord" class="repo-card" aria-labelledby="title-fluxrecord">
+<div class="repo-header"><h3 id="title-fluxrecord">fluxrecord</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">A shared language for bounded context, evidence and visible failures.</p><p class="maturity">Ticket standard</p>
+<p class="contribution"><strong>Where you could help:</strong> Contribute small interoperable examples, schema edge cases and adapter fixtures.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/fluxrecord">Source & contribution guidance</a><a href="https://hamanakam1.github.io/fluxrecord/">Project guide / site</a><a href="https://github.com/hamanakam1/fluxrecord/issues">Issues & ideas</a></div></article>
+<article id="project-el-verificador" class="repo-card" aria-labelledby="title-el-verificador">
+<div class="repo-header"><h3 id="title-el-verificador">el-verificador</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Independent intent checks and proof records for reviewable coding work.</p><p class="maturity">Verification tooling</p>
+<p class="contribution"><strong>Where you could help:</strong> Add falsifiable checks, adversarial examples and understandable failure reports.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/el-verificador">Source & contribution guidance</a><a href="https://hamanakam1.github.io/el-verificador/">Project guide / site</a><a href="https://github.com/hamanakam1/el-verificador/issues">Issues & ideas</a></div></article>
+<article id="project-the-chronicler" class="repo-card" aria-labelledby="title-the-chronicler">
+<div class="repo-header"><h3 id="title-the-chronicler">the-chronicler</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Turn local failure evidence into reviewed lessons and reusable heuristics.</p><p class="maturity">Memory tooling</p>
+<p class="contribution"><strong>Where you could help:</strong> Improve provenance, retrieval evaluation and reviewable memory updates.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/the-chronicler">Source & contribution guidance</a><a href="https://hamanakam1.github.io/the-chronicler/">Project guide / site</a><a href="https://github.com/hamanakam1/the-chronicler/issues">Issues & ideas</a></div></article>
+<article id="project-edgerecord-core" class="repo-card" aria-labelledby="title-edgerecord-core">
+<div class="repo-header"><h3 id="title-edgerecord-core">edgerecord-core</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">Deterministic append-only state verification for edge nodes.</p><p class="maturity">Private verifier</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss portable verification formats using synthetic examples.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/edgerecord-core">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-edgerecord" class="repo-card" aria-labelledby="title-edgerecord">
+<div class="repo-header"><h3 id="title-edgerecord">edgerecord</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">Local verification and evidence workspace.</p><p class="maturity">Private workspace</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss evidence exchange and review ergonomics in the public atlas.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/edgerecord">Access-controlled repository</a><a href="https://edgerecord.com">Project guide / site</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-edgerecord-era" class="repo-card" aria-labelledby="title-edgerecord-era">
+<div class="repo-header"><h3 id="title-edgerecord-era">edgerecord-era</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">Autonomy evidence and records ledger.</p><p class="maturity">Private ledger</p>
+<p class="contribution"><strong>Where you could help:</strong> Propose interoperable receipts without requiring ledger access.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/edgerecord-era">Access-controlled repository</a><a href="https://edgerecord.com">Project guide / site</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article></div></div></section><section class="section" id="edge"><div class="container"><h2 class="section-title">Machines, inference & the edge</h2><p class="section-description">Discover resources, understand constraints and explore distributed work.</p><div class="repos-grid"><article id="project-the-surveyor" class="repo-card" aria-labelledby="title-the-surveyor">
+<div class="repo-header"><h3 id="title-the-surveyor">the-surveyor</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Hardware discovery, topology snapshots and change reports.</p><p class="maturity">Read-only discovery</p>
+<p class="contribution"><strong>Where you could help:</strong> Add hardware fixtures, discovery adapters and topology-diff examples.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/the-surveyor">Source & contribution guidance</a><a href="https://hamanakam1.github.io/the-surveyor/">Project guide / site</a><a href="https://github.com/hamanakam1/the-surveyor/issues">Issues & ideas</a></div></article>
+<article id="project-the-tower" class="repo-card" aria-labelledby="title-the-tower">
+<div class="repo-header"><h3 id="title-the-tower">the-tower</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Thermal, power and memory observations with advisory dispatch planning.</p><p class="maturity">Prototype</p>
+<p class="contribution"><strong>Where you could help:</strong> Improve sensor fixtures, stale-data handling and resource-limit explanations.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/the-tower">Source & contribution guidance</a><a href="https://hamanakam1.github.io/the-tower/">Project guide / site</a><a href="https://github.com/hamanakam1/the-tower/issues">Issues & ideas</a></div></article>
+<article id="project-horizon-broker" class="repo-card" aria-labelledby="title-horizon-broker">
+<div class="repo-header"><h3 id="title-horizon-broker">horizon-broker</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Asynchronous inference queues with retries and failover; the real ledger adapter remains unfinished.</p><p class="maturity">Alpha</p>
+<p class="contribution"><strong>Where you could help:</strong> Explore idempotency, cancellation, failover and the unfinished ledger seam.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/horizon-broker">Source & contribution guidance</a><a href="https://hamanakam1.github.io/horizon-broker/">Project guide / site</a><a href="https://github.com/hamanakam1/horizon-broker/issues">Issues & ideas</a></div></article>
+<article id="project-VortexMesh" class="repo-card" aria-labelledby="title-VortexMesh">
+<div class="repo-header"><h3 id="title-VortexMesh">VortexMesh</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Go event envelopes and an in-process concurrent pub/sub mesh.</p><p class="maturity">Learning experiment</p>
+<p class="contribution"><strong>Where you could help:</strong> Explore transport, offline durability, discovery and partition tests as proposed next slices.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/VortexMesh">Source & contribution guidance</a><a href="https://github.com/hamanakam1/VortexMesh/issues">Issues & ideas</a></div></article></div></div></section><section class="section" id="lab"><div class="container"><h2 class="section-title">Simulation & product experiments</h2><p class="section-description">Fictional fixtures and experimental product surfaces.</p><div class="repos-grid"><article id="project-mockmill" class="repo-card" aria-labelledby="title-mockmill">
+<div class="repo-header"><h3 id="title-mockmill">mockmill</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Reproducible fictional business stories and offline CRM adapters.</p><p class="maturity">Synthetic fixtures</p>
+<p class="contribution"><strong>Where you could help:</strong> Add generic fixture scenarios, adapter validation and deterministic examples.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/mockmill">Source & contribution guidance</a><a href="https://github.com/hamanakam1/mockmill/issues">Issues & ideas</a></div></article>
+<article id="project-onramp-synthetic-company" class="repo-card" aria-labelledby="title-onramp-synthetic-company">
+<div class="repo-header"><h3 id="title-onramp-synthetic-company">onramp-synthetic-company</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">A fictional company dataset for local business-workflow rehearsals.</p><p class="maturity">Private simulation</p>
+<p class="contribution"><strong>Where you could help:</strong> Use generic public Mockmill fixtures to explore similar workflows.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/onramp-synthetic-company">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-vs-platform-synthetic-fleet" class="repo-card" aria-labelledby="title-vs-platform-synthetic-fleet">
+<div class="repo-header"><h3 id="title-vs-platform-synthetic-fleet">vs-platform-synthetic-fleet</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">Synthetic hardware nodes and protocol fixtures for platform testing.</p><p class="maturity">Private simulation</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss generic protocol fixtures through the public atlas.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/vs-platform-synthetic-fleet">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-cloudteams-extension-studio" class="repo-card" aria-labelledby="title-cloudteams-extension-studio">
+<div class="repo-header"><h3 id="title-cloudteams-extension-studio">cloudteams-extension-studio</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">Standalone extension concepts and a proposed browser-local SDK.</p><p class="maturity">Private prototype</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss generic extension lifecycles, permissions and fictional fixtures.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/cloudteams-extension-studio">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-cloudteams-lunch-break" class="repo-card" aria-labelledby="title-cloudteams-lunch-break">
+<div class="repo-header"><h3 id="title-cloudteams-lunch-break">cloudteams-lunch-break</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">A fictional client/talent gesture-planning demo derived from Extension Studio.</p><p class="maturity">Private experiment</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss accessible planning and consent models with synthetic examples.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/cloudteams-lunch-break">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-cloudteams-plot-twist" class="repo-card" aria-labelledby="title-cloudteams-plot-twist">
+<div class="repo-header"><h3 id="title-cloudteams-plot-twist">cloudteams-plot-twist</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">A fictional demo for rehearsing changed project circumstances.</p><p class="maturity">Private experiment</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss context continuity and human-reviewed next-step proposals.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/cloudteams-plot-twist">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-blessed-edge-deployment" class="repo-card" aria-labelledby="title-blessed-edge-deployment">
+<div class="repo-header"><h3 id="title-blessed-edge-deployment">blessed-edge-deployment</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">A fictional hardware-to-handoff rehearsal with local permissions and reproducible bundles.</p><p class="maturity">Private local demo</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss reproducible demo bundles and tamper/failure fixtures.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/blessed-edge-deployment">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article></div></div></section><section class="section" id="surface"><div class="container"><h2 class="section-title">Publishing & public entry points</h2><p class="section-description">The front doors, documentation and communication layers.</p><div class="repos-grid"><article id="project-portal" class="repo-card" aria-labelledby="title-portal">
+<div class="repo-header"><h3 id="title-portal">portal</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">A private personal clone used for client-platform work.</p><p class="maturity">Private client workspace</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss portable client interfaces without copying client-specific source or data.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/portal">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-edgerecord-com" class="repo-card" aria-labelledby="title-edgerecord-com">
+<div class="repo-header"><h3 id="title-edgerecord-com">edgerecord-com</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">A multi-tenant web shell for the evidence workspace.</p><p class="maturity">Private web shell</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss accessible operator/client surfaces using generic examples.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/edgerecord-com">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-edgerecord-publisher" class="repo-card" aria-labelledby="title-edgerecord-publisher">
+<div class="repo-header"><h3 id="title-edgerecord-publisher">edgerecord-publisher</h3><span class="repo-badge">Private</span></div>
+<p class="repo-description">Publish reviewed ledger receipts through Joomla Web Services.</p><p class="maturity">Private publishing adapter</p>
+<p class="contribution"><strong>Where you could help:</strong> Discuss portable receipt-to-article formats and preview behavior.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/edgerecord-publisher">Access-controlled repository</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Public discussion</a></div></article>
+<article id="project-hamanakam1" class="repo-card" aria-labelledby="title-hamanakam1">
+<div class="repo-header"><h3 id="title-hamanakam1">hamanakam1</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">The short introduction to the entire software-factory ecosystem.</p><p class="maturity">Public profile</p>
+<p class="contribution"><strong>Where you could help:</strong> Improve orientation, project explanations and contributor entry points.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/hamanakam1">Source & contribution guidance</a><a href="https://edgerecord.com">Project guide / site</a><a href="https://github.com/hamanakam1/hamanakam1/issues">Issues & ideas</a></div></article>
+<article id="project-hamanakam1.github.io" class="repo-card" aria-labelledby="title-hamanakam1.github.io">
+<div class="repo-header"><h3 id="title-hamanakam1.github.io">hamanakam1.github.io</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">This public map of the workshop, its experiments and ways to contribute.</p><p class="maturity">Public atlas</p>
+<p class="contribution"><strong>Where you could help:</strong> Improve the map, accessible navigation and project/contribution descriptions.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/hamanakam1.github.io">Source & contribution guidance</a><a href="https://hamanakam1.github.io/">Project guide / site</a><a href="https://github.com/hamanakam1/hamanakam1.github.io/issues">Issues & ideas</a></div></article></div></div></section><section class="section" id="upstream"><div class="container"><h2 class="section-title">Upstream collaborations</h2><p class="section-description">Forks that connect the workshop to other communities.</p><div class="repos-grid"><article id="project-archify" class="repo-card" aria-labelledby="title-archify">
+<div class="repo-header"><h3 id="title-archify">archify</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">An agent skill for interactive technical diagrams.</p><p class="maturity">Upstream fork</p>
+<p class="contribution"><strong>Where you could help:</strong> Check upstream guidance and contribute diagram usability or schema examples to the right project.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/archify">Source & contribution guidance</a><a href="https://archify.si">Project guide / site</a><a href="https://github.com/hamanakam1/archify/issues">Issues & ideas</a></div></article>
+<article id="project-wad-sbx-workshop" class="repo-card" aria-labelledby="title-wad-sbx-workshop">
+<div class="repo-header"><h3 id="title-wad-sbx-workshop">wad-sbx-workshop</h3><span class="repo-badge">Public</span></div>
+<p class="repo-description">Docker Sandboxes learning material and host-side testing connectors.</p><p class="maturity">Workshop fork</p>
+<p class="contribution"><strong>Where you could help:</strong> Improve workshop reproduction, platform notes and synthetic sandbox examples.</p>
+<div class="repo-links"><a href="https://github.com/hamanakam1/wad-sbx-workshop">Source & contribution guidance</a><a href="https://github.com/hamanakam1/wad-sbx-workshop">Project guide / site</a><a href="https://github.com/hamanakam1/wad-sbx-workshop/issues">Issues & ideas</a></div></article></div></div></section>
+<section id="contribute" class="section section-dark"><div class="container"><p class="eyebrow">Build a useful piece of the bigger system</p><h2 class="section-title">Pick a seam. Make it better.</h2><p class="section-description">You do not need the private factory to help. Start with a public tool, a reproducible problem or a small synthetic example. Improvements can stand on their own; I can evaluate how they fit the larger system later.</p><div class="repos-grid"><article class="repo-card"><h3>Try a real workflow</h3><p>Run a public project using its own setup guide. Report your platform, the steps, what you expected and what happened. Accessibility, recovery and confusing first-run experiences are valuable starting points.</p></article><article class="repo-card"><h3>Build an adapter or fixture</h3><p>Suggest a small contract first: inputs, outputs, failure behavior and an offline example. Good places include ticket formats, evidence interchange, hardware discovery, inference queues and synthetic CRM data.</p></article><article class="repo-card"><h3>Explore an experiment</h3><p>Prototype ideas in a bounded branch. Label simulations and proposals, keep the example reproducible, and show what would be needed before integration. Learning projects are welcome here too.</p></article></div><p class="section-description">Contribution ideas are invitations to discuss scope, not pre-approved implementation requests. Check each repository’s license and contribution guidance. For private components, use the public atlas issue tracker to propose a generic interface or ask about collaboration.</p><a class="hero-link" href="https://github.com/hamanakam1/hamanakam1.github.io/issues/new?template=ecosystem-idea.yml">Propose an ecosystem contribution ↗</a></div></section></main>
+<footer class="footer"><div class="container"><p>© 2026 Mike Hamanaka · Hamanaka Software Factory</p><p><a href="https://github.com/hamanakam1">GitHub</a> · <a href="ecosystem.html">Interactive map</a> · <a href="assets/repositories.json">Repository inventory</a> · <a href="#repos">Back to the workshop</a></p></div></footer></body></html>

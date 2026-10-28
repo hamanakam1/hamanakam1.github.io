@@ -1,0 +1,229 @@
+{
+  "observed_on": "2026-10-28",
+  "repositories": [
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "ai-dashboard",
+      "url": "https://github.com/hamanakam1/ai-dashboard"
+    },
+    {
+      "homepageUrl": "https://archify.si",
+      "isFork": true,
+      "isPrivate": false,
+      "name": "archify",
+      "url": "https://github.com/hamanakam1/archify"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "blessed-edge-deployment",
+      "url": "https://github.com/hamanakam1/blessed-edge-deployment"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "cloudteams-extension-studio",
+      "url": "https://github.com/hamanakam1/cloudteams-extension-studio"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "cloudteams-lunch-break",
+      "url": "https://github.com/hamanakam1/cloudteams-lunch-break"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "cloudteams-plot-twist",
+      "url": "https://github.com/hamanakam1/cloudteams-plot-twist"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "cofoundry",
+      "url": "https://github.com/hamanakam1/cofoundry"
+    },
+    {
+      "homepageUrl": "https://edgerecord.com",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "edgerecord",
+      "url": "https://github.com/hamanakam1/edgerecord"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "edgerecord-ai",
+      "url": "https://github.com/hamanakam1/edgerecord-ai"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "edgerecord-com",
+      "url": "https://github.com/hamanakam1/edgerecord-com"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "edgerecord-core",
+      "url": "https://github.com/hamanakam1/edgerecord-core"
+    },
+    {
+      "homepageUrl": "https://edgerecord.com",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "edgerecord-era",
+      "url": "https://github.com/hamanakam1/edgerecord-era"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "edgerecord-publisher",
+      "url": "https://github.com/hamanakam1/edgerecord-publisher"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/el-hidratador/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "el-hidratador",
+      "url": "https://github.com/hamanakam1/el-hidratador"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/el-verificador/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "el-verificador",
+      "url": "https://github.com/hamanakam1/el-verificador"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/fluxrecord/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "fluxrecord",
+      "url": "https://github.com/hamanakam1/fluxrecord"
+    },
+    {
+      "homepageUrl": "https://edgerecord.com",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "hamanakam1",
+      "url": "https://github.com/hamanakam1/hamanakam1"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "hamanakam1.github.io",
+      "url": "https://github.com/hamanakam1/hamanakam1.github.io"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/horizon-broker/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "horizon-broker",
+      "url": "https://github.com/hamanakam1/horizon-broker"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "mockmill",
+      "url": "https://github.com/hamanakam1/mockmill"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "onramp-synthetic-company",
+      "url": "https://github.com/hamanakam1/onramp-synthetic-company"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "osprey",
+      "url": "https://github.com/hamanakam1/osprey"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "panther-companion",
+      "url": "https://github.com/hamanakam1/panther-companion"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/panther-intent-capture/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "panther-intent-capture",
+      "url": "https://github.com/hamanakam1/panther-intent-capture"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "portal",
+      "url": "https://github.com/hamanakam1/portal"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/taskrivet/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "taskrivet",
+      "url": "https://github.com/hamanakam1/taskrivet"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/the-chronicler/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "the-chronicler",
+      "url": "https://github.com/hamanakam1/the-chronicler"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/the-surveyor/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "the-surveyor",
+      "url": "https://github.com/hamanakam1/the-surveyor"
+    },
+    {
+      "homepageUrl": "https://hamanakam1.github.io/the-tower/",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "the-tower",
+      "url": "https://github.com/hamanakam1/the-tower"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": false,
+      "name": "VortexMesh",
+      "url": "https://github.com/hamanakam1/VortexMesh"
+    },
+    {
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": true,
+      "name": "vs-platform-synthetic-fleet",
+      "url": "https://github.com/hamanakam1/vs-platform-synthetic-fleet"
+    },
+    {
+      "homepageUrl": "https://github.com/hamanakam1/wad-sbx-workshop",
+      "isFork": true,
+      "isPrivate": false,
+      "name": "wad-sbx-workshop",
+      "url": "https://github.com/hamanakam1/wad-sbx-workshop"
+    }
+  ]
+}

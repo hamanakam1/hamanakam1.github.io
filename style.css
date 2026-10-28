@@ -1,4 +1,27 @@
 /* Local assets only: system fonts, CSS decoration, and accessible native links. */
+.inventory-count { margin-top: 1.75rem; color: var(--accent); font-family: var(--font-mono); font-size: .85rem; }
+.hub-callout { margin-top: 2rem; padding: 2rem; border: 1px solid var(--accent); border-radius: .6rem; background: var(--ink); max-width: 65rem; }
+.hub-callout h3 { font-size: 2rem; margin-bottom: 1rem; }
+.maturity { color: var(--accent); font-family: var(--font-mono); font-size: .8rem; margin-block: .8rem; }
+.contribution { color: var(--muted); margin-bottom: 1rem; }
+.map-header { padding: 1.5rem 2rem; border-bottom: 1px solid var(--line); }
+.map-header h1 { margin-block: .8rem; font-size: 2rem; }
+.map-header p { color: var(--muted); }
+.map-layout { display: grid; grid-template-columns: minmax(0,1fr) 21rem; gap: 1.5rem; padding: 1.25rem; align-items: start; }
+.map-viewport { height: calc(100dvh - 13rem); min-height: 400px; overflow: auto; border: 1px solid var(--line); border-radius: .6rem; background: var(--surface); overscroll-behavior: contain; }
+#map-stage { padding: 16px; min-height: 100%; width: max-content; min-width: 100%; }
+#map-stage > svg { display: block; max-width: none; margin: 0; }
+.map-controls { padding: 1.25rem; background: var(--surface); border: 1px solid var(--line); border-radius: .6rem; position: sticky; top: 1rem; max-height: calc(100dvh - 2rem); overflow: auto; }
+.map-controls > a { display: block; margin-top: 1rem; }
+.map-controls label { display: block; margin-top: 1rem; }
+.map-controls select { width: 100%; min-height: 44px; padding: .5rem; margin-block: .5rem 1.25rem; font: inherit; background: var(--ink); color: var(--text); border: 1px solid var(--line); }
+.map-controls hr { margin-block: 1rem; border: 0; border-top: 1px solid var(--line); }
+.map-hint { font-size: .85rem; color: var(--muted); margin-top: .75rem; }
+.zoom-controls { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.zoom-controls button { min-height: 44px; min-width: 44px; padding: .5rem .8rem; background: var(--surface-raised); color: var(--text); border: 1px solid var(--line); border-radius: .3rem; font: inherit; cursor: pointer; }
+#project-detail h2 { font-size: 1.25rem; margin-bottom: 1rem; }
+#project-detail .repo-card { padding: 0; border: 0; background: transparent; }
+@media (max-width: 800px) { .map-layout { grid-template-columns: minmax(0,1fr); padding: .75rem; } .map-controls { position: static; max-height: none; } .map-viewport { height: 65dvh; min-height: 350px; } .map-header { padding: 1rem; } }
 :root {
     color-scheme: dark;
     --ink: #091719;

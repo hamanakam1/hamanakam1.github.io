@@ -2,6 +2,7 @@
 """Check local site navigation and assets without network or package installs."""
 
 from collections import Counter
+import json
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -33,8 +34,8 @@ class Page(HTMLParser):
             self.references.extend((attrs.get(attribute) or "").split())
         if tag == "img" and "alt" not in attrs:
             self.errors.append("image is missing alt text (use alt='' for decoration)")
-        if tag == "script":
-            self.errors.append("this static site does not use scripts")
+        if tag == "script" and not (self.path.name == "ecosystem.html" and attrs.get("src") == "assets/ecosystem-viewer.js"):
+            self.errors.append("only the local ecosystem viewer script is allowed")
         for attribute in ("href", "src"):
             value = attrs.get(attribute)
             if value is None:
@@ -55,6 +56,16 @@ def check(root: Path) -> list[str]:
     errors = []
     if root / "index.html" not in pages:
         errors.append("index.html: homepage is missing")
+    inventory = root / "assets/repositories.json"
+    if inventory.is_file() and root / "index.html" in pages:
+        names = {r["name"] for r in json.loads(inventory.read_text())["repositories"]}
+        actual = {key[8:] for key in pages[root / "index.html"].ids if key.startswith("project-")}
+        if names != actual:
+            errors.append("Repository inventory and public atlas cards differ")
+        spec = json.loads((root / "assets/ecosystem-spec.json").read_text())
+        mapped = {n["label"] for n in spec["nodes"] if n["id"].startswith("repo-")}
+        if mapped != names:
+            errors.append("Diagram specification does not cover the complete repository inventory")
     for path, page in pages.items():
         problems = list(page.errors)
         if page.headings != 1:

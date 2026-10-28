@@ -1,0 +1,597 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 2852" role="img" lang="en" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" data-tree-ui="" data-tree-direction="right" data-reader-fit="intrinsic-height" data-reader-min-text="7.5"><style>:root {--text:#edf5f3;--text-muted:#b5cbc7;--text-dim:#8aa6a0;--mask:#102326;--grid:#34545a;--arrow:#669e9d;--arrow-emphasis:#86e8cc;--lane-stroke:#34545a;--frontend-fill:#163034;--frontend-stroke:#86e8cc;--backend-fill:#182d3d;--backend-stroke:#84baff;--database-fill:#1a3430;--database-stroke:#8ae1b3;--cloud-fill:#2c2840;--cloud-stroke:#c5a8ff;--security-fill:#3b2a2e;--security-stroke:#f3a8b9;--messagebus-fill:#3c321d;--messagebus-stroke:#f0cc80;--external-fill:#202f3e;--external-stroke:#a0b8c7;} text{font-family:system-ui,sans-serif}.t-primary{fill:var(--text)}.t-muted{fill:var(--text-muted)}.t-dim{fill:var(--text-dim)}.c-mask{fill:var(--mask)}.a-default{fill:none;stroke:var(--arrow)}.c-external{fill:var(--external-fill);stroke:var(--external-stroke)}.tree-toggle{display:none} [data-tree-toggle]{display:none} [data-node-id]{cursor:pointer;outline:none}[data-node-id]:focus > rect,[data-selected] > rect{stroke:#ffe296;stroke-width:3px} .tree-socket{fill:#102326;stroke:#86e8cc}</style><style>.c-grid{fill:none;stroke:#34545a;opacity:.35}</style><rect width="100%" height="100%" fill="#102326"/>
+        <title id="archify-diagram-title">Hamanaka Software Factory — all repository roles</title>
+        <desc id="archify-diagram-description">Owner-described ecosystem. Branches group repositories by role; they do not assert deployed integrations.</desc>
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-default" />
+          </marker>
+          <marker id="arrowhead-emphasis" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-emphasis" />
+          </marker>
+          <marker id="arrowhead-security" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-security" />
+          </marker>
+          <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-dashed" />
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" class="c-grid" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <style>
+          svg[data-tree-ui] .tree-hue-root { --tree-hue: var(--text-muted); --tree-wash: transparent; }
+          svg[data-tree-ui] .tree-hue-backend { --tree-hue: var(--backend-stroke); --tree-wash: var(--backend-fill); }
+          svg[data-tree-ui] .tree-hue-database { --tree-hue: var(--database-stroke); --tree-wash: var(--database-fill); }
+          svg[data-tree-ui] .tree-hue-cloud { --tree-hue: var(--cloud-stroke); --tree-wash: var(--cloud-fill); }
+          svg[data-tree-ui] .tree-hue-frontend { --tree-hue: var(--frontend-stroke); --tree-wash: var(--frontend-fill); }
+          svg[data-tree-ui] .tree-hue-messagebus { --tree-hue: var(--messagebus-stroke); --tree-wash: var(--messagebus-fill); }
+          svg[data-tree-ui] .tree-hue-external { --tree-hue: var(--external-stroke); --tree-wash: var(--external-fill); }
+          svg[data-tree-ui] .tree-edge { stroke-linejoin: round; stroke-linecap: round; }
+          svg[data-tree-ui] .tree-edge-trunk { stroke: color-mix(in srgb, var(--text) 18%, var(--arrow)); }
+          svg[data-tree-ui] .tree-edge-hued { stroke: color-mix(in srgb, var(--tree-hue) 42%, var(--arrow)); }
+          svg[data-tree-ui] .tree-root { fill: var(--text); stroke: none; }
+          svg[data-tree-ui] [data-tree-depth="0"] .tree-label { fill: var(--mask); }
+          svg[data-tree-ui] [data-tree-depth="0"] .tree-sublabel { fill: var(--mask); opacity: 0.68; }
+          svg[data-tree-ui] .tree-branch { fill: var(--tree-wash); stroke: color-mix(in srgb, var(--tree-hue) 48%, var(--lane-stroke)); }
+          svg[data-tree-ui] .tree-leaf { fill: var(--mask); stroke: color-mix(in srgb, var(--tree-hue) 22%, var(--lane-stroke)); }
+          svg[data-tree-ui] .tree-socket { fill: var(--mask); stroke: var(--tree-hue); pointer-events: none; }
+          svg[data-tree-ui] .tree-accent { stroke: var(--tree-hue); pointer-events: none; }
+          svg[data-tree-ui] [data-tree-stack] { display: none; fill: var(--mask); stroke: color-mix(in srgb, var(--tree-hue) 70%, var(--lane-stroke)); }
+          svg[data-tree-ui] [data-tree-collapsed] [data-tree-stack] { display: inline; }
+          svg[data-tree-ui] [data-tree-hidden] { display: none; }
+          svg[data-tree-ui] .tree-toggle-hit { fill: transparent; }
+          svg[data-tree-ui] .tree-toggle-disc { fill: var(--mask); stroke: color-mix(in srgb, var(--tree-hue) 55%, var(--lane-stroke)); transition: stroke 0.15s ease, fill 0.15s ease; }
+          svg[data-tree-ui] .tree-toggle-glyph { stroke: var(--text-muted); fill: none; transition: stroke 0.15s ease; }
+          svg[data-tree-ui] .tree-toggle-count { display: none; }
+          svg[data-tree-ui] .tree-count-pill { fill: var(--tree-hue); stroke: none; }
+          svg[data-tree-ui] .tree-toggle-count text { fill: var(--mask); }
+          svg[data-tree-ui] [data-tree-toggle] { cursor: pointer; outline: none; }
+          svg[data-tree-ui] [data-tree-toggle][aria-expanded="true"] .tree-toggle-plus { display: none; }
+          svg[data-tree-ui] [data-tree-toggle][aria-expanded="false"] .tree-toggle-count { display: inline; }
+          svg[data-tree-ui] [data-tree-toggle][aria-expanded="false"] .tree-toggle-disc { fill: var(--tree-hue); stroke: var(--tree-hue); }
+          svg[data-tree-ui] [data-tree-toggle][aria-expanded="false"] .tree-toggle-glyph { stroke: var(--mask); }
+          svg[data-tree-ui] [data-tree-toggle]:hover .tree-toggle-disc,
+          svg[data-tree-ui] [data-tree-toggle]:focus-visible .tree-toggle-disc { stroke: var(--tree-hue); stroke-width: 2; }
+          svg[data-tree-ui] [data-tree-toggle]:hover .tree-toggle-glyph,
+          svg[data-tree-ui] [data-tree-toggle]:focus-visible .tree-toggle-glyph { stroke: var(--text); }
+          svg[data-tree-ui] [data-tree-expand-all] { cursor: pointer; outline: none; }
+          svg[data-tree-ui] [data-tree-expand-all] rect { fill: var(--mask); stroke: var(--lane-stroke); }
+          svg[data-tree-ui] [data-tree-expand-all]:is(:hover, :focus-visible) rect { stroke: var(--arrow-emphasis); stroke-width: 2; }
+          svg[data-tree-ui]:not([data-tree-any-collapsed]) [data-tree-expand-all] { display: none; }
+        </style>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(#grid)" />
+
+        <!-- Containment links -->
+        <path data-edge-from="factory" data-edge-to="hub" data-edge-key="0" data-tree-ancestors="factory" data-composition-points="294,1442.5;334,1442.5;334,180.5;374,180.5" d="M 294 1442.5 L 324 1442.5 Q 334 1442.5 334 1432.5 L 334 190.5 Q 334 180.5 344 180.5 L 374 180.5" class="a-default tree-edge tree-edge-trunk" data-animate="edge" style="--step:1" stroke-width="1.8"/>
+        <path data-edge-from="hub" data-edge-to="repo-ai-dashboard" data-edge-key="1" data-tree-ancestors="hub factory" data-composition-points="660,180.5;700,180.5;700,93.5;740,93.5" d="M 660 180.5 L 690 180.5 Q 700 180.5 700 170.5 L 700 103.5 Q 700 93.5 710 93.5 L 740 93.5" class="a-default tree-edge tree-edge-hued tree-hue-backend" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="hub" data-edge-to="repo-cofoundry" data-edge-key="2" data-tree-ancestors="hub factory" data-composition-points="660,181;740,181" d="M 660 181 L 740 181" class="a-default tree-edge tree-edge-hued tree-hue-backend" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="hub" data-edge-to="repo-edgerecord-ai" data-edge-key="3" data-tree-ancestors="hub factory" data-composition-points="660,180.5;700,180.5;700,267.5;740,267.5" d="M 660 180.5 L 690 180.5 Q 700 180.5 700 190.5 L 700 257.5 Q 700 267.5 710 267.5 L 740 267.5" class="a-default tree-edge tree-edge-hued tree-hue-backend" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="factory" data-edge-to="work" data-edge-key="4" data-tree-ancestors="factory" data-composition-points="294,1442.5;334,1442.5;334,528.5;374,528.5" d="M 294 1442.5 L 324 1442.5 Q 334 1442.5 334 1432.5 L 334 538.5 Q 334 528.5 344 528.5 L 374 528.5" class="a-default tree-edge tree-edge-trunk" data-animate="edge" style="--step:1" stroke-width="1.8"/>
+        <path data-edge-from="work" data-edge-to="repo-panther-intent-capture" data-edge-key="5" data-tree-ancestors="work factory" data-composition-points="660,528.5;700,528.5;700,354.5;740,354.5" d="M 660 528.5 L 690 528.5 Q 700 528.5 700 518.5 L 700 364.5 Q 700 354.5 710 354.5 L 740 354.5" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="work" data-edge-to="repo-panther-companion" data-edge-key="6" data-tree-ancestors="work factory" data-composition-points="660,528.5;700,528.5;700,441.5;740,441.5" d="M 660 528.5 L 690 528.5 Q 700 528.5 700 518.5 L 700 451.5 Q 700 441.5 710 441.5 L 740 441.5" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="work" data-edge-to="repo-taskrivet" data-edge-key="7" data-tree-ancestors="work factory" data-composition-points="660,529;740,529" d="M 660 529 L 740 529" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="work" data-edge-to="repo-osprey" data-edge-key="8" data-tree-ancestors="work factory" data-composition-points="660,528.5;700,528.5;700,615.5;740,615.5" d="M 660 528.5 L 690 528.5 Q 700 528.5 700 538.5 L 700 605.5 Q 700 615.5 710 615.5 L 740 615.5" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="work" data-edge-to="repo-el-hidratador" data-edge-key="9" data-tree-ancestors="work factory" data-composition-points="660,528.5;700,528.5;700,702.5;740,702.5" d="M 660 528.5 L 690 528.5 Q 700 528.5 700 538.5 L 700 692.5 Q 700 702.5 710 702.5 L 740 702.5" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="factory" data-edge-to="proof" data-edge-key="10" data-tree-ancestors="factory" data-composition-points="294,1442.5;334,1442.5;334,1007.5;374,1007.5" d="M 294 1442.5 L 324 1442.5 Q 334 1442.5 334 1432.5 L 334 1017.5 Q 334 1007.5 344 1007.5 L 374 1007.5" class="a-default tree-edge tree-edge-trunk" data-animate="edge" style="--step:1" stroke-width="1.8"/>
+        <path data-edge-from="proof" data-edge-to="repo-fluxrecord" data-edge-key="11" data-tree-ancestors="proof factory" data-composition-points="660,1007.5;700,1007.5;700,789.5;740,789.5" d="M 660 1007.5 L 690 1007.5 Q 700 1007.5 700 997.5 L 700 799.5 Q 700 789.5 710 789.5 L 740 789.5" class="a-default tree-edge tree-edge-hued tree-hue-cloud" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="proof" data-edge-to="repo-el-verificador" data-edge-key="12" data-tree-ancestors="proof factory" data-composition-points="660,1007.5;700,1007.5;700,876.5;740,876.5" d="M 660 1007.5 L 690 1007.5 Q 700 1007.5 700 997.5 L 700 886.5 Q 700 876.5 710 876.5 L 740 876.5" class="a-default tree-edge tree-edge-hued tree-hue-cloud" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="proof" data-edge-to="repo-the-chronicler" data-edge-key="13" data-tree-ancestors="proof factory" data-composition-points="660,1007.5;700,1007.5;700,963.5;740,963.5" d="M 660 1007.5 L 690 1007.5 Q 700 1007.5 700 997.5 L 700 973.5 Q 700 963.5 710 963.5 L 740 963.5" class="a-default tree-edge tree-edge-hued tree-hue-cloud" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="proof" data-edge-to="repo-edgerecord-core" data-edge-key="14" data-tree-ancestors="proof factory" data-composition-points="660,1007.5;700,1007.5;700,1050.5;740,1050.5" d="M 660 1007.5 L 690 1007.5 Q 700 1007.5 700 1017.5 L 700 1040.5 Q 700 1050.5 710 1050.5 L 740 1050.5" class="a-default tree-edge tree-edge-hued tree-hue-cloud" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="proof" data-edge-to="repo-edgerecord" data-edge-key="15" data-tree-ancestors="proof factory" data-composition-points="660,1007.5;700,1007.5;700,1137.5;740,1137.5" d="M 660 1007.5 L 690 1007.5 Q 700 1007.5 700 1017.5 L 700 1127.5 Q 700 1137.5 710 1137.5 L 740 1137.5" class="a-default tree-edge tree-edge-hued tree-hue-cloud" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="proof" data-edge-to="repo-edgerecord-era" data-edge-key="16" data-tree-ancestors="proof factory" data-composition-points="660,1007.5;700,1007.5;700,1224.5;740,1224.5" d="M 660 1007.5 L 690 1007.5 Q 700 1007.5 700 1017.5 L 700 1214.5 Q 700 1224.5 710 1224.5 L 740 1224.5" class="a-default tree-edge tree-edge-hued tree-hue-cloud" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="factory" data-edge-to="edge" data-edge-key="17" data-tree-ancestors="factory" data-composition-points="294,1443;374,1443" d="M 294 1443 L 374 1443" class="a-default tree-edge tree-edge-trunk" data-animate="edge" style="--step:1" stroke-width="1.8"/>
+        <path data-edge-from="edge" data-edge-to="repo-the-surveyor" data-edge-key="18" data-tree-ancestors="edge factory" data-composition-points="660,1442.5;700,1442.5;700,1311.5;740,1311.5" d="M 660 1442.5 L 690 1442.5 Q 700 1442.5 700 1432.5 L 700 1321.5 Q 700 1311.5 710 1311.5 L 740 1311.5" class="a-default tree-edge tree-edge-hued tree-hue-frontend" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="edge" data-edge-to="repo-the-tower" data-edge-key="19" data-tree-ancestors="edge factory" data-composition-points="660,1442.5;700,1442.5;700,1398.5;740,1398.5" d="M 660 1442.5 L 690 1442.5 Q 700 1442.5 700 1432.5 L 700 1408.5 Q 700 1398.5 710 1398.5 L 740 1398.5" class="a-default tree-edge tree-edge-hued tree-hue-frontend" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="edge" data-edge-to="repo-horizon-broker" data-edge-key="20" data-tree-ancestors="edge factory" data-composition-points="660,1442.5;700,1442.5;700,1485.5;740,1485.5" d="M 660 1442.5 L 690 1442.5 Q 700 1442.5 700 1452.5 L 700 1475.5 Q 700 1485.5 710 1485.5 L 740 1485.5" class="a-default tree-edge tree-edge-hued tree-hue-frontend" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="edge" data-edge-to="repo-VortexMesh" data-edge-key="21" data-tree-ancestors="edge factory" data-composition-points="660,1442.5;700,1442.5;700,1572.5;740,1572.5" d="M 660 1442.5 L 690 1442.5 Q 700 1442.5 700 1452.5 L 700 1562.5 Q 700 1572.5 710 1572.5 L 740 1572.5" class="a-default tree-edge tree-edge-hued tree-hue-frontend" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="factory" data-edge-to="lab" data-edge-key="22" data-tree-ancestors="factory" data-composition-points="294,1442.5;334,1442.5;334,1921;374,1921" d="M 294 1442.5 L 324 1442.5 Q 334 1442.5 334 1452.5 L 334 1911 Q 334 1921 344 1921 L 374 1921" class="a-default tree-edge tree-edge-trunk" data-animate="edge" style="--step:1" stroke-width="1.8"/>
+        <path data-edge-from="lab" data-edge-to="repo-mockmill" data-edge-key="23" data-tree-ancestors="lab factory" data-composition-points="660,1921;700,1921;700,1659.5;740,1659.5" d="M 660 1921 L 690 1921 Q 700 1921 700 1911 L 700 1669.5 Q 700 1659.5 710 1659.5 L 740 1659.5" class="a-default tree-edge tree-edge-hued tree-hue-messagebus" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="lab" data-edge-to="repo-onramp-synthetic-company" data-edge-key="24" data-tree-ancestors="lab factory" data-composition-points="660,1921;700,1921;700,1746.5;740,1746.5" d="M 660 1921 L 690 1921 Q 700 1921 700 1911 L 700 1756.5 Q 700 1746.5 710 1746.5 L 740 1746.5" class="a-default tree-edge tree-edge-hued tree-hue-messagebus" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="lab" data-edge-to="repo-vs-platform-synthetic-fleet" data-edge-key="25" data-tree-ancestors="lab factory" data-composition-points="660,1921;700,1921;700,1833.5;740,1833.5" d="M 660 1921 L 690 1921 Q 700 1921 700 1911 L 700 1843.5 Q 700 1833.5 710 1833.5 L 740 1833.5" class="a-default tree-edge tree-edge-hued tree-hue-messagebus" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="lab" data-edge-to="repo-cloudteams-extension-studio" data-edge-key="26" data-tree-ancestors="lab factory" data-composition-points="660,1921;740,1921" d="M 660 1921 L 740 1921" class="a-default tree-edge tree-edge-hued tree-hue-messagebus" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="lab" data-edge-to="repo-cloudteams-lunch-break" data-edge-key="27" data-tree-ancestors="lab factory" data-composition-points="660,1921;700,1921;700,2007.5;740,2007.5" d="M 660 1921 L 690 1921 Q 700 1921 700 1931 L 700 1997.5 Q 700 2007.5 710 2007.5 L 740 2007.5" class="a-default tree-edge tree-edge-hued tree-hue-messagebus" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="lab" data-edge-to="repo-cloudteams-plot-twist" data-edge-key="28" data-tree-ancestors="lab factory" data-composition-points="660,1921;700,1921;700,2094.5;740,2094.5" d="M 660 1921 L 690 1921 Q 700 1921 700 1931 L 700 2084.5 Q 700 2094.5 710 2094.5 L 740 2094.5" class="a-default tree-edge tree-edge-hued tree-hue-messagebus" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="lab" data-edge-to="repo-blessed-edge-deployment" data-edge-key="29" data-tree-ancestors="lab factory" data-composition-points="660,1921;700,1921;700,2181.5;740,2181.5" d="M 660 1921 L 690 1921 Q 700 1921 700 1931 L 700 2171.5 Q 700 2181.5 710 2181.5 L 740 2181.5" class="a-default tree-edge tree-edge-hued tree-hue-messagebus" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="factory" data-edge-to="surface" data-edge-key="30" data-tree-ancestors="factory" data-composition-points="294,1442.5;334,1442.5;334,2443;374,2443" d="M 294 1442.5 L 324 1442.5 Q 334 1442.5 334 1452.5 L 334 2433 Q 334 2443 344 2443 L 374 2443" class="a-default tree-edge tree-edge-trunk" data-animate="edge" style="--step:1" stroke-width="1.8"/>
+        <path data-edge-from="surface" data-edge-to="repo-portal" data-edge-key="31" data-tree-ancestors="surface factory" data-composition-points="660,2443;700,2443;700,2268.5;740,2268.5" d="M 660 2443 L 690 2443 Q 700 2443 700 2433 L 700 2278.5 Q 700 2268.5 710 2268.5 L 740 2268.5" class="a-default tree-edge tree-edge-hued tree-hue-external" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="surface" data-edge-to="repo-edgerecord-com" data-edge-key="32" data-tree-ancestors="surface factory" data-composition-points="660,2443;700,2443;700,2355.5;740,2355.5" d="M 660 2443 L 690 2443 Q 700 2443 700 2433 L 700 2365.5 Q 700 2355.5 710 2355.5 L 740 2355.5" class="a-default tree-edge tree-edge-hued tree-hue-external" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="surface" data-edge-to="repo-edgerecord-publisher" data-edge-key="33" data-tree-ancestors="surface factory" data-composition-points="660,2443;740,2443" d="M 660 2443 L 740 2443" class="a-default tree-edge tree-edge-hued tree-hue-external" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="surface" data-edge-to="repo-hamanakam1" data-edge-key="34" data-tree-ancestors="surface factory" data-composition-points="660,2443;700,2443;700,2529.5;740,2529.5" d="M 660 2443 L 690 2443 Q 700 2443 700 2453 L 700 2519.5 Q 700 2529.5 710 2529.5 L 740 2529.5" class="a-default tree-edge tree-edge-hued tree-hue-external" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="surface" data-edge-to="repo-hamanakam1-github-io" data-edge-key="35" data-tree-ancestors="surface factory" data-composition-points="660,2443;700,2443;700,2616.5;740,2616.5" d="M 660 2443 L 690 2443 Q 700 2443 700 2453 L 700 2606.5 Q 700 2616.5 710 2616.5 L 740 2616.5" class="a-default tree-edge tree-edge-hued tree-hue-external" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="factory" data-edge-to="upstream" data-edge-key="36" data-tree-ancestors="factory" data-composition-points="294,1442.5;334,1442.5;334,2747.5;374,2747.5" d="M 294 1442.5 L 324 1442.5 Q 334 1442.5 334 1452.5 L 334 2737.5 Q 334 2747.5 344 2747.5 L 374 2747.5" class="a-default tree-edge tree-edge-trunk" data-animate="edge" style="--step:1" stroke-width="1.8"/>
+        <path data-edge-from="upstream" data-edge-to="repo-archify" data-edge-key="37" data-tree-ancestors="upstream factory" data-composition-points="660,2747.5;700,2747.5;700,2703.5;740,2703.5" d="M 660 2747.5 L 690 2747.5 Q 700 2747.5 700 2737.5 L 700 2713.5 Q 700 2703.5 710 2703.5 L 740 2703.5" class="a-default tree-edge tree-edge-hued tree-hue-backend" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+        <path data-edge-from="upstream" data-edge-to="repo-wad-sbx-workshop" data-edge-key="38" data-tree-ancestors="upstream factory" data-composition-points="660,2747.5;700,2747.5;700,2790.5;740,2790.5" d="M 660 2747.5 L 690 2747.5 Q 700 2747.5 700 2757.5 L 700 2780.5 Q 700 2790.5 710 2790.5 L 740 2790.5" class="a-default tree-edge tree-edge-hued tree-hue-backend" data-animate="edge" style="--step:2" stroke-width="1.5"/>
+
+        <!-- Nodes -->
+        <g id="node-factory" data-node-id="factory" data-node-label="Hamanaka Software Factory" tabindex="0" role="button" aria-label="Inspect Hamanaka Software Factory, One ecosystem · AI Dashboard at its core, Root" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="One ecosystem · AI Dashboard at its core" data-node-context="Root" data-tree-depth="0" class="tree-hue-root">
+          <title>Hamanaka Software Factory · One ecosystem · AI Dashboard at its core · Root</title>
+          <rect data-tree-stack="" x="37" y="1411" width="262" height="73" rx="10" class="tree-stack-frontend" stroke-width="1.2"/>
+          <rect x="32" y="1406" width="262" height="73" rx="10" class="c-mask"/>
+          <rect x="32" y="1406" width="262" height="73" rx="10" class="c-frontend tree-root" data-animate="node" style="--step:0" stroke-width="0"/>
+
+
+          <text data-node-label="" x="163" class="t-primary tree-label" font-size="14.5" font-weight="750" text-anchor="middle"><tspan x="163" y="1430.5">Hamanaka Software Factory</tspan></text>
+          <text data-detail="context" x="163" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="163" y="1449.5">One ecosystem · AI Dashboard at its</tspan><tspan x="163" y="1463.5">core</tspan></text>
+        </g>
+        <g id="node-hub" data-node-id="hub" data-node-label="The factory core" tabindex="0" role="button" aria-label="Inspect The factory core, Repository roles · not runtime call paths, Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Repository roles · not runtime call paths" data-node-context="Branch" data-tree-depth="1" data-tree-ancestors="factory" class="tree-hue-backend">
+          <title>The factory core · Repository roles · not runtime call paths · Branch</title>
+          <rect data-tree-stack="" x="379" y="149" width="286" height="73" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
+          <rect x="374" y="144" width="286" height="73" rx="10" class="c-mask"/>
+          <rect x="374" y="144" width="286" height="73" rx="10" class="c-backend tree-branch" data-animate="node" style="--step:1" stroke-width="1.2"/>
+
+          <circle cx="374" cy="180.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="517" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="517" y="168.5">The factory core</tspan></text>
+          <text data-detail="context" x="517" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="517" y="187.5">Repository roles · not runtime</tspan><tspan x="517" y="201.5">call paths</tspan></text>
+        </g>
+        <g id="node-repo-ai-dashboard" data-node-id="repo-ai-dashboard" data-node-label="ai-dashboard" tabindex="0" role="button" aria-label="Inspect ai-dashboard, Private · Integration hub, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Integration hub" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="hub factory" class="tree-hue-backend">
+          <title>ai-dashboard · Private · Integration hub · Leaf</title>
+
+          <rect x="740" y="64" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="64" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="93.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="88.5">ai-dashboard</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="107.5">Private · Integration hub</tspan></text>
+        </g>
+        <g id="node-repo-cofoundry" data-node-id="repo-cofoundry" data-node-label="cofoundry" tabindex="0" role="button" aria-label="Inspect cofoundry, Private · Private engine, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private engine" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="hub factory" class="tree-hue-backend">
+          <title>cofoundry · Private · Private engine · Leaf</title>
+
+          <rect x="740" y="151" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="151" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="180.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="175.5">cofoundry</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="194.5">Private · Private engine</tspan></text>
+        </g>
+        <g id="node-repo-edgerecord-ai" data-node-id="repo-edgerecord-ai" data-node-label="edgerecord-ai" tabindex="0" role="button" aria-label="Inspect edgerecord-ai, Private · Private workspace, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private workspace" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="hub factory" class="tree-hue-backend">
+          <title>edgerecord-ai · Private · Private workspace · Leaf</title>
+
+          <rect x="740" y="238" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="238" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="267.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="262.5">edgerecord-ai</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="281.5">Private · Private workspace</tspan></text>
+        </g>
+        <g id="node-work" data-node-id="work" data-node-label="Intent, sessions &amp; delivery" tabindex="0" role="button" aria-label="Inspect Intent, sessions &amp; delivery, Repository roles · not runtime call paths, Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Repository roles · not runtime call paths" data-node-context="Branch" data-tree-depth="1" data-tree-ancestors="factory" class="tree-hue-database">
+          <title>Intent, sessions &amp; delivery · Repository roles · not runtime call paths · Branch</title>
+          <rect data-tree-stack="" x="379" y="497" width="286" height="73" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
+          <rect x="374" y="492" width="286" height="73" rx="10" class="c-mask"/>
+          <rect x="374" y="492" width="286" height="73" rx="10" class="c-backend tree-branch" data-animate="node" style="--step:1" stroke-width="1.2"/>
+
+          <circle cx="374" cy="528.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="517" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="517" y="516.5">Intent, sessions &amp; delivery</tspan></text>
+          <text data-detail="context" x="517" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="517" y="535.5">Repository roles · not runtime</tspan><tspan x="517" y="549.5">call paths</tspan></text>
+        </g>
+        <g id="node-repo-panther-intent-capture" data-node-id="repo-panther-intent-capture" data-node-label="panther-intent-capture" tabindex="0" role="button" aria-label="Inspect panther-intent-capture, Public · Browser extension, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Browser extension" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="work factory" class="tree-hue-database">
+          <title>panther-intent-capture · Public · Browser extension · Leaf</title>
+
+          <rect x="740" y="325" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="325" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="354.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="349.5">panther-intent-capture</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="368.5">Public · Browser extension</tspan></text>
+        </g>
+        <g id="node-repo-panther-companion" data-node-id="repo-panther-companion" data-node-label="panther-companion" tabindex="0" role="button" aria-label="Inspect panther-companion, Public · Desktop companion, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Desktop companion" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="work factory" class="tree-hue-database">
+          <title>panther-companion · Public · Desktop companion · Leaf</title>
+
+          <rect x="740" y="412" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="412" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="441.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="436.5">panther-companion</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="455.5">Public · Desktop companion</tspan></text>
+        </g>
+        <g id="node-repo-taskrivet" data-node-id="repo-taskrivet" data-node-label="taskrivet" tabindex="0" role="button" aria-label="Inspect taskrivet, Public · Desktop alpha, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Desktop alpha" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="work factory" class="tree-hue-database">
+          <title>taskrivet · Public · Desktop alpha · Leaf</title>
+
+          <rect x="740" y="499" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="499" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="528.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="523.5">taskrivet</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="542.5">Public · Desktop alpha</tspan></text>
+        </g>
+        <g id="node-repo-osprey" data-node-id="repo-osprey" data-node-label="osprey" tabindex="0" role="button" aria-label="Inspect osprey, Public · Prerelease, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Prerelease" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="work factory" class="tree-hue-database">
+          <title>osprey · Public · Prerelease · Leaf</title>
+
+          <rect x="740" y="586" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="586" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="615.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="610.5">osprey</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="629.5">Public · Prerelease</tspan></text>
+        </g>
+        <g id="node-repo-el-hidratador" data-node-id="repo-el-hidratador" data-node-label="el-hidratador" tabindex="0" role="button" aria-label="Inspect el-hidratador, Public · Staging experiment, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Staging experiment" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="work factory" class="tree-hue-database">
+          <title>el-hidratador · Public · Staging experiment · Leaf</title>
+
+          <rect x="740" y="673" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="673" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="702.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="697.5">el-hidratador</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="716.5">Public · Staging experiment</tspan></text>
+        </g>
+        <g id="node-proof" data-node-id="proof" data-node-label="Evidence &amp; institutional memory" tabindex="0" role="button" aria-label="Inspect Evidence &amp; institutional memory, Repository roles · not runtime call paths, Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Repository roles · not runtime call paths" data-node-context="Branch" data-tree-depth="1" data-tree-ancestors="factory" class="tree-hue-cloud">
+          <title>Evidence &amp; institutional memory · Repository roles · not runtime call paths · Branch</title>
+          <rect data-tree-stack="" x="379" y="976" width="286" height="73" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
+          <rect x="374" y="971" width="286" height="73" rx="10" class="c-mask"/>
+          <rect x="374" y="971" width="286" height="73" rx="10" class="c-backend tree-branch" data-animate="node" style="--step:1" stroke-width="1.2"/>
+
+          <circle cx="374" cy="1007.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="517" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="517" y="995.5">Evidence &amp; institutional memory</tspan></text>
+          <text data-detail="context" x="517" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="517" y="1014.5">Repository roles · not runtime call</tspan><tspan x="517" y="1028.5">paths</tspan></text>
+        </g>
+        <g id="node-repo-fluxrecord" data-node-id="repo-fluxrecord" data-node-label="fluxrecord" tabindex="0" role="button" aria-label="Inspect fluxrecord, Public · Ticket standard, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Ticket standard" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="proof factory" class="tree-hue-cloud">
+          <title>fluxrecord · Public · Ticket standard · Leaf</title>
+
+          <rect x="740" y="760" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="760" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="789.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="784.5">fluxrecord</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="803.5">Public · Ticket standard</tspan></text>
+        </g>
+        <g id="node-repo-el-verificador" data-node-id="repo-el-verificador" data-node-label="el-verificador" tabindex="0" role="button" aria-label="Inspect el-verificador, Public · Verification tooling, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Verification tooling" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="proof factory" class="tree-hue-cloud">
+          <title>el-verificador · Public · Verification tooling · Leaf</title>
+
+          <rect x="740" y="847" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="847" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="876.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="871.5">el-verificador</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="890.5">Public · Verification tooling</tspan></text>
+        </g>
+        <g id="node-repo-the-chronicler" data-node-id="repo-the-chronicler" data-node-label="the-chronicler" tabindex="0" role="button" aria-label="Inspect the-chronicler, Public · Memory tooling, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Memory tooling" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="proof factory" class="tree-hue-cloud">
+          <title>the-chronicler · Public · Memory tooling · Leaf</title>
+
+          <rect x="740" y="934" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="934" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="963.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="958.5">the-chronicler</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="977.5">Public · Memory tooling</tspan></text>
+        </g>
+        <g id="node-repo-edgerecord-core" data-node-id="repo-edgerecord-core" data-node-label="edgerecord-core" tabindex="0" role="button" aria-label="Inspect edgerecord-core, Private · Private verifier, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private verifier" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="proof factory" class="tree-hue-cloud">
+          <title>edgerecord-core · Private · Private verifier · Leaf</title>
+
+          <rect x="740" y="1021" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1021" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1050.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1045.5">edgerecord-core</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1064.5">Private · Private verifier</tspan></text>
+        </g>
+        <g id="node-repo-edgerecord" data-node-id="repo-edgerecord" data-node-label="edgerecord" tabindex="0" role="button" aria-label="Inspect edgerecord, Private · Private workspace, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private workspace" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="proof factory" class="tree-hue-cloud">
+          <title>edgerecord · Private · Private workspace · Leaf</title>
+
+          <rect x="740" y="1108" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1108" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1137.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1132.5">edgerecord</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1151.5">Private · Private workspace</tspan></text>
+        </g>
+        <g id="node-repo-edgerecord-era" data-node-id="repo-edgerecord-era" data-node-label="edgerecord-era" tabindex="0" role="button" aria-label="Inspect edgerecord-era, Private · Private ledger, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private ledger" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="proof factory" class="tree-hue-cloud">
+          <title>edgerecord-era · Private · Private ledger · Leaf</title>
+
+          <rect x="740" y="1195" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1195" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1224.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1219.5">edgerecord-era</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1238.5">Private · Private ledger</tspan></text>
+        </g>
+        <g id="node-edge" data-node-id="edge" data-node-label="Machines, inference &amp; the edge" tabindex="0" role="button" aria-label="Inspect Machines, inference &amp; the edge, Repository roles · not runtime call paths, Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Repository roles · not runtime call paths" data-node-context="Branch" data-tree-depth="1" data-tree-ancestors="factory" class="tree-hue-frontend">
+          <title>Machines, inference &amp; the edge · Repository roles · not runtime call paths · Branch</title>
+          <rect data-tree-stack="" x="379" y="1411" width="286" height="73" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
+          <rect x="374" y="1406" width="286" height="73" rx="10" class="c-mask"/>
+          <rect x="374" y="1406" width="286" height="73" rx="10" class="c-backend tree-branch" data-animate="node" style="--step:1" stroke-width="1.2"/>
+
+          <circle cx="374" cy="1442.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="517" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="517" y="1430.5">Machines, inference &amp; the edge</tspan></text>
+          <text data-detail="context" x="517" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="517" y="1449.5">Repository roles · not runtime call</tspan><tspan x="517" y="1463.5">paths</tspan></text>
+        </g>
+        <g id="node-repo-the-surveyor" data-node-id="repo-the-surveyor" data-node-label="the-surveyor" tabindex="0" role="button" aria-label="Inspect the-surveyor, Public · Read-only discovery, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Read-only discovery" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="edge factory" class="tree-hue-frontend">
+          <title>the-surveyor · Public · Read-only discovery · Leaf</title>
+
+          <rect x="740" y="1282" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1282" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1311.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1306.5">the-surveyor</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1325.5">Public · Read-only discovery</tspan></text>
+        </g>
+        <g id="node-repo-the-tower" data-node-id="repo-the-tower" data-node-label="the-tower" tabindex="0" role="button" aria-label="Inspect the-tower, Public · Prototype, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Prototype" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="edge factory" class="tree-hue-frontend">
+          <title>the-tower · Public · Prototype · Leaf</title>
+
+          <rect x="740" y="1369" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1369" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1398.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1393.5">the-tower</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1412.5">Public · Prototype</tspan></text>
+        </g>
+        <g id="node-repo-horizon-broker" data-node-id="repo-horizon-broker" data-node-label="horizon-broker" tabindex="0" role="button" aria-label="Inspect horizon-broker, Public · Alpha, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Alpha" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="edge factory" class="tree-hue-frontend">
+          <title>horizon-broker · Public · Alpha · Leaf</title>
+
+          <rect x="740" y="1456" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1456" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1485.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1480.5">horizon-broker</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1499.5">Public · Alpha</tspan></text>
+        </g>
+        <g id="node-repo-VortexMesh" data-node-id="repo-VortexMesh" data-node-label="VortexMesh" tabindex="0" role="button" aria-label="Inspect VortexMesh, Public · Learning experiment, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Learning experiment" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="edge factory" class="tree-hue-frontend">
+          <title>VortexMesh · Public · Learning experiment · Leaf</title>
+
+          <rect x="740" y="1543" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1543" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1572.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1567.5">VortexMesh</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1586.5">Public · Learning experiment</tspan></text>
+        </g>
+        <g id="node-lab" data-node-id="lab" data-node-label="Simulation &amp; product experiments" tabindex="0" role="button" aria-label="Inspect Simulation &amp; product experiments, Repository roles · not runtime call paths, Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Repository roles · not runtime call paths" data-node-context="Branch" data-tree-depth="1" data-tree-ancestors="factory" class="tree-hue-messagebus">
+          <title>Simulation &amp; product experiments · Repository roles · not runtime call paths · Branch</title>
+          <rect data-tree-stack="" x="379" y="1881" width="286" height="90" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
+          <rect x="374" y="1876" width="286" height="90" rx="10" class="c-mask"/>
+          <rect x="374" y="1876" width="286" height="90" rx="10" class="c-backend tree-branch" data-animate="node" style="--step:1" stroke-width="1.2"/>
+
+          <circle cx="374" cy="1921" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="517" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="517" y="1900.5">Simulation &amp; product</tspan><tspan x="517" y="1917.5">experiments</tspan></text>
+          <text data-detail="context" x="517" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="517" y="1936.5">Repository roles · not runtime</tspan><tspan x="517" y="1950.5">call paths</tspan></text>
+        </g>
+        <g id="node-repo-mockmill" data-node-id="repo-mockmill" data-node-label="mockmill" tabindex="0" role="button" aria-label="Inspect mockmill, Public · Synthetic fixtures, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Synthetic fixtures" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="lab factory" class="tree-hue-messagebus">
+          <title>mockmill · Public · Synthetic fixtures · Leaf</title>
+
+          <rect x="740" y="1630" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1630" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1659.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1654.5">mockmill</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1673.5">Public · Synthetic fixtures</tspan></text>
+        </g>
+        <g id="node-repo-onramp-synthetic-company" data-node-id="repo-onramp-synthetic-company" data-node-label="onramp-synthetic-company" tabindex="0" role="button" aria-label="Inspect onramp-synthetic-company, Private · Private simulation, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private simulation" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="lab factory" class="tree-hue-messagebus">
+          <title>onramp-synthetic-company · Private · Private simulation · Leaf</title>
+
+          <rect x="740" y="1717" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1717" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1746.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1741.5">onramp-synthetic-company</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1760.5">Private · Private simulation</tspan></text>
+        </g>
+        <g id="node-repo-vs-platform-synthetic-fleet" data-node-id="repo-vs-platform-synthetic-fleet" data-node-label="vs-platform-synthetic-fleet" tabindex="0" role="button" aria-label="Inspect vs-platform-synthetic-fleet, Private · Private simulation, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private simulation" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="lab factory" class="tree-hue-messagebus">
+          <title>vs-platform-synthetic-fleet · Private · Private simulation · Leaf</title>
+
+          <rect x="740" y="1804" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1804" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1833.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1828.5">vs-platform-synthetic-fleet</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1847.5">Private · Private simulation</tspan></text>
+        </g>
+        <g id="node-repo-cloudteams-extension-studio" data-node-id="repo-cloudteams-extension-studio" data-node-label="cloudteams-extension-studio" tabindex="0" role="button" aria-label="Inspect cloudteams-extension-studio, Private · Private prototype, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private prototype" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="lab factory" class="tree-hue-messagebus">
+          <title>cloudteams-extension-studio · Private · Private prototype · Leaf</title>
+
+          <rect x="740" y="1891" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1891" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="1920.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="1915.5">cloudteams-extension-studio</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="1934.5">Private · Private prototype</tspan></text>
+        </g>
+        <g id="node-repo-cloudteams-lunch-break" data-node-id="repo-cloudteams-lunch-break" data-node-label="cloudteams-lunch-break" tabindex="0" role="button" aria-label="Inspect cloudteams-lunch-break, Private · Private experiment, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private experiment" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="lab factory" class="tree-hue-messagebus">
+          <title>cloudteams-lunch-break · Private · Private experiment · Leaf</title>
+
+          <rect x="740" y="1978" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="1978" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2007.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2002.5">cloudteams-lunch-break</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2021.5">Private · Private experiment</tspan></text>
+        </g>
+        <g id="node-repo-cloudteams-plot-twist" data-node-id="repo-cloudteams-plot-twist" data-node-label="cloudteams-plot-twist" tabindex="0" role="button" aria-label="Inspect cloudteams-plot-twist, Private · Private experiment, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private experiment" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="lab factory" class="tree-hue-messagebus">
+          <title>cloudteams-plot-twist · Private · Private experiment · Leaf</title>
+
+          <rect x="740" y="2065" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="2065" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2094.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2089.5">cloudteams-plot-twist</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2108.5">Private · Private experiment</tspan></text>
+        </g>
+        <g id="node-repo-blessed-edge-deployment" data-node-id="repo-blessed-edge-deployment" data-node-label="blessed-edge-deployment" tabindex="0" role="button" aria-label="Inspect blessed-edge-deployment, Private · Private local demo, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private local demo" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="lab factory" class="tree-hue-messagebus">
+          <title>blessed-edge-deployment · Private · Private local demo · Leaf</title>
+
+          <rect x="740" y="2152" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="2152" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2181.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2176.5">blessed-edge-deployment</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2195.5">Private · Private local demo</tspan></text>
+        </g>
+        <g id="node-surface" data-node-id="surface" data-node-label="Publishing &amp; public entry points" tabindex="0" role="button" aria-label="Inspect Publishing &amp; public entry points, Repository roles · not runtime call paths, Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Repository roles · not runtime call paths" data-node-context="Branch" data-tree-depth="1" data-tree-ancestors="factory" class="tree-hue-external">
+          <title>Publishing &amp; public entry points · Repository roles · not runtime call paths · Branch</title>
+          <rect data-tree-stack="" x="379" y="2403" width="286" height="90" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
+          <rect x="374" y="2398" width="286" height="90" rx="10" class="c-mask"/>
+          <rect x="374" y="2398" width="286" height="90" rx="10" class="c-backend tree-branch" data-animate="node" style="--step:1" stroke-width="1.2"/>
+
+          <circle cx="374" cy="2443" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="517" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="517" y="2422.5">Publishing &amp; public</tspan><tspan x="517" y="2439.5">entry points</tspan></text>
+          <text data-detail="context" x="517" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="517" y="2458.5">Repository roles · not runtime</tspan><tspan x="517" y="2472.5">call paths</tspan></text>
+        </g>
+        <g id="node-repo-portal" data-node-id="repo-portal" data-node-label="portal" tabindex="0" role="button" aria-label="Inspect portal, Private · Private client workspace, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private client workspace" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="surface factory" class="tree-hue-external">
+          <title>portal · Private · Private client workspace · Leaf</title>
+
+          <rect x="740" y="2239" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="2239" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2268.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2263.5">portal</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2282.5">Private · Private client workspace</tspan></text>
+        </g>
+        <g id="node-repo-edgerecord-com" data-node-id="repo-edgerecord-com" data-node-label="edgerecord-com" tabindex="0" role="button" aria-label="Inspect edgerecord-com, Private · Private web shell, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private web shell" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="surface factory" class="tree-hue-external">
+          <title>edgerecord-com · Private · Private web shell · Leaf</title>
+
+          <rect x="740" y="2326" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="2326" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2355.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2350.5">edgerecord-com</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2369.5">Private · Private web shell</tspan></text>
+        </g>
+        <g id="node-repo-edgerecord-publisher" data-node-id="repo-edgerecord-publisher" data-node-label="edgerecord-publisher" tabindex="0" role="button" aria-label="Inspect edgerecord-publisher, Private · Private publishing adapter, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Private · Private publishing adapter" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="surface factory" class="tree-hue-external">
+          <title>edgerecord-publisher · Private · Private publishing adapter · Leaf</title>
+
+          <rect x="740" y="2413" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="2413" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2442.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2437.5">edgerecord-publisher</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2456.5">Private · Private publishing adapter</tspan></text>
+        </g>
+        <g id="node-repo-hamanakam1" data-node-id="repo-hamanakam1" data-node-label="hamanakam1" tabindex="0" role="button" aria-label="Inspect hamanakam1, Public · Public profile, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Public profile" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="surface factory" class="tree-hue-external">
+          <title>hamanakam1 · Public · Public profile · Leaf</title>
+
+          <rect x="740" y="2500" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="2500" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2529.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2524.5">hamanakam1</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2543.5">Public · Public profile</tspan></text>
+        </g>
+        <g id="node-repo-hamanakam1-github-io" data-node-id="repo-hamanakam1-github-io" data-node-label="hamanakam1.github.io" tabindex="0" role="button" aria-label="Inspect hamanakam1.github.io, Public · Public atlas, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Public atlas" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="surface factory" class="tree-hue-external">
+          <title>hamanakam1.github.io · Public · Public atlas · Leaf</title>
+
+          <rect x="740" y="2587" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="2587" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2616.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2611.5">hamanakam1.github.io</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2630.5">Public · Public atlas</tspan></text>
+        </g>
+        <g id="node-upstream" data-node-id="upstream" data-node-label="Upstream collaborations" tabindex="0" role="button" aria-label="Inspect Upstream collaborations, Repository roles · not runtime call paths, Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Repository roles · not runtime call paths" data-node-context="Branch" data-tree-depth="1" data-tree-ancestors="factory" class="tree-hue-backend">
+          <title>Upstream collaborations · Repository roles · not runtime call paths · Branch</title>
+          <rect data-tree-stack="" x="379" y="2716" width="286" height="73" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
+          <rect x="374" y="2711" width="286" height="73" rx="10" class="c-mask"/>
+          <rect x="374" y="2711" width="286" height="73" rx="10" class="c-backend tree-branch" data-animate="node" style="--step:1" stroke-width="1.2"/>
+
+          <circle cx="374" cy="2747.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="517" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="517" y="2735.5">Upstream collaborations</tspan></text>
+          <text data-detail="context" x="517" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="517" y="2754.5">Repository roles · not runtime</tspan><tspan x="517" y="2768.5">call paths</tspan></text>
+        </g>
+        <g id="node-repo-archify" data-node-id="repo-archify" data-node-label="archify" tabindex="0" role="button" aria-label="Inspect archify, Public · Upstream fork, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Upstream fork" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="upstream factory" class="tree-hue-backend">
+          <title>archify · Public · Upstream fork · Leaf</title>
+
+          <rect x="740" y="2674" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="2674" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2703.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2698.5">archify</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2717.5">Public · Upstream fork</tspan></text>
+        </g>
+        <g id="node-repo-wad-sbx-workshop" data-node-id="repo-wad-sbx-workshop" data-node-label="wad-sbx-workshop" tabindex="0" role="button" aria-label="Inspect wad-sbx-workshop, Public · Workshop fork, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="Public · Workshop fork" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="upstream factory" class="tree-hue-backend">
+          <title>wad-sbx-workshop · Public · Workshop fork · Leaf</title>
+
+          <rect x="740" y="2761" width="266" height="59" rx="10" class="c-mask"/>
+          <rect x="740" y="2761" width="266" height="59" rx="10" class="c-external tree-leaf" data-animate="node" style="--step:2" stroke-width="1"/>
+
+          <circle cx="740" cy="2790.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="873" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="873" y="2785.5">wad-sbx-workshop</tspan></text>
+          <text data-detail="context" x="873" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="873" y="2804.5">Public · Workshop fork</tspan></text>
+        </g>
+
+        <!-- Branch toggles -->
+        <g data-tree-toggle="factory" data-tree-count="39" data-tree-label-collapse="Collapse Hamanaka Software Factory (39 below)" data-tree-label-expand="Expand Hamanaka Software Factory (39 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Hamanaka Software Factory (39 below)" class="tree-hue-root">
+          <circle cx="294" cy="1442.5" r="14.5" class="tree-toggle-hit"/>
+          <circle cx="294" cy="1442.5" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
+          <path class="tree-toggle-glyph" d="M 290.85 1442.5 H 297.15" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="tree-toggle-glyph tree-toggle-plus" d="M 294 1439.35 V 1445.65" stroke-width="1.5" stroke-linecap="round"/>
+          <g class="tree-toggle-count">
+            <rect x="304.5" y="1435" width="23.4" height="15" rx="7.5" class="tree-count-pill"/>
+            <text x="316.2" y="1446.1" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">39</text>
+          </g>
+        </g>
+        <g data-tree-toggle="hub" data-tree-count="3" data-tree-ancestors="factory" data-tree-label-collapse="Collapse The factory core (3 below)" data-tree-label-expand="Expand The factory core (3 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse The factory core (3 below)" class="tree-hue-backend">
+          <circle cx="660" cy="180.5" r="14.5" class="tree-toggle-hit"/>
+          <circle cx="660" cy="180.5" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
+          <path class="tree-toggle-glyph" d="M 656.85 180.5 H 663.15" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="tree-toggle-glyph tree-toggle-plus" d="M 660 177.35 V 183.65" stroke-width="1.5" stroke-linecap="round"/>
+          <g class="tree-toggle-count">
+            <rect x="670.5" y="173" width="17.2" height="15" rx="7.5" class="tree-count-pill"/>
+            <text x="679.1" y="184.1" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">3</text>
+          </g>
+        </g>
+        <g data-tree-toggle="work" data-tree-count="5" data-tree-ancestors="factory" data-tree-label-collapse="Collapse Intent, sessions &amp; delivery (5 below)" data-tree-label-expand="Expand Intent, sessions &amp; delivery (5 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Intent, sessions &amp; delivery (5 below)" class="tree-hue-database">
+          <circle cx="660" cy="528.5" r="14.5" class="tree-toggle-hit"/>
+          <circle cx="660" cy="528.5" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
+          <path class="tree-toggle-glyph" d="M 656.85 528.5 H 663.15" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="tree-toggle-glyph tree-toggle-plus" d="M 660 525.35 V 531.65" stroke-width="1.5" stroke-linecap="round"/>
+          <g class="tree-toggle-count">
+            <rect x="670.5" y="521" width="17.2" height="15" rx="7.5" class="tree-count-pill"/>
+            <text x="679.1" y="532.1" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">5</text>
+          </g>
+        </g>
+        <g data-tree-toggle="proof" data-tree-count="6" data-tree-ancestors="factory" data-tree-label-collapse="Collapse Evidence &amp; institutional memory (6 below)" data-tree-label-expand="Expand Evidence &amp; institutional memory (6 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Evidence &amp; institutional memory (6 below)" class="tree-hue-cloud">
+          <circle cx="660" cy="1007.5" r="14.5" class="tree-toggle-hit"/>
+          <circle cx="660" cy="1007.5" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
+          <path class="tree-toggle-glyph" d="M 656.85 1007.5 H 663.15" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="tree-toggle-glyph tree-toggle-plus" d="M 660 1004.35 V 1010.65" stroke-width="1.5" stroke-linecap="round"/>
+          <g class="tree-toggle-count">
+            <rect x="670.5" y="1000" width="17.2" height="15" rx="7.5" class="tree-count-pill"/>
+            <text x="679.1" y="1011.1" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">6</text>
+          </g>
+        </g>
+        <g data-tree-toggle="edge" data-tree-count="4" data-tree-ancestors="factory" data-tree-label-collapse="Collapse Machines, inference &amp; the edge (4 below)" data-tree-label-expand="Expand Machines, inference &amp; the edge (4 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Machines, inference &amp; the edge (4 below)" class="tree-hue-frontend">
+          <circle cx="660" cy="1442.5" r="14.5" class="tree-toggle-hit"/>
+          <circle cx="660" cy="1442.5" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
+          <path class="tree-toggle-glyph" d="M 656.85 1442.5 H 663.15" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="tree-toggle-glyph tree-toggle-plus" d="M 660 1439.35 V 1445.65" stroke-width="1.5" stroke-linecap="round"/>
+          <g class="tree-toggle-count">
+            <rect x="670.5" y="1435" width="17.2" height="15" rx="7.5" class="tree-count-pill"/>
+            <text x="679.1" y="1446.1" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">4</text>
+          </g>
+        </g>
+        <g data-tree-toggle="lab" data-tree-count="7" data-tree-ancestors="factory" data-tree-label-collapse="Collapse Simulation &amp; product experiments (7 below)" data-tree-label-expand="Expand Simulation &amp; product experiments (7 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Simulation &amp; product experiments (7 below)" class="tree-hue-messagebus">
+          <circle cx="660" cy="1921" r="14.5" class="tree-toggle-hit"/>
+          <circle cx="660" cy="1921" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
+          <path class="tree-toggle-glyph" d="M 656.85 1921 H 663.15" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="tree-toggle-glyph tree-toggle-plus" d="M 660 1917.85 V 1924.15" stroke-width="1.5" stroke-linecap="round"/>
+          <g class="tree-toggle-count">
+            <rect x="670.5" y="1913.5" width="17.2" height="15" rx="7.5" class="tree-count-pill"/>
+            <text x="679.1" y="1924.6" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">7</text>
+          </g>
+        </g>
+        <g data-tree-toggle="surface" data-tree-count="5" data-tree-ancestors="factory" data-tree-label-collapse="Collapse Publishing &amp; public entry points (5 below)" data-tree-label-expand="Expand Publishing &amp; public entry points (5 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Publishing &amp; public entry points (5 below)" class="tree-hue-external">
+          <circle cx="660" cy="2443" r="14.5" class="tree-toggle-hit"/>
+          <circle cx="660" cy="2443" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
+          <path class="tree-toggle-glyph" d="M 656.85 2443 H 663.15" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="tree-toggle-glyph tree-toggle-plus" d="M 660 2439.85 V 2446.15" stroke-width="1.5" stroke-linecap="round"/>
+          <g class="tree-toggle-count">
+            <rect x="670.5" y="2435.5" width="17.2" height="15" rx="7.5" class="tree-count-pill"/>
+            <text x="679.1" y="2446.6" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">5</text>
+          </g>
+        </g>
+        <g data-tree-toggle="upstream" data-tree-count="2" data-tree-ancestors="factory" data-tree-label-collapse="Collapse Upstream collaborations (2 below)" data-tree-label-expand="Expand Upstream collaborations (2 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Upstream collaborations (2 below)" class="tree-hue-backend">
+          <circle cx="660" cy="2747.5" r="14.5" class="tree-toggle-hit"/>
+          <circle cx="660" cy="2747.5" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
+          <path class="tree-toggle-glyph" d="M 656.85 2747.5 H 663.15" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="tree-toggle-glyph tree-toggle-plus" d="M 660 2744.35 V 2750.65" stroke-width="1.5" stroke-linecap="round"/>
+          <g class="tree-toggle-count">
+            <rect x="670.5" y="2740" width="17.2" height="15" rx="7.5" class="tree-count-pill"/>
+            <text x="679.1" y="2751.1" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">2</text>
+          </g>
+        </g>
+
+        <!-- Expand all (shown only while a branch is collapsed) -->
+        <g data-tree-expand-all="" role="button" tabindex="0" aria-label="Expand all">
+          <rect x="32" y="18" width="87" height="24" rx="12" stroke-width="1.2"/>
+          <text x="44" y="34" class="t-primary" font-size="10.5" font-weight="650">Expand all</text>
+        </g>
+      </svg>

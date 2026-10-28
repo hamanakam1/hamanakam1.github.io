@@ -1,0 +1,13 @@
+{
+  "artifact_id": "696c47b674614a8594b2385993f42c2a",
+  "original_html_sha256": "0430a1d2485233d3204def324b3f3032a6a2d0e1ea99373bb9363ee6aaf7e1fc",
+  "specification_sha256": "d394d65f819b3815fea7c14572147139cc96290e6931730c7053ae86be3bac85",
+  "public_svg_sha256": "3fb5e3d514d54b7fed2e0377524da7bb55e86d574bb462d325bafccae0ec57d8",
+  "derivation": "Canonical geometry extracted; public theme and independent view controls added. Original HTML retained privately.",
+  "validation": {
+    "checks_passed": 9,
+    "errors": 0,
+    "warnings": 0
+  },
+  "evidence_scope": "Archify validation and browser checks apply to original artifact; hosted viewer has separate layout checks."
+}

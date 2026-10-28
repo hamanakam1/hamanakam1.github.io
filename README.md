@@ -1,130 +1,37 @@
-# Hamanaka Software Factory project atlas
+# Hamanaka Software Factory — the ecosystem atlas
 
-A small, static directory of Mike Hamanaka's public projects. The page introduces
-tools for intent capture, AI session coordination, verification, memory, and edge
-infrastructure, and links directly to their repositories.
+[Explore the atlas](https://hamanakam1.github.io/) · [Interactive repository map](https://hamanakam1.github.io/ecosystem.html) · [Suggest a contribution](https://github.com/hamanakam1/hamanakam1.github.io/issues/new?template=ecosystem-idea.yml)
 
-The project directory comes first. Task shortcuts jump to intent capture,
-session coordination, evidence explanations, and the ticket standard. Each project
-has separate, descriptive links to its source and setup or documentation;
-Taskrivet also links to its desktop release downloads. The conceptual workflow
-follows the directory.
+One software factory, many entry points. Most systems work comes together in the private [ai-dashboard](https://github.com/hamanakam1/ai-dashboard). Public tools, private components, upstream forks and experiments all belong on the same map. Describing a private repository does not distribute its source; GitHub permissions still govern access.
 
-## Preview locally
+The atlas covers the owner's 2026-10-28 GitHub inventory: 32 repositories in seven areas. Each has a role, source-access label, maturity description and suggested contribution surface. These are editorial assessments and invitations, not claims that every adapter is deployed or every contribution is pre-approved.
 
-Python 3 is the only tool needed for a local preview. From this directory, run:
+## Contribute a useful piece
+
+Try a public tool and report a reproducible problem. Improve accessibility, recovery, documentation or failure explanations. Propose a small adapter, portable evidence contract, hardware fixture or synthetic scenario. Public projects can evolve independently; later integration into the private factory is a separate decision. Check each repository's license and contribution guide.
+
+For a private component, discuss a generic interface through this repository's public issue tracker. No private access is needed to contribute a useful idea.
+
+## The map
+
+The 40-node map groups repositories by responsibility. Branches show membership, not runtime calls or deployment qualification. AI Dashboard's role as integration hub is supplied by the owner.
+
+The viewer starts two zoom steps out (81%), aligned left. Controls occupy a separate column; below 800px they stack below the drawing. Zoom, reset, keyboard selection and a project chooser are supported. Reset restores the initial view. The text directory and static SVG remain available without JavaScript.
+
+Archify generated the canonical geometry through the Dashboard integration, passing all nine validation checks and its original browser gate. The original HTML is retained outside this public repository. The SVG has a public theme and independent controls; its portable receipt records source and derived hashes. Hosted viewer tests and visual review are separate checks.
+
+## Preview and maintain
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1
+python3 scripts/check_site.py
+node --check assets/ecosystem-viewer.js
 ```
 
-Open <http://127.0.0.1:8000/>. Use another unused port if 8000 is busy, and stop the
-preview with `Ctrl+C` when finished. There is no build step or package installation.
+Open `/` and `/ecosystem.html`. Assets are local; serving needs no build service, package install, analytics, remote fonts or inference.
 
-You can also open `index.html` directly in a browser. All page assets are local;
-following a project link navigates to that project's external website.
+The reviewed inventory is `assets/repositories.json`. Editorial roles and contribution ideas are in `scripts/build_atlas.py`. Review additions/removals in that mapping, then run `python3 scripts/build_atlas.py --refresh` to read GitHub metadata with gh and rebuild the static page and typed diagram specification. Without `--refresh`, it uses the retained snapshot. Regenerate through the local Archify integration when the specification changes, then run `scripts/export_map.py` against the canonical HTML. Retain the original delivery receipt and inspect the hosted viewer.
 
-Open <http://127.0.0.1:8000/404.html> to preview the missing-page design. Python's
-standard preview server does not substitute that file for missing URLs; its
-default error response is expected. The recovery page uses root-relative links
-and `/style.css`, so preview it over HTTP at the site root. These paths also let
-the page recover from nested missing URLs on the intended root-level site.
+The offline checker verifies local links, fragments, duplicate IDs, ARIA targets, headings and image alt attributes. Only the named local viewer script is allowed. Inspect desktop/mobile widths, zero horizontal page overflow, project selection, zoom/reset, keyboard focus and control clearance. The 404 page keeps root-relative recovery links.
 
-## Files and content
-
-| File | Purpose |
-| --- | --- |
-| `index.html` | Page content, navigation, metadata, project links, and the existing workflow illustration |
-| `404.html` | Missing-page explanation, project-directory recovery link, and indexing exclusion |
-| `style.css` | Responsive layout, system fonts, focus indicators, and print styles |
-| `robots.txt` | Crawl guidance and the sitemap location |
-| `sitemap.xml` | The canonical homepage URL for this repository |
-| `assets/` | Local project artwork and its upstream license/provenance |
-| `scripts/check_site.py` | Offline checks for local destinations, navigation targets, and basic HTML invariants |
-| `.github/` | Pull-request checks and weekly GitHub Actions dependency updates |
-
-The intended public URL is `https://hamanakam1.github.io/`. Keep the homepage's
-canonical link, Open Graph URL, sitemap entry, and robots sitemap location in
-sync if that address changes. The sitemap covers this homepage; the linked
-projects maintain their own documentation. These files describe the intended
-address and do not establish that hosting is active.
-
-The architecture illustration is conceptual. It is not evidence that the tools
-are deployed together or that a particular integration is implemented. Keep this
-distinction visible when updating the page, and use each project's README and
-release notes to establish its supported capabilities.
-
-The page needs no JavaScript, analytics, web fonts, or third-party asset requests.
-Keep those properties intact unless a future change explicitly calls for them.
-
-## Check a change
-
-With Python 3.9 or newer, run `python3 scripts/check_site.py` before opening a pull
-request. GitHub Actions
-runs the same offline check on every pull request and default-branch push. It
-checks local `href`/`src` files and fragments, duplicate IDs, `aria-labelledby`
-and `aria-describedby` targets, one `h1` per page, and image alternative-text
-attributes. HTML `src` URLs and stylesheet/icon links must be local. It does not
-fetch external project links, inspect `srcset`, preload or CSS references,
-validate all HTML, or establish accessibility conformance. Keep the manual
-checks below for those concerns.
-
-The checkout action is pinned to an immutable commit. Dependabot proposes grouped
-GitHub Actions updates weekly; updates still need review and passing checks.
-
-1. Preview the page and confirm the browser reports no missing assets.
-2. Use `Tab` from the top of the page. The first link should reveal **Skip to main
-   content**; `Enter` should move focus to the main content. Continue through the
-   source and documentation links and check that focus stays visible. Each link
-   should announce its project and destination without reading the entire card.
-   On Safari for Mac, use `Option+Tab` if `Tab` skips links; see Apple's
-   [keyboard navigation guide](https://support.apple.com/guide/safari/cpsh003/mac).
-3. Activate each navigation link and confirm it reaches the matching section.
-4. Inspect widths of 320, 390, 768, and 1440 CSS pixels, then test 200% zoom. Text,
-   cards, and navigation should remain readable without horizontal page scrolling.
-   Increase the default text size to 200% as a separate check; headings should
-   enlarge with the body text.
-5. Test user text-spacing overrides together: line height of 1.5 times the font
-   size, paragraph spacing of 2 times the font size, letter spacing of 0.12 times
-   the font size, and word spacing of 0.16 times the font size. Content and links
-   should remain available without clipping. These are the override values in
-   [WCAG's text-spacing guidance](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html),
-   not required default styles.
-6. Review A4 and Letter print previews. Source and documentation URLs should be
-   visible, cards should remain intact, and the numbered workflow should stay
-   together. Also review reduced-motion preferences and forced-colors mode.
-7. Open `404.html` and follow **Browse public projects**. Check its skip link and
-   narrow-screen layout. When hosting is separately authorized, verify that both
-   a missing root URL and a nested missing URL return HTTP 404, display this page,
-   and load `/style.css`. [GitHub Pages supports a root-level `404.html`](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site);
-   a local preview does not establish hosted routing.
-8. Check project destinations when changing links. A successful response confirms
-   reachability, not the accuracy of a project's feature claims.
-9. Check that the canonical link and `og:url` occur once in the homepage head and
-   match the sole URL in `sitemap.xml`. Confirm `robots.txt` advertises the sitemap
-   without blocking the homepage, stylesheet, or linked project documentation.
-   Keep the missing-page document's `noindex` directive and omit it from the
-   sitemap. Add a `lastmod` date only when it reflects a verified content update.
-10. Run `git diff --check` for tracked changes. Review new files separately because
-   Git does not include untracked files in that check.
-
-Automated checks complement keyboard, visual, and screen-reader testing; they do
-not establish complete accessibility conformance.
-
-## Maintaining the directory
-
-Use descriptive link text, a single page heading, and ordered section headings.
-Keep the skip target, section IDs, and navigation fragments in sync. Treat emoji
-and arrows as decorative, and preserve the text alternative for the workflow SVG.
-Keep each project card as an article with a named heading and independent source
-and setup links. Add a release link when it helps someone try the project.
-Avoid making the entire card a link, nesting links, or adding click
-handlers to the article. Keep the SVG's short title as its accessible name and
-its longer explanation as its description.
-
-Use synthetic examples and omit credentials, private logs, machine paths, and
-identifying operational screenshots. The project list describes public roles;
-each repository defines its own license and contribution process.
-
-Local source changes and preview checks do not publish the site. Hosting setup,
-publication, and verification of the public destination are separate steps.
+Pages currently publishes from `codex/f07-site-quality` at the repository root. A push and an actual Pages deployment need separate remote readback.
