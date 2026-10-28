@@ -22,7 +22,9 @@ The browser reads project descriptions directly from `index.html`; it does not k
 
 The original 40-node Archify map remains available as the full vector diagram. A compact seven-area overview is generated through the Dashboard Archify integration, with the authored and canonical specifications and portable receipt in `assets/factory-overview-*`. Its nine validation gates and canonical browser evidence are separate from the public explorer checks. Both diagram versions group roles; they do not certify integrations.
 
-`assets/factory-preview.svg` is the compact GitHub profile card. Link the image to the interactive page; GitHub README rendering does not run the explorer JavaScript.
+`assets/factory-tour.gif` is the 14-second, seven-stop browser preview used on the homepage and GitHub profile. It links to the interactive page. The homepage has play/pause controls and initially shows the still image when reduced motion is requested; without JavaScript it remains a linked still. Turning on reduced motion while it plays also stops the preview. An explicit Play action can start it afterward. The profile uses a `<picture>` still fallback for reduced-motion preferences and provides a separate still-image link. GitHub README rendering does not run the explorer JavaScript.
+
+The [capture notes and seven reviewed frames](docs/tour/README.md) retain provenance and reproduction instructions. Run `python3 scripts/build_tour.py` with FFmpeg installed to rebuild the GIF and still. This is a dated UI tour, not live telemetry. `assets/factory-preview.svg` remains an alternative static card.
 
 ## Preview and maintain
 
@@ -36,6 +38,6 @@ Open `/` and `/ecosystem.html`. Assets are local; serving needs no build service
 
 The reviewed inventory is `assets/repositories.json`. Editorial roles and contribution ideas are in `scripts/build_atlas.py`. Review additions/removals in that mapping, then run `python3 scripts/build_atlas.py --refresh` to read GitHub metadata with gh and rebuild the static page and typed diagram specification. Without `--refresh`, it uses the retained snapshot. Regenerate through the local Archify integration when the specification changes, then run `scripts/export_map.py` against the canonical HTML. Retain the original delivery receipt and inspect the hosted viewer.
 
-The offline checker verifies local links, fragments, duplicate IDs, ARIA targets, headings and image alt attributes. Only the named local viewer script is allowed. Inspect desktop/mobile widths, zero horizontal page overflow, all project selections, search/access filters, empty recovery, tour completion, keyboard focus, mobile modal dismissal, deep links, clipboard behavior, motion preferences and fetch-failure fallback. The 404 page keeps root-relative recovery links.
+The offline checker verifies local links, fragments, duplicate IDs, ARIA targets, headings and image alt attributes. Only the named local viewer and preview scripts are allowed. Inspect desktop/mobile widths, zero horizontal page overflow, all project selections, search/access filters, empty recovery, tour completion, keyboard focus, mobile modal dismissal, deep links, clipboard behavior, motion preferences and fetch-failure fallback. The 404 page keeps root-relative recovery links.
 
 Pages currently publishes from `codex/f07-site-quality` at the repository root. A push and an actual Pages deployment need separate remote readback.
