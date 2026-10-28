@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 454" role="img" lang="en" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" data-node-ui="" data-reader-fit="intrinsic-height" data-reader-min-text="7.5" data-reader-primary-text="14"><style>:root{--mask:#080f1c;--external-stroke:#9df5d0;--external-fill:#132b31;--text:#edf5fc;--text-muted:#b3c6d9}text{font-family:system-ui,sans-serif}.t-primary{fill:var(--text);font-size:18px}.t-muted{fill:var(--text-muted);font-size:11px}.t-external{fill:#9df5d0;font-size:9px}.c-mask{fill:var(--mask)}.c-external{fill:var(--external-fill);stroke:var(--external-stroke)}.c-grid{fill:none;stroke:#2a4056;opacity:.35}</style><rect width="100%" height="100%" fill="#080f1c"/>
+        <title id="archify-diagram-title">Software Factory — seven areas of the workshop</title>
+        <desc id="archify-diagram-description">Owner-described repository roles from the public atlas; not runtime integrations.</desc>
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-default" />
+          </marker>
+          <marker id="arrowhead-emphasis" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-emphasis" />
+          </marker>
+          <marker id="arrowhead-security" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-security" />
+          </marker>
+          <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-dashed" />
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" class="c-grid" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <style>
+          svg[data-node-ui] [data-node-id] > rect:not(.c-mask) { stroke-width: 1.25px; }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-frontend { fill: color-mix(in srgb, var(--frontend-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--frontend-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-backend { fill: color-mix(in srgb, var(--backend-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--backend-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-database { fill: color-mix(in srgb, var(--database-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--database-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-cloud { fill: color-mix(in srgb, var(--cloud-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--cloud-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-security { fill: color-mix(in srgb, var(--security-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--security-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-messagebus { fill: color-mix(in srgb, var(--messagebus-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--messagebus-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-external { fill: color-mix(in srgb, var(--external-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--external-stroke) 72%, var(--mask)); }
+          svg[data-node-ui]:is([data-preset="classic"], [data-preset="signal-flow"], [data-preset="editorial"]) .c-region { fill: color-mix(in srgb, var(--cloud-stroke) 3%, transparent); stroke: color-mix(in srgb, var(--cloud-stroke) 42%, var(--lane-stroke)); stroke-dasharray: none; }
+          svg[data-node-ui] .c-security-group { stroke: color-mix(in srgb, var(--security-stroke) 58%, var(--lane-stroke)); }
+          svg[data-node-ui]:is([data-preset="classic"], [data-preset="signal-flow"], [data-preset="editorial"]) .c-security-group { stroke-dasharray: 4 3; }
+          svg[data-node-ui]:is([data-preset="classic"], [data-preset="signal-flow"], [data-preset="editorial"]) .c-lane { stroke: var(--lane-stroke); stroke-dasharray: none; }
+          svg[data-node-ui] [data-graph-role="structural-frame-label-mask"] { rx: 5px; fill: color-mix(in srgb, var(--cloud-stroke) 10%, var(--mask)); stroke: color-mix(in srgb, var(--cloud-stroke) 38%, var(--mask)); stroke-width: .8px; }
+          svg[data-node-ui] [data-composition-frame-kind="security-group"] > [data-graph-role="structural-frame-label-mask"] { fill: color-mix(in srgb, var(--security-stroke) 9%, var(--mask)); stroke: color-mix(in srgb, var(--security-stroke) 36%, var(--mask)); }
+          svg[data-node-ui] .phase-rule { opacity: .5; stroke-dasharray: none; }
+          svg[data-node-ui] .phase-chip { stroke: var(--lane-stroke); stroke-width: .75px; }
+          svg[data-node-ui] g[data-edge-from] > rect.c-mask { rx: 7px; stroke: var(--lane-stroke); stroke-width: .75px; }
+          svg[data-node-ui][data-preset="blueprint"] :is([data-graph-role="structural-frame-label-mask"], g[data-edge-from] > rect.c-mask, .phase-chip) { rx: 2px; }
+          svg[data-node-ui][data-preset="editorial"] :is([data-graph-role="structural-frame-label-mask"], g[data-edge-from] > rect.c-mask, .phase-chip) { rx: 3px; }
+        </style>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(#grid)" />
+
+        <!-- Boundaries (behind everything) -->
+
+
+        <!-- Connection paths (before components for correct z-order) -->
+
+
+        <!-- Components -->
+        <g id="node-hub" data-node-id="hub" data-node-label="Factory core" data-node-kind="external" data-node-sublabel="AI Dashboard and private engines" data-node-tag="3 repositories" data-node-context="Architecture component">
+          <title>Factory core · AI Dashboard and private engines · Architecture component · 3 repositories</title>
+          <rect x="40" y="40" width="920" height="86" rx="8" class="c-mask"/>
+          <rect x="40" y="40" width="920" height="86" rx="8" class="c-external" data-animate="node" style="--step:0" stroke-width="1.5"/>
+
+          <text data-node-label="" data-detail-anchor="" x="500" y="81" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Factory core</text>
+        <text data-detail="context" x="500" y="97" class="t-muted" font-size="9" text-anchor="middle">AI Dashboard and private engines</text>
+        <text data-detail="fine" x="500" y="118" class="t-external" font-size="7" text-anchor="middle">3 repositories</text>
+        </g>
+
+        <g id="node-work" data-node-id="work" data-node-label="Intent &amp; delivery" data-node-kind="external" data-node-sublabel="Capture, context and agent sessions" data-node-tag="5 repositories" data-node-context="Architecture component">
+          <title>Intent &amp; delivery · Capture, context and agent sessions · Architecture component · 5 repositories</title>
+          <rect x="40" y="170" width="280" height="86" rx="8" class="c-mask"/>
+          <rect x="40" y="170" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:1" stroke-width="1.5"/>
+
+          <text data-node-label="" data-detail-anchor="" x="180" y="211" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Intent &amp; delivery</text>
+        <text data-detail="context" x="180" y="227" class="t-muted" font-size="9" text-anchor="middle">Capture, context and agent sessions</text>
+        <text data-detail="fine" x="180" y="248" class="t-external" font-size="7" text-anchor="middle">5 repositories</text>
+        </g>
+
+        <g id="node-proof" data-node-id="proof" data-node-label="Evidence &amp; memory" data-node-kind="external" data-node-sublabel="Contracts, checks and retained lessons" data-node-tag="6 repositories" data-node-context="Architecture component">
+          <title>Evidence &amp; memory · Contracts, checks and retained lessons · Architecture component · 6 repositories</title>
+          <rect x="360" y="170" width="280" height="86" rx="8" class="c-mask"/>
+          <rect x="360" y="170" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:2" stroke-width="1.5"/>
+
+          <text data-node-label="" data-detail-anchor="" x="500" y="211" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Evidence &amp; memory</text>
+        <text data-detail="context" x="500" y="227" class="t-muted" font-size="9" text-anchor="middle">Contracts, checks and retained lessons</text>
+        <text data-detail="fine" x="500" y="248" class="t-external" font-size="7" text-anchor="middle">6 repositories</text>
+        </g>
+
+        <g id="node-edge" data-node-id="edge" data-node-label="Machines &amp; inference" data-node-kind="external" data-node-sublabel="Resources, queues and edge experiments" data-node-tag="4 repositories" data-node-context="Architecture component">
+          <title>Machines &amp; inference · Resources, queues and edge experiments · Architecture component · 4 repositories</title>
+          <rect x="680" y="170" width="280" height="86" rx="8" class="c-mask"/>
+          <rect x="680" y="170" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:3" stroke-width="1.5"/>
+
+          <text data-node-label="" data-detail-anchor="" x="820" y="211" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Machines &amp; inference</text>
+        <text data-detail="context" x="820" y="227" class="t-muted" font-size="9" text-anchor="middle">Resources, queues and edge experiments</text>
+        <text data-detail="fine" x="820" y="248" class="t-external" font-size="7" text-anchor="middle">4 repositories</text>
+        </g>
+
+        <g id="node-lab" data-node-id="lab" data-node-label="Simulation lab" data-node-kind="external" data-node-sublabel="Fictional fixtures and product experiments" data-node-tag="7 repositories" data-node-context="Architecture component">
+          <title>Simulation lab · Fictional fixtures and product experiments · Architecture component · 7 repositories</title>
+          <rect x="40" y="300" width="280" height="86" rx="8" class="c-mask"/>
+          <rect x="40" y="300" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:4" stroke-width="1.5"/>
+
+          <text data-node-label="" data-detail-anchor="" x="180" y="341" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Simulation lab</text>
+        <text data-detail="context" x="180" y="357" class="t-muted" font-size="9" text-anchor="middle">Fictional fixtures and product experiments</text>
+        <text data-detail="fine" x="180" y="378" class="t-external" font-size="7" text-anchor="middle">7 repositories</text>
+        </g>
+
+        <g id="node-surface" data-node-id="surface" data-node-label="Publishing &amp; entry" data-node-kind="external" data-node-sublabel="Web surfaces and public orientation" data-node-tag="5 repositories" data-node-context="Architecture component">
+          <title>Publishing &amp; entry · Web surfaces and public orientation · Architecture component · 5 repositories</title>
+          <rect x="360" y="300" width="280" height="86" rx="8" class="c-mask"/>
+          <rect x="360" y="300" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:5" stroke-width="1.5"/>
+
+          <text data-node-label="" data-detail-anchor="" x="500" y="341" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Publishing &amp; entry</text>
+        <text data-detail="context" x="500" y="357" class="t-muted" font-size="9" text-anchor="middle">Web surfaces and public orientation</text>
+        <text data-detail="fine" x="500" y="378" class="t-external" font-size="7" text-anchor="middle">5 repositories</text>
+        </g>
+
+        <g id="node-upstream" data-node-id="upstream" data-node-label="Upstream collaborations" data-node-kind="external" data-node-sublabel="Diagrams and sandbox workshops" data-node-tag="2 repositories" data-node-context="Architecture component">
+          <title>Upstream collaborations · Diagrams and sandbox workshops · Architecture component · 2 repositories</title>
+          <rect x="680" y="300" width="280" height="86" rx="8" class="c-mask"/>
+          <rect x="680" y="300" width="280" height="86" rx="8" class="c-external" data-animate="node" style="--step:6" stroke-width="1.5"/>
+
+          <text data-node-label="" data-detail-anchor="" x="820" y="341" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Upstream collaborations</text>
+        <text data-detail="context" x="820" y="357" class="t-muted" font-size="9" text-anchor="middle">Diagrams and sandbox workshops</text>
+        <text data-detail="fine" x="820" y="378" class="t-external" font-size="7" text-anchor="middle">2 repositories</text>
+        </g>
+
+        <!-- Connection labels -->
+
+
+        <!-- Boundary labels (foreground masks keep routes out of titles) -->
+
+
+        <!-- Legend -->
+
+      </svg>

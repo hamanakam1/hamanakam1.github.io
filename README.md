@@ -12,13 +12,17 @@ Try a public tool and report a reproducible problem. Improve accessibility, reco
 
 For a private component, discuss a generic interface through this repository's public issue tracker. No private access is needed to contribute a useful idea.
 
-## The map
+## The interactive factory floor
 
-The 40-node map groups repositories by responsibility. Branches show membership, not runtime calls or deployment qualification. AI Dashboard's role as integration hub is supplied by the owner.
+`ecosystem.html` is a compact, responsive explorer of the same reviewed inventory as the text atlas. Seven station buttons filter projects by responsibility. Search matches names, roles, maturity and contribution ideas; public/private filters describe source access. The details panel always follows the visible results and clears when no projects match.
 
-The viewer starts two zoom steps out (81%), aligned left. Controls occupy a separate column; below 800px they stack below the drawing. Zoom, reset, keyboard selection and a project chooser are supported. Reset restores the initial view. The text directory and static SVG remain available without JavaScript.
+On desktop, the floor and project details sit side by side. Short laptop screens use a compact layout. Phones use a swipeable area strip and a native modal for project details. Keyboard selection, `/` to focus search, Escape to close details, a motion toggle, reduced-motion preferences, copyable project links (`#project=taskrivet`), surprise selection and a seven-stop guided tour are supported. The tour explains roles, not observed runtime jobs. No analytics, external fonts, provider requests or live telemetry are used.
 
-Archify generated the canonical geometry through the Dashboard integration, passing all nine validation checks and its original browser gate. The original HTML is retained outside this public repository. The SVG has a public theme and independent controls; its portable receipt records source and derived hashes. Hosted viewer tests and visual review are separate checks.
+The browser reads project descriptions directly from `index.html`; it does not keep a second editorial inventory. Loading and failed requests disable controls, and a text-atlas fallback remains available without JavaScript. Private links remain access-controlled.
+
+The original 40-node Archify map remains available as the full vector diagram. A compact seven-area overview is generated through the Dashboard Archify integration, with the authored and canonical specifications and portable receipt in `assets/factory-overview-*`. Its nine validation gates and canonical browser evidence are separate from the public explorer checks. Both diagram versions group roles; they do not certify integrations.
+
+`assets/factory-preview.svg` is the compact GitHub profile card. Link the image to the interactive page; GitHub README rendering does not run the explorer JavaScript.
 
 ## Preview and maintain
 
@@ -32,6 +36,6 @@ Open `/` and `/ecosystem.html`. Assets are local; serving needs no build service
 
 The reviewed inventory is `assets/repositories.json`. Editorial roles and contribution ideas are in `scripts/build_atlas.py`. Review additions/removals in that mapping, then run `python3 scripts/build_atlas.py --refresh` to read GitHub metadata with gh and rebuild the static page and typed diagram specification. Without `--refresh`, it uses the retained snapshot. Regenerate through the local Archify integration when the specification changes, then run `scripts/export_map.py` against the canonical HTML. Retain the original delivery receipt and inspect the hosted viewer.
 
-The offline checker verifies local links, fragments, duplicate IDs, ARIA targets, headings and image alt attributes. Only the named local viewer script is allowed. Inspect desktop/mobile widths, zero horizontal page overflow, project selection, zoom/reset, keyboard focus and control clearance. The 404 page keeps root-relative recovery links.
+The offline checker verifies local links, fragments, duplicate IDs, ARIA targets, headings and image alt attributes. Only the named local viewer script is allowed. Inspect desktop/mobile widths, zero horizontal page overflow, all project selections, search/access filters, empty recovery, tour completion, keyboard focus, mobile modal dismissal, deep links, clipboard behavior, motion preferences and fetch-failure fallback. The 404 page keeps root-relative recovery links.
 
 Pages currently publishes from `codex/f07-site-quality` at the repository root. A push and an actual Pages deployment need separate remote readback.
