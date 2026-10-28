@@ -18,6 +18,7 @@ svg = svg.replace('>', '>' + css + '<rect width="100%" height="100%" fill="#1023
 # The public rendering has its own reviewed controls; canonical Archify HTML stays unchanged.
 svg = re.sub(r'aria-label="Focus ', 'aria-label="Inspect ', svg)
 (root / 'assets/ecosystem-map.svg').write_text(svg)
+(root / 'assets/ecosystem-canonical-spec.json').write_bytes((artifact.parent / 'specification.json').read_bytes())
 receipt = {'artifact_id': artifact.parent.name, 'original_html_sha256': hashlib.sha256(original).hexdigest(), 'specification_sha256': hashlib.sha256((artifact.parent / 'specification.json').read_bytes()).hexdigest(), 'public_svg_sha256': hashlib.sha256(svg.encode()).hexdigest(), 'derivation': 'Canonical geometry extracted; public theme and independent view controls added. Original HTML retained privately.', 'validation': {'checks_passed': 9, 'errors': 0, 'warnings': 0}, 'evidence_scope': 'Archify validation and browser checks apply to original artifact; hosted viewer has separate layout checks.'}
 (root / 'assets/ecosystem-map-receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
 print('Exported public SVG and portable provenance receipt')
