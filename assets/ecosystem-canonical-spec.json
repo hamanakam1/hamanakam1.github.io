@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "diagram_type": "tree",
+  "meta": {
+    "title": "Hamanaka Software Factory — all repository roles",
+    "subtitle": "Owner-described ecosystem. Branches group repositories by role; they do not assert deployed integrations.",
+    "output": "ecosystem-map.html",
+    "quality_profile": "showcase",
+    "locale": "en"
+  },
+  "layout": {
+    "direction": "right",
+    "nodeW": 230,
+    "nodeMaxW": 290,
+    "gapX": 80,
+    "gapY": 28
+  },
+  "nodes": [
+    {
+      "id": "factory",
+      "label": "Hamanaka Software Factory",
+      "sublabel": "One ecosystem · AI Dashboard at its core"
+    },
+    {
+      "id": "hub",
+      "parent": "factory",
+      "label": "The factory core",
+      "sublabel": "Repository roles · not runtime call paths"
+    },
+    {
+      "id": "repo-ai-dashboard",
+      "parent": "hub",
+      "label": "ai-dashboard",
+      "sublabel": "Private · Integration hub"
+    },
+    {
+      "id": "repo-cofoundry",
+      "parent": "hub",
+      "label": "cofoundry",
+      "sublabel": "Private · Private engine"
+    },
+    {
+      "id": "repo-edgerecord-ai",
+      "parent": "hub",
+      "label": "edgerecord-ai",
+      "sublabel": "Private · Private workspace"
+    },
+    {
+      "id": "work",
+      "parent": "factory",
+      "label": "Intent, sessions & delivery",
+      "sublabel": "Repository roles · not runtime call paths"
+    },
+    {
+      "id": "repo-panther-intent-capture",
+      "parent": "work",
+      "label": "panther-intent-capture",
+      "sublabel": "Public · Browser extension"
+    },
+    {
+      "id": "repo-panther-companion",
+      "parent": "work",
+      "label": "panther-companion",
+      "sublabel": "Public · Desktop companion"
+    },
+    {
+      "id": "repo-taskrivet",
+      "parent": "work",
+      "label": "taskrivet",
+      "sublabel": "Public · Desktop alpha"
+    },
+    {
+      "id": "repo-osprey",
+      "parent": "work",
+      "label": "osprey",
+      "sublabel": "Public · Prerelease"
+    },
+    {
+      "id": "repo-el-hidratador",
+      "parent": "work",
+      "label": "el-hidratador",
+      "sublabel": "Public · Staging experiment"
+    },
+    {
+      "id": "proof",
+      "parent": "factory",
+      "label": "Evidence & institutional memory",
+      "sublabel": "Repository roles · not runtime call paths"
+    },
+    {
+      "id": "repo-fluxrecord",
+      "parent": "proof",
+      "label": "fluxrecord",
+      "sublabel": "Public · Ticket standard"
+    },
+    {
+      "id": "repo-el-verificador",
+      "parent": "proof",
+      "label": "el-verificador",
+      "sublabel": "Public · Verification tooling"
+    },
+    {
+      "id": "repo-the-chronicler",
+      "parent": "proof",
+      "label": "the-chronicler",
+      "sublabel": "Public · Memory tooling"
+    },
+    {
+      "id": "repo-edgerecord-core",
+      "parent": "proof",
+      "label": "edgerecord-core",
+      "sublabel": "Private · Private verifier"
+    },
+    {
+      "id": "repo-edgerecord",
+      "parent": "proof",
+      "label": "edgerecord",
+      "sublabel": "Private · Private workspace"
+    },
+    {
+      "id": "repo-edgerecord-era",
+      "parent": "proof",
+      "label": "edgerecord-era",
+      "sublabel": "Private · Private ledger"
+    },
+    {
+      "id": "edge",
+      "parent": "factory",
+      "label": "Machines, inference & the edge",
+      "sublabel": "Repository roles · not runtime call paths"
+    },
+    {
+      "id": "repo-the-surveyor",
+      "parent": "edge",
+      "label": "the-surveyor",
+      "sublabel": "Public · Read-only discovery"
+    },
+    {
+      "id": "repo-the-tower",
+      "parent": "edge",
+      "label": "the-tower",
+      "sublabel": "Public · Prototype"
+    },
+    {
+      "id": "repo-horizon-broker",
+      "parent": "edge",
+      "label": "horizon-broker",
+      "sublabel": "Public · Alpha"
+    },
+    {
+      "id": "repo-VortexMesh",
+      "parent": "edge",
+      "label": "VortexMesh",
+      "sublabel": "Public · Learning experiment"
+    },
+    {
+      "id": "lab",
+      "parent": "factory",
+      "label": "Simulation & product experiments",
+      "sublabel": "Repository roles · not runtime call paths"
+    },
+    {
+      "id": "repo-mockmill",
+      "parent": "lab",
+      "label": "mockmill",
+      "sublabel": "Public · Synthetic fixtures"
+    },
+    {
+      "id": "repo-onramp-synthetic-company",
+      "parent": "lab",
+      "label": "onramp-synthetic-company",
+      "sublabel": "Private · Private simulation"
+    },
+    {
+      "id": "repo-vs-platform-synthetic-fleet",
+      "parent": "lab",
+      "label": "vs-platform-synthetic-fleet",
+      "sublabel": "Private · Private simulation"
+    },
+    {
+      "id": "repo-cloudteams-extension-studio",
+      "parent": "lab",
+      "label": "cloudteams-extension-studio",
+      "sublabel": "Private · Private prototype"
+    },
+    {
+      "id": "repo-cloudteams-lunch-break",
+      "parent": "lab",
+      "label": "cloudteams-lunch-break",
+      "sublabel": "Private · Private experiment"
+    },
+    {
+      "id": "repo-cloudteams-plot-twist",
+      "parent": "lab",
+      "label": "cloudteams-plot-twist",
+      "sublabel": "Private · Private experiment"
+    },
+    {
+      "id": "repo-blessed-edge-deployment",
+      "parent": "lab",
+      "label": "blessed-edge-deployment",
+      "sublabel": "Private · Private local demo"
+    },
+    {
+      "id": "surface",
+      "parent": "factory",
+      "label": "Publishing & public entry points",
+      "sublabel": "Repository roles · not runtime call paths"
+    },
+    {
+      "id": "repo-portal",
+      "parent": "surface",
+      "label": "portal",
+      "sublabel": "Private · Private client workspace"
+    },
+    {
+      "id": "repo-edgerecord-com",
+      "parent": "surface",
+      "label": "edgerecord-com",
+      "sublabel": "Private · Private web shell"
+    },
+    {
+      "id": "repo-edgerecord-publisher",
+      "parent": "surface",
+      "label": "edgerecord-publisher",
+      "sublabel": "Private · Private publishing adapter"
+    },
+    {
+      "id": "repo-hamanakam1",
+      "parent": "surface",
+      "label": "hamanakam1",
+      "sublabel": "Public · Public profile"
+    },
+    {
+      "id": "repo-hamanakam1-github-io",
+      "parent": "surface",
+      "label": "hamanakam1.github.io",
+      "sublabel": "Public · Public atlas"
+    },
+    {
+      "id": "upstream",
+      "parent": "factory",
+      "label": "Upstream collaborations",
+      "sublabel": "Repository roles · not runtime call paths"
+    },
+    {
+      "id": "repo-archify",
+      "parent": "upstream",
+      "label": "archify",
+      "sublabel": "Public · Upstream fork"
+    },
+    {
+      "id": "repo-wad-sbx-workshop",
+      "parent": "upstream",
+      "label": "wad-sbx-workshop",
+      "sublabel": "Public · Workshop fork"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "The integration hub",
+      "items": [
+        "Most systems work comes together in the private ai-dashboard, according to its owner.",
+        "Public tools offer independent contribution surfaces; integration is evaluated separately."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Read the map honestly",
+      "items": [
+        "Public/private describes repository access. Experiments remain part of the ecosystem.",
+        "Membership links are taxonomy, not execution, data flow or runtime qualification."
+      ]
+    }
+  ]
+}
