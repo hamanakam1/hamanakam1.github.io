@@ -27,6 +27,8 @@ jobs:
       - name: Check local navigation and assets
         run: python3 scripts/check_site.py
       - name: Check interactive viewer syntax
-        run: node --check assets/ecosystem-viewer.js
+        run: |
+          node --check assets/ecosystem-viewer.js
+          node --check assets/tour-preview.js
       - name: Check patch whitespace
         run: git diff --check HEAD^ HEAD

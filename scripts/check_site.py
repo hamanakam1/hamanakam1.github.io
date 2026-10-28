@@ -34,8 +34,9 @@ class Page(HTMLParser):
             self.references.extend((attrs.get(attribute) or "").split())
         if tag == "img" and "alt" not in attrs:
             self.errors.append("image is missing alt text (use alt='' for decoration)")
-        if tag == "script" and not (self.path.name == "ecosystem.html" and attrs.get("src") == "assets/ecosystem-viewer.js"):
-            self.errors.append("only the local ecosystem viewer script is allowed")
+        allowed_scripts = {"ecosystem.html": "assets/ecosystem-viewer.js", "index.html": "assets/tour-preview.js"}
+        if tag == "script" and (not attrs.get("src") or attrs.get("src") != allowed_scripts.get(self.path.name)):
+            self.errors.append("only the named local viewer and preview scripts are allowed")
         for attribute in ("href", "src"):
             value = attrs.get(attribute)
             if value is None:
