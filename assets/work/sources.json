@@ -1,0 +1,68 @@
+[
+  {
+    "repo": "taskrivet",
+    "path": "docs/screenshots/workspace-session-inspector.png",
+    "revision": "2160f606256edbd38004b6c8693bca8c7497ca9b",
+    "url": "https://raw.githubusercontent.com/hamanakam1/taskrivet/2160f606256edbd38004b6c8693bca8c7497ca9b/docs/screenshots/workspace-session-inspector.png",
+    "file": "taskrivet.png",
+    "title": "Persistent agent workspaces",
+    "boundary": "Actual desktop interface; synthetic task data.",
+    "sha256": "e63be563a355199fcb287d66625c99ae1dd52d26a6e7e20a24b2280592bb3fb3",
+    "source_page": "https://github.com/hamanakam1/taskrivet/blob/2160f606256edbd38004b6c8693bca8c7497ca9b/README.md"
+  },
+  {
+    "repo": "panther-intent-capture",
+    "path": "docs/screenshots/options-dashboard.png",
+    "revision": "72d10ade2b4e1b15887faef46624cc8cb5fd7c1a",
+    "url": "https://raw.githubusercontent.com/hamanakam1/panther-intent-capture/72d10ade2b4e1b15887faef46624cc8cb5fd7c1a/docs/screenshots/options-dashboard.png",
+    "file": "panther-intent-capture.png",
+    "title": "From browser friction to a reviewable request",
+    "boundary": "Actual options page; synthetic capture.",
+    "sha256": "697a413881c0809c86e9772e3c8f11a49874e500a9d4d59fa032d38d9e87c342",
+    "source_page": "https://github.com/hamanakam1/panther-intent-capture/blob/72d10ade2b4e1b15887faef46624cc8cb5fd7c1a/README.md"
+  },
+  {
+    "repo": "meter-mouse-garden",
+    "path": "docs/screenshots/garden-dashboard.png",
+    "revision": "fbb5334a73f45bbb16a62a9f5995efa012bcd62e",
+    "url": "https://raw.githubusercontent.com/hamanakam1/meter-mouse-garden/fbb5334a73f45bbb16a62a9f5995efa012bcd62e/docs/screenshots/garden-dashboard.png",
+    "file": "meter-mouse-garden.png",
+    "title": "Make AI usage visible",
+    "boundary": "Static dashboard prototype; fixture data.",
+    "sha256": "433a39e37aad79965dac1b30963cf055f76a5107dc3ada43239854f4a9cbbb21",
+    "source_page": "https://github.com/hamanakam1/meter-mouse-garden/blob/fbb5334a73f45bbb16a62a9f5995efa012bcd62e/README.md"
+  },
+  {
+    "repo": "el-verificador",
+    "path": "docs/screenshots/02-correction-prompt.png",
+    "revision": "4a4b3d54fcce529b2f56db4d2fd613d9752c3df9",
+    "url": "https://raw.githubusercontent.com/hamanakam1/el-verificador/4a4b3d54fcce529b2f56db4d2fd613d9752c3df9/docs/screenshots/02-correction-prompt.png",
+    "file": "el-verificador.png",
+    "title": "Make failed checks actionable",
+    "boundary": "Actual CLI demo output; not a client engagement.",
+    "sha256": "4dbddaefdc728296e67899d81b84f27a7ce9faad993ed66519c74788f800fcd3",
+    "source_page": "https://github.com/hamanakam1/el-verificador/blob/4a4b3d54fcce529b2f56db4d2fd613d9752c3df9/README.md"
+  },
+  {
+    "repo": "fluxrecord",
+    "path": "docs/screenshots/lifecycle.png",
+    "revision": "0478e6a1a3ee775fc35cae72ab96edae65cacca3",
+    "url": "https://raw.githubusercontent.com/hamanakam1/fluxrecord/0478e6a1a3ee775fc35cae72ab96edae65cacca3/docs/screenshots/lifecycle.png",
+    "file": "fluxrecord.png",
+    "title": "Keep work and decisions traceable",
+    "boundary": "Actual CLI demonstration; synthetic task.",
+    "sha256": "a65975aa2e7ea5afa7f137adcb2a1e62971a6b37b2b431f0282058177960dcbe",
+    "source_page": "https://github.com/hamanakam1/fluxrecord/blob/0478e6a1a3ee775fc35cae72ab96edae65cacca3/README.md"
+  },
+  {
+    "repo": "lineasflow",
+    "path": "docs/screenshots/test-bench.png",
+    "revision": "1a4cab63e206e160df0dcbdcfe1bdd56a107dad7",
+    "url": "https://raw.githubusercontent.com/hamanakam1/lineasflow/1a4cab63e206e160df0dcbdcfe1bdd56a107dad7/docs/screenshots/test-bench.png",
+    "file": "lineasflow.png",
+    "title": "Inspect an edge systems experiment",
+    "boundary": "Published test/benchmark capture; not fleet deployment evidence.",
+    "sha256": "4cea1f32c71733deccdf387e6cd0b55c78dd7174eb32e10b6d4fc5f44fd327a4",
+    "source_page": "https://github.com/hamanakam1/lineasflow/blob/1a4cab63e206e160df0dcbdcfe1bdd56a107dad7/README.md"
+  }
+]

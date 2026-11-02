@@ -4,7 +4,7 @@
 
 One software factory, many entry points. Most systems work comes together in the private [ai-dashboard](https://github.com/hamanakam1/ai-dashboard). Public tools, private components, upstream forks and experiments all belong on the same map. Describing a private repository does not distribute its source; GitHub permissions still govern access.
 
-The atlas covers the owner's 2026-10-28 GitHub inventory: 32 repositories in seven areas. Each has a role, source-access label, maturity description and suggested contribution surface. These are editorial assessments and invitations, not claims that every adapter is deployed or every contribution is pre-approved.
+The atlas covers the owner's 2026-11-02 GitHub inventory: 41 repositories in seven areas. Each has a role, source-access label, maturity description and suggested contribution surface. These are editorial assessments and invitations, not claims that every adapter is deployed or every contribution is pre-approved.
 
 ## Contribute a useful piece
 
@@ -20,9 +20,9 @@ On desktop, the floor and project details sit side by side. Short laptop screens
 
 The browser reads project descriptions directly from `index.html`; it does not keep a second editorial inventory. Loading and failed requests disable controls, and a text-atlas fallback remains available without JavaScript. Private links remain access-controlled.
 
-The original 40-node Archify map remains available as the full vector diagram. A compact seven-area overview is generated through the Dashboard Archify integration, with the authored and canonical specifications and portable receipt in `assets/factory-overview-*`. Its nine validation gates and canonical browser evidence are separate from the public explorer checks. Both diagram versions group roles; they do not certify integrations.
+The original 40-node Archify map remains as an explicitly archived 28 October diagram; the current interactive viewer loads all 41 repository cards. A compact seven-area overview is generated through the Dashboard Archify integration, with the authored and canonical specifications and portable receipt in `assets/factory-overview-*`. Its nine validation gates and canonical browser evidence are separate from the public explorer checks. Both diagram versions group roles; they do not certify integrations.
 
-`assets/factory-tour.gif` is the 14-second, seven-stop browser preview used on the homepage and GitHub profile. It links to the interactive page. The homepage has play/pause controls and initially shows the still image when reduced motion is requested; without JavaScript it remains a linked still. Turning on reduced motion while it plays also stops the preview. An explicit Play action can start it afterward. The profile uses a `<picture>` still fallback for reduced-motion preferences and provides a separate still-image link. GitHub README rendering does not run the explorer JavaScript.
+`assets/factory-tour.gif` is the 30-second, six-capture software reel used on the homepage and GitHub profile. It links to the interactive page. The homepage has play/pause controls and initially shows the still image when reduced motion is requested; without JavaScript it remains a linked still. Turning on reduced motion while it plays also stops the preview. An explicit Play action can start it afterward. The profile uses a `<picture>` still fallback for reduced-motion preferences and provides a separate still-image link. GitHub README rendering does not run the explorer JavaScript.
 
 The [capture notes and seven reviewed frames](docs/tour/README.md) retain provenance and reproduction instructions. Run `python3 scripts/build_tour.py` with FFmpeg installed to rebuild the GIF and still. This is a dated UI tour, not live telemetry. `assets/factory-preview.svg` remains an alternative static card.
 
@@ -41,3 +41,11 @@ The reviewed inventory is `assets/repositories.json`. Editorial roles and contri
 The offline checker verifies local links, fragments, duplicate IDs, ARIA targets, headings and image alt attributes. Only the named local viewer and preview scripts are allowed. Inspect desktop/mobile widths, zero horizontal page overflow, all project selections, search/access filters, empty recovery, tour completion, keyboard focus, mobile modal dismissal, deep links, clipboard behavior, motion preferences and fetch-failure fallback. The 404 page keeps root-relative recovery links.
 
 Pages currently publishes from `codex/f07-site-quality` at the repository root. A push and an actual Pages deployment need separate remote readback.
+
+## Paid work overview preparation
+
+`work.html` presents selected software, three scoped engagement options, a screenshot gallery, three interactive diagrams and the complete public repository catalogue. `assets/work/sources.json` pins the original screenshot bytes to public commits. CLI detail crops in the reel are labelled; original screenshots remain available. Public forks are attributed. The complete atlas includes private repository names and descriptions, which need owner review before publication.
+
+Prepared locally only. Profile and campaign drafts are outside this repository. The contact route and LinkedIn role facts need correction and authenticated verification before publication.
+
+New diagram HTML is unchanged registered Archify output. `diagrams/manifest.json` binds those files to their registered hashes; the site checker validates the hash and local destination while Archify validates and browser-checks its own embedded viewer.

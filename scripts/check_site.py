@@ -3,6 +3,7 @@
 
 from collections import Counter
 import json
+import hashlib
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -34,7 +35,7 @@ class Page(HTMLParser):
             self.references.extend((attrs.get(attribute) or "").split())
         if tag == "img" and "alt" not in attrs:
             self.errors.append("image is missing alt text (use alt='' for decoration)")
-        allowed_scripts = {"ecosystem.html": "assets/ecosystem-viewer.js", "index.html": "assets/tour-preview.js"}
+        allowed_scripts = {"ecosystem.html": "assets/ecosystem-viewer.js", "index.html": "assets/tour-preview.js", "work.html": "assets/work.js"}
         if tag == "script" and (not attrs.get("src") or attrs.get("src") != allowed_scripts.get(self.path.name)):
             self.errors.append("only the named local viewer and preview scripts are allowed")
         for attribute in ("href", "src"):
@@ -53,8 +54,21 @@ class Page(HTMLParser):
 
 def check(root: Path) -> list[str]:
     root = root.resolve()
-    pages = {path: Page(path) for path in root.rglob("*.html") if ".git" not in path.parts}
-    errors = []
+    generated = root / "diagrams"
+    manifest_path = generated / "manifest.json"
+    approved = {}
+    if manifest_path.exists():
+        approved = {entry["file"]: entry["sha256"] for entry in json.loads(manifest_path.read_text())}
+    generated_errors = []
+    for path in generated.glob("*.html"):
+        expected = approved.get(path.name)
+        if expected is None or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+            generated_errors.append(f"Unverified generated diagram: {path.name}")
+    for name in approved:
+        if not (generated / name).is_file():
+            generated_errors.append(f"Missing generated diagram: {name}")
+    pages = {path: Page(path) for path in root.rglob("*.html") if ".git" not in path.parts and path.parent != generated}
+    errors = generated_errors[:]
     if root / "index.html" not in pages:
         errors.append("index.html: homepage is missing")
     inventory = root / "assets/repositories.json"
