@@ -76,7 +76,7 @@
     const links = el('div', null, 'detail-links');
     for (const source of project.links) { const a = el('a', source.textContent.trim() + ' ↗'); a.href = source.href; links.append(a); }
     fragment.append(links);
-    const extra = el('div', null, 'detail-tools'), atlasLink = el('a', 'Read in the atlas'); atlasLink.href = `index.html#project-${project.id}`;
+    const extra = el('div', null, 'detail-tools'), atlasLink = el('a', 'Read in the atlas'); atlasLink.href = `atlas.html#project-${project.id}`;
     const copy = el('button', 'Copy project link', 'quiet'); copy.type = 'button';
     copy.addEventListener('click', async () => {
       try { await navigator.clipboard.writeText(new URL(`#project=${encodeURIComponent(project.id)}`, location.href).href); copy.textContent = 'Link copied ✓'; }
@@ -121,7 +121,7 @@
   }
   addEventListener('hashchange', () => fromHash(true));
   try {
-    const response = await fetch('index.html'); if (!response.ok) throw new Error('Atlas unavailable');
+    const response = await fetch('atlas.html'); if (!response.ok) throw new Error('Atlas unavailable');
     const doc = new DOMParser().parseFromString(await response.text(), 'text/html');
     projects = [...doc.querySelectorAll('.repo-card[id^="project-"]')].map(card => {
       const group = card.closest('section').id;
@@ -137,7 +137,7 @@
     if (!fromHash(true)) { render(); select('ai-dashboard', false, false); }
   } catch (error) {
     $('load-status').replaceChildren(el('span', 'The interactive floor could not load. '));
-    const fallback = el('a', 'Browse the complete text atlas →'); fallback.href = 'index.html#repos'; $('load-status').append(fallback);
+    const fallback = el('a', 'Browse the complete text atlas →'); fallback.href = 'atlas.html#repos'; $('load-status').append(fallback);
     document.querySelectorAll('.toolbar button,.toolbar input,.toolbar select').forEach(control => { control.disabled = true; });
   }
 }());

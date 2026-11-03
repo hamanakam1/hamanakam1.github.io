@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "size": [
+    1280,
+    820
+  ],
+  "frames": 75,
+  "duration_ms": 37580,
+  "chapters": [
+    "murmuration",
+    "panther-intent-capture",
+    "taskrivet",
+    "meter-mouse-garden",
+    "el-verificador",
+    "fluxrecord",
+    "lineasflow"
+  ],
+  "transitions": "Editorial crossfades and source detail crops; not live application behavior",
+  "gif_bytes": 6734296,
+  "gif_sha256": "be9c339e4eb333bf0e87abfd46014c9faf491c33949995830da931e0811db0f6",
+  "keyframes": [
+    {
+      "label": "cover",
+      "hold_ms": 3000
+    },
+    {
+      "label": "murmuration-overview",
+      "hold_ms": 2100
+    },
+    {
+      "label": "murmuration-detail",
+      "hold_ms": 1700
+    },
+    {
+      "label": "panther-intent-capture-overview",
+      "hold_ms": 2100
+    },
+    {
+      "label": "panther-intent-capture-detail",
+      "hold_ms": 1700
+    },
+    {
+      "label": "taskrivet-overview",
+      "hold_ms": 2100
+    },
+    {
+      "label": "taskrivet-detail",
+      "hold_ms": 1700
+    },
+    {
+      "label": "meter-mouse-garden-overview",
+      "hold_ms": 2100
+    },
+    {
+      "label": "meter-mouse-garden-detail",
+      "hold_ms": 1700
+    },
+    {
+      "label": "el-verificador-overview",
+      "hold_ms": 2100
+    },
+    {
+      "label": "el-verificador-detail",
+      "hold_ms": 1700
+    },
+    {
+      "label": "fluxrecord-overview",
+      "hold_ms": 2100
+    },
+    {
+      "label": "fluxrecord-detail",
+      "hold_ms": 1700
+    },
+    {
+      "label": "lineasflow-overview",
+      "hold_ms": 2100
+    },
+    {
+      "label": "lineasflow-detail",
+      "hold_ms": 1700
+    },
+    {
+      "label": "contact",
+      "hold_ms": 3500
+    }
+  ],
+  "authored_frames": 80
+}

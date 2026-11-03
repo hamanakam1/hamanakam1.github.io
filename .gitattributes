@@ -1,0 +1,5 @@
+# Preserve byte-identical registered Archify artifacts. Their exact SHA256 hashes
+# are checked by scripts/check_site.py; upstream output contains blank-line spaces.
+diagrams/client-engagement.html whitespace=-blank-at-eol
+diagrams/factory-roles.html whitespace=-blank-at-eol
+diagrams/local-systems.html whitespace=-blank-at-eol

@@ -52,6 +52,12 @@
       "sublabel": "Repository roles \u00b7 not runtime call paths"
     },
     {
+      "id": "repo-muse-connector-tools",
+      "parent": "work",
+      "label": "muse-connector-tools",
+      "sublabel": "Private \u00b7 Private workspace"
+    },
+    {
       "id": "repo-panther-intent-capture",
       "parent": "work",
       "label": "panther-intent-capture",
@@ -86,6 +92,24 @@
       "parent": "factory",
       "label": "Evidence & institutional memory",
       "sublabel": "Repository roles \u00b7 not runtime call paths"
+    },
+    {
+      "id": "repo-counterfactory",
+      "parent": "proof",
+      "label": "counterfactory",
+      "sublabel": "Public \u00b7 Executable failure models"
+    },
+    {
+      "id": "repo-agent-recovery-bench",
+      "parent": "proof",
+      "label": "agent-recovery-bench",
+      "sublabel": "Private \u00b7 Private benchmark"
+    },
+    {
+      "id": "repo-reality-boundary-standard",
+      "parent": "proof",
+      "label": "reality-boundary-standard",
+      "sublabel": "Public \u00b7 Draft standard"
     },
     {
       "id": "repo-fluxrecord",
@@ -130,6 +154,18 @@
       "sublabel": "Repository roles \u00b7 not runtime call paths"
     },
     {
+      "id": "repo-bumperfort",
+      "parent": "edge",
+      "label": "bumperfort",
+      "sublabel": "Public \u00b7 Physics experiment"
+    },
+    {
+      "id": "repo-lineasflow",
+      "parent": "edge",
+      "label": "lineasflow",
+      "sublabel": "Public \u00b7 Edge experiment"
+    },
+    {
       "id": "repo-the-surveyor",
       "parent": "edge",
       "label": "the-surveyor",
@@ -151,13 +187,31 @@
       "id": "repo-VortexMesh",
       "parent": "edge",
       "label": "VortexMesh",
-      "sublabel": "Public \u00b7 Learning experiment"
+      "sublabel": "Public \u00b7 Learning project / integration incomplete"
     },
     {
       "id": "lab",
       "parent": "factory",
       "label": "Simulation & product experiments",
       "sublabel": "Repository roles \u00b7 not runtime call paths"
+    },
+    {
+      "id": "repo-murmuration",
+      "parent": "lab",
+      "label": "murmuration",
+      "sublabel": "Public \u00b7 Interactive browser toy"
+    },
+    {
+      "id": "repo-scratch-kitchen",
+      "parent": "lab",
+      "label": "scratch-kitchen",
+      "sublabel": "Public \u00b7 MVP scaffold"
+    },
+    {
+      "id": "repo-storyfoundry-public-fixture",
+      "parent": "lab",
+      "label": "storyfoundry-public-fixture",
+      "sublabel": "Public \u00b7 Synthetic fixtures"
     },
     {
       "id": "repo-mockmill",
@@ -208,6 +262,12 @@
       "sublabel": "Repository roles \u00b7 not runtime call paths"
     },
     {
+      "id": "repo-meter-mouse-garden",
+      "parent": "surface",
+      "label": "meter-mouse-garden",
+      "sublabel": "Public \u00b7 Prototype"
+    },
+    {
       "id": "repo-portal",
       "parent": "surface",
       "label": "portal",
@@ -242,6 +302,12 @@
       "parent": "factory",
       "label": "Upstream collaborations",
       "sublabel": "Repository roles \u00b7 not runtime call paths"
+    },
+    {
+      "id": "repo-node-pty",
+      "parent": "upstream",
+      "label": "node-pty",
+      "sublabel": "Public \u00b7 Upstream fork"
     },
     {
       "id": "repo-archify",

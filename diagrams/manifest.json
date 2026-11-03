@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "factory-roles",
+    "file": "factory-roles.html",
+    "artifact_id": "ba20998cde764a14a75bbdceceae19d9",
+    "sha256": "7b1ef3882715739e08215d238cd6bdea0bacdb8af778e51a8354bb0305a59c9d",
+    "checks": {
+      "checks": "9/9",
+      "errors": 0,
+      "warnings": 0
+    },
+    "browser_evidence": "passed",
+    "visual_review": "pending"
+  },
+  {
+    "slug": "local-systems",
+    "file": "local-systems.html",
+    "artifact_id": "8b7812a3a448413a9f5313b72ac2b93e",
+    "sha256": "b80cfe3f1900f6e20982e68f930e3a0b9fb8a369379420cfe3360359e2ffa73d",
+    "checks": {
+      "checksPassed": 9,
+      "checkCount": 9,
+      "compositionProfile": "showcase",
+      "compositionStatus": "pass",
+      "errors": 0,
+      "warnings": 0,
+      "status": "passed",
+      "checks": "9/9"
+    },
+    "browser_evidence": "passed",
+    "visual_review": "pending"
+  },
+  {
+    "slug": "client-engagement",
+    "file": "client-engagement.html",
+    "artifact_id": "3f8b4b9b17074e6a954b9cdb5c000b98",
+    "sha256": "2bb4143fddced93ef0b8f5634f5d14debb307418bd45198d75924324bcbf997b",
+    "checks": {
+      "checksPassed": 9,
+      "checkCount": 9,
+      "compositionProfile": "showcase",
+      "compositionStatus": "pass",
+      "errors": 0,
+      "warnings": 0,
+      "status": "passed",
+      "checks": "9/9"
+    },
+    "browser_evidence": "passed",
+    "visual_review": "pending"
+  }
+]
