@@ -31,5 +31,6 @@ jobs:
           node --check assets/ecosystem-viewer.js
           node --check assets/tour-preview.js
           node --check assets/work.js
+          node --check assets/factory-stories.js
       - name: Check patch whitespace
         run: git diff --check HEAD^ HEAD

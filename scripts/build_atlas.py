@@ -15,6 +15,9 @@ GROUPS = {
     'lab': ('Simulation & product experiments', 'Fictional fixtures and experimental product surfaces.'),
     'surface': ('Publishing & public entry points', 'The front doors, documentation and communication layers.'),
 }
+# Independent product and creative experiments finish the atlas.
+GROUPS = {key: GROUPS[key] for key in ('hub', 'work', 'proof', 'edge', 'surface', 'lab')}
+
 # Role, maturity and contribution ideas are editorial assessments, not integration certification.
 PROJECTS = {
  'counterfactory': ('proof', 'Executable failure models', 'Quint models that reproduce lost acknowledgements and duplicate execution, then examine a corrected design.', 'Inspect the reproducible trace and add bounded failure scenarios.'),

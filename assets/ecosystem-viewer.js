@@ -6,8 +6,8 @@
     {id:'work', title:'Intent & delivery', code:'BUILD', icon:'↗', color:'#9dbdff', featured:'taskrivet', story:'Give an idea a place to work', description:'Capture intent with Panther, keep agent sessions in Taskrivet, and explore bounded preparation and supervision tools.'},
     {id:'proof', title:'Evidence & memory', code:'VERIFY', icon:'◇', color:'#baa6ff', featured:'el-verificador', story:'Make the result reviewable', description:'Explore independent checks, shared evidence formats and retained lessons. Each project has its own maturity and contribution surface.'},
     {id:'edge', title:'Machines & inference', code:'COMPUTE', icon:'⌁', color:'#7ddde6', featured:'the-surveyor', story:'Know the machines', description:'Discover hardware, inspect resource constraints and explore inference queues. Prototypes and unfinished adapters stay labelled.'},
-    {id:'lab', title:'Simulation lab', code:'EXPERIMENT', icon:'⚗', color:'#ffd28c', featured:'mockmill', story:'Try something safely fictional', description:'Mockmill and the private simulations provide fictional fixtures and experiments for rehearsing product and platform ideas.'},
     {id:'surface', title:'Publishing & portals', code:'SHARE', icon:'▤', color:'#f5a8be', featured:'hamanakam1.github.io', story:'Give the workshop a front door', description:'Explore the atlas, profile, publishing adapters and client surfaces. Private source still requires access.'},
+    {id:'lab', title:'Simulation lab', code:'EXPERIMENT', icon:'⚗', color:'#ffd28c', featured:'mockmill', story:'Try something safely fictional', description:'Mockmill and the private simulations provide fictional fixtures and experiments for rehearsing product and platform ideas.'},
   ];
   const groupById = new Map(groups.map(g => [g.id, g]));
   const search = $('project-search'), access = $('access-filter'), dialog = $('project-dialog');

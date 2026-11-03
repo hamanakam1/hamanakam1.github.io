@@ -112,6 +112,16 @@ def check(root: Path) -> list[str]:
         excluded = {"archify", "cwinvoicer", "node-pty", "wad-sbx-workshop", "portal"}
         if excluded.intersection(actual):
             errors.append("Excluded projects appear in the factory gallery")
+        if stories.get("motion_revision", 1) >= 2:
+            if actual[0] != "ai-dashboard" or actual[-1] != "scratch-kitchen":
+                errors.append("Factory story order must lead with AI Dashboard and finish with Scratch Kitchen")
+            if len(stories.get("dashboard_details", [])) != 4:
+                errors.append("AI Dashboard must retain all four detailed concept scenes")
+            for detail in stories.get("dashboard_details", []):
+                for path_key, hash_key in (("file", "sha256"), ("preview", "preview_sha256")):
+                    image = root / detail.get(path_key, "MISSING")
+                    if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != detail.get(hash_key):
+                        errors.append(f"AI Dashboard chapter provenance mismatch: {detail['slug']} {path_key}")
         if sum(bool(r["fork"]) for r in stories["repositories"]) != sum(bool(r["fork"]) for r in json.loads(public_path.read_text())["repositories"]):
             errors.append("Factory fork attribution count differs from the public inventory")
         for story in stories["repositories"]:
@@ -134,14 +144,36 @@ def check(root: Path) -> list[str]:
             errors.append("Per-project animation manifest is missing")
         else:
             motion = json.loads(motion_path.read_text())
-            if {m["name"] for m in motion["projects"]} != expected:
+            if not motion.get("complete") or len(motion["projects"]) != len(expected) or {m["name"] for m in motion["projects"]} != expected:
                 errors.append("Every selected project must have its own animated loop")
+            story_by_name = {s["name"]: s for s in stories["repositories"]}
             for item in motion["projects"]:
+                story = story_by_name.get(item["name"], {})
+                if story.get("motion") != item:
+                    errors.append(f"Gallery animation metadata differs from the motion manifest: {item['name']}")
+                sources = [{"file": item.get("source_file", "MISSING"), "sha256": item.get("source_sha256")}]
+                sources.extend(item.get("scene_sources", []))
+                for source in sources:
+                    original = root / source["file"]
+                    if not original.is_file() or hashlib.sha256(original.read_bytes()).hexdigest() != source["sha256"]:
+                        errors.append(f"Animation source provenance mismatch: {item['name']} {source['file']}")
+                if stories.get("motion_revision", 1) >= 2:
+                    config = {"recipe": item["recipe"], "script_sha256": hashlib.sha256((root / "scripts/build_project_animations.py").read_bytes()).hexdigest(),
+                              "symbols": story.get("motion_symbols"), "color": story.get("color"),
+                              "chapters": item.get("scene_sources", []) if item["name"] == "ai-dashboard" else [], "fps": item["fps"]}
+                    if hashlib.sha256(json.dumps(config, sort_keys=True).encode()).hexdigest() != item.get("recipe_sha256"):
+                        errors.append(f"Animation recipe differs from the committed renderer: {item['name']}")
                 asset = root / item["file"]
                 if not asset.is_file() or hashlib.sha256(asset.read_bytes()).hexdigest() != item["sha256"]:
                     errors.append(f"Project animation provenance mismatch: {item['name']}")
-                elif asset.stat().st_size >= 1_000_000 or item["frames"] < 10 or item["duration_ms"] < 3000:
+                elif asset.stat().st_size >= (3_000_000 if item["name"] == "ai-dashboard" else 1_000_000) or item["frames"] < 10 or item["duration_ms"] < 3000:
                     errors.append(f"Project animation exceeds size budget or lacks motion frames: {item['name']}")
+                if stories.get("motion_revision", 1) >= 2:
+                    dashboard = item["name"] == "ai-dashboard"
+                    if item["frames"] != (480 if dashboard else 180) or item["duration_ms"] != (16000 if dashboard else 6000) or item.get("loop") != 0:
+                        errors.append(f"Project animation timing differs from the reviewed sequence: {item['name']}")
+                    if dashboard and item.get("chapters") != ["work", "inference", "resources", "review"]:
+                        errors.append("AI Dashboard chapter sequence differs from the reviewed order")
         gif = root / animation.get("file", "MISSING")
         if not gif.is_file() or gif.stat().st_size >= 4_000_000:
             errors.append("Factory GIF is missing or exceeds the 4 MB GitHub delivery budget")

@@ -19,7 +19,7 @@ Source access and maturity are separate labels. Private repository links require
 
 `factory.html` contains 39 individually animated project illustrations: 23 public repositories and 16 private projects described only from their already-public atlas summaries. The gallery offers search, stage explanations, source references, still images and explicit playback controls. The original generated PNGs are retained; WebP previews and GIFs are delivery formats. These are conceptual workflows, not application screenshots or recordings of deployed automation.
 
-`assets/factory-process-v3.gif` combines eight featured six-second loops into the compact profile overview. Each project GIF shows a moving work packet and stage pauses while preserving the generated illustration. `assets/factory-stories/stories.json` records reviewed project descriptions and original/preview hashes; `motion.json` records frame counts, decoded duration, source hashes, animation hashes and distinct-frame checks. `prompts.json` retains the image-generation prompts without local paths.
+`assets/factory-process-v3.gif` combines featured factory workflows and ends with independent experiments in a compact profile preview. Each project GIF has project-specific moving inputs, processing activity and outputs layered over the generated illustration. Ordinary loops use 180 frames over six seconds; AI Dashboard has four detailed chapters across 16 seconds. The profile preview plays these sequences at twice the gallery pace. The gallery follows the full duration before advancing. `assets/factory-stories/stories.json` records reviewed project descriptions and original/preview hashes; `motion.json` records frame counts, decoded duration, source hashes, animation hashes and distinct-frame checks. `prompts.json` retains the image-generation prompts without local paths.
 
 Rebuild after reviewing the selected source data and generated PNGs:
 
@@ -28,7 +28,7 @@ python3 scripts/build_project_animations.py
 python3 scripts/build_factory_stories.py --encode
 ```
 
-The tools are FFmpeg, cwebp and Pillow (validation). The build enforces a 4 MB maximum for the overview and a 1 MB maximum for each project loop; the current loops are much smaller. The page starts on still previews and stops playback when reduced motion is requested or the page becomes hidden.
+The tools are FFmpeg, cwebp and Pillow. The build enforces a 4 MB maximum for the overview and a 1 MB maximum for ordinary project loops and a 3 MB limit for the longer AI Dashboard sequence. The page starts on still previews and stops playback when reduced motion is requested or the page becomes hidden.
 
 The seven actual software captures remain in the homepage gallery. `assets/work/sources.json` pins their original hashes. `assets/factory-tour.gif` is a compressed legacy screenshot reel retained for the existing profile URL during migration; it has its own provenance receipt and must also remain below 4 MB. `scripts/build_screenshot_reel.py` is a legacy authoring script, not the factory animation builder. See [tour maintenance notes](docs/tour/README.md).
 
