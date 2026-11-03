@@ -8,7 +8,6 @@
     {id:'edge', title:'Machines & inference', code:'COMPUTE', icon:'⌁', color:'#7ddde6', featured:'the-surveyor', story:'Know the machines', description:'Discover hardware, inspect resource constraints and explore inference queues. Prototypes and unfinished adapters stay labelled.'},
     {id:'lab', title:'Simulation lab', code:'EXPERIMENT', icon:'⚗', color:'#ffd28c', featured:'mockmill', story:'Try something safely fictional', description:'Mockmill and the private simulations provide fictional fixtures and experiments for rehearsing product and platform ideas.'},
     {id:'surface', title:'Publishing & portals', code:'SHARE', icon:'▤', color:'#f5a8be', featured:'hamanakam1.github.io', story:'Give the workshop a front door', description:'Explore the atlas, profile, publishing adapters and client surfaces. Private source still requires access.'},
-    {id:'upstream', title:'Upstream connections', code:'COLLABORATE', icon:'⑂', color:'#b9c9f3', featured:'archify', story:'Build with other communities', description:'Archify and the sandbox workshop connect this ecosystem to upstream projects. Check their contribution guidance before starting.'}
   ];
   const groupById = new Map(groups.map(g => [g.id, g]));
   const search = $('project-search'), access = $('access-filter'), dialog = $('project-dialog');

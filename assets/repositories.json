@@ -1,5 +1,5 @@
 {
-  "observed_on": "2026-11-02",
+  "observed_on": "2026-11-03",
   "repositories": [
     {
       "name": "agent-recovery-bench",
@@ -14,13 +14,6 @@
       "homepageUrl": "",
       "isFork": false,
       "isPrivate": true
-    },
-    {
-      "name": "archify",
-      "url": "https://github.com/hamanakam1/archify",
-      "homepageUrl": "https://archify.si",
-      "isFork": true,
-      "isPrivate": false
     },
     {
       "name": "blessed-edge-deployment",
@@ -191,13 +184,6 @@
       "isPrivate": true
     },
     {
-      "name": "node-pty",
-      "url": "https://github.com/hamanakam1/node-pty",
-      "homepageUrl": "",
-      "isFork": true,
-      "isPrivate": false
-    },
-    {
       "name": "onramp-synthetic-company",
       "url": "https://github.com/hamanakam1/onramp-synthetic-company",
       "homepageUrl": "",
@@ -224,13 +210,6 @@
       "homepageUrl": "https://hamanakam1.github.io/panther-intent-capture/",
       "isFork": false,
       "isPrivate": false
-    },
-    {
-      "name": "portal",
-      "url": "https://github.com/hamanakam1/portal",
-      "homepageUrl": "",
-      "isFork": false,
-      "isPrivate": true
     },
     {
       "name": "reality-boundary-standard",
@@ -294,13 +273,7 @@
       "homepageUrl": "",
       "isFork": false,
       "isPrivate": true
-    },
-    {
-      "name": "wad-sbx-workshop",
-      "url": "https://github.com/hamanakam1/wad-sbx-workshop",
-      "homepageUrl": "https://github.com/hamanakam1/wad-sbx-workshop",
-      "isFork": true,
-      "isPrivate": false
     }
-  ]
+  ],
+  "scope": "Curated portfolio: 39 selected projects, with 23 public repositories and 16 private summaries. Excludes forks and client-specific workspaces; not the full GitHub account inventory."
 }

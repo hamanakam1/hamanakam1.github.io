@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "How a project moves through the Software Factory",
+    "subtitle": "Conceptual workflow — each repository has its own implementation and limits",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "visual_preset": "editorial",
+    "output": "factory-flow.html",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "frontend": {
+          "label": "Define the need"
+        },
+        "backend": {
+          "label": "Build and revise"
+        },
+        "security": {
+          "label": "Check and decide"
+        },
+        "external": {
+          "label": "Share a result"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "project",
+      "label": "Project path"
+    },
+    {
+      "id": "iteration",
+      "label": "Iteration",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "define",
+    "build",
+    "check",
+    "review",
+    "share"
+  ],
+  "semanticChecks": {
+    "allowedRoots": [
+      "define"
+    ],
+    "allowedTerminals": [
+      "share"
+    ],
+    "requiredEdges": [
+      {
+        "from": "check",
+        "to": "revise"
+      },
+      {
+        "from": "review",
+        "to": "revise"
+      },
+      {
+        "from": "revise",
+        "to": "build"
+      }
+    ],
+    "requiredPaths": [
+      {
+        "from": "define",
+        "to": "share"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "define",
+      "lane": "project",
+      "col": 0,
+      "type": "frontend",
+      "icon": "flag",
+      "label": "Define",
+      "sublabel": "Problem + useful result"
+    },
+    {
+      "id": "build",
+      "lane": "project",
+      "col": 1,
+      "type": "backend",
+      "label": "AI-assisted Build",
+      "sublabel": "A focused working slice"
+    },
+    {
+      "id": "check",
+      "lane": "project",
+      "col": 2,
+      "type": "security",
+      "label": "Check",
+      "sublabel": "Test the agreed scope"
+    },
+    {
+      "id": "review",
+      "lane": "project",
+      "col": 3,
+      "type": "security",
+      "icon": "person",
+      "label": "Human Review",
+      "sublabel": "Inspect result + limits"
+    },
+    {
+      "id": "share",
+      "lane": "project",
+      "col": 4,
+      "type": "external",
+      "icon": "briefcase",
+      "label": "Share / demo",
+      "sublabel": "Explain what works"
+    },
+    {
+      "id": "revise",
+      "lane": "iteration",
+      "col": 2,
+      "type": "backend",
+      "label": "Revise",
+      "sublabel": "Fix findings or scope"
+    }
+  ],
+  "edges": [
+    {
+      "id": "define-build",
+      "from": "define",
+      "to": "build",
+      "label": "Scope",
+      "role": "main"
+    },
+    {
+      "id": "build-check",
+      "from": "build",
+      "to": "check",
+      "label": "Candidate",
+      "role": "main"
+    },
+    {
+      "id": "check-review",
+      "from": "check",
+      "to": "review",
+      "label": "Pass",
+      "role": "main",
+      "variant": "emphasis"
+    },
+    {
+      "id": "review-share",
+      "from": "review",
+      "to": "share",
+      "label": "Approved",
+      "role": "main",
+      "variant": "emphasis"
+    },
+    {
+      "id": "check-revise",
+      "from": "check",
+      "to": "revise",
+      "label": "Needs work",
+      "role": "error",
+      "variant": "security"
+    },
+    {
+      "id": "review-revise",
+      "from": "review",
+      "to": "revise",
+      "label": "Changes",
+      "role": "branch",
+      "variant": "security"
+    },
+    {
+      "id": "revise-build",
+      "from": "revise",
+      "to": "build",
+      "label": "Rework",
+      "role": "return"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "What this explains",
+      "items": [
+        "A proposed way to move a bounded project from an idea to a reviewable demonstration.",
+        "A check or review can send the work back for revision."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "What this does not claim",
+      "items": [
+        "This is a conceptual sequence, not a trace of live automation.",
+        "It does not claim every repository has passed these stages or shipped."
+      ]
+    }
+  ]
+}

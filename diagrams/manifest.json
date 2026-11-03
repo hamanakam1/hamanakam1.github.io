@@ -47,5 +47,19 @@
     },
     "browser_evidence": "passed",
     "visual_review": "pending"
+  },
+  {
+    "slug": "factory-flow",
+    "file": "factory-flow.html",
+    "artifact_id": "46a03b1267df46298e153adede37841c",
+    "sha256": "6aa54c9e99ec9546a0e8762417c94315a21c7ac75c5044651ec27f37c38cf0ae",
+    "checks": {
+      "checks": "9/9",
+      "errors": 0,
+      "warnings": 0
+    },
+    "browser_evidence": "passed",
+    "visual_review": "light and dark captures inspected at 1440x900 and 2048x1320",
+    "scope": "Conceptual proposed workflow; not an observed runtime trace or claim of completion across repositories."
   }
 ]
