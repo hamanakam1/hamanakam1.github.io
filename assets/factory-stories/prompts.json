@@ -275,5 +275,10 @@
       "source_revision": "549098d56def24511d7b941da31ce5c6875f3df9",
       "sha256": "32684d3e627665740d7b676fa97e50ed45c6b76e64a4016e9a82abf081aca5a9"
     }
-  ]
+  ],
+  "cover": {
+    "name": "factory-cover",
+    "sha256": "2fb25dbf3393d45eadd1345e809cbccfc0cc1cc25bf9dd283d9bb9e7a5107903",
+    "prompt": "Use case: illustration-story. Create the opening illustration for Michael Hamanaka's GitHub Software Factory animation. A professional, crisp, wide 16:9 editorial illustration of a small software workshop as a left-to-right isometric conveyor. At the left a simple paper idea card and a browser-window blueprint enter; in the middle two compact fabrication benches with AI assistant terminals assemble interface components; then a human operator examines the result with a magnifying glass and a checklist; at the right a clean laptop shows the resulting application. The picture must communicate idea -> AI-assisted building -> checking -> usable software instantly. Palette: warm ivory background, near-black outlines, restrained teal and lime accents with one orange review indicator. Precise vector-like illustration, sophisticated restrained visual design, large readable forms, generous whitespace, no photorealism, no neon, no dense wires. All objects in one coherent landscape, no collage and no tiny text. Exact title at top: 'HAMANAKA SOFTWARE FACTORY'. Exact short station labels at bottom: 'DEFINE' 'BUILD' 'CHECK' 'REVIEW'. This is an illustrative workflow, not a screenshot or proof of a deployed pipeline. No invented metrics, testimonials, certification symbols, or automatic production deployment. Render at a wide landscape size."
+  }
 }
