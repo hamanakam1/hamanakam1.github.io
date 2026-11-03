@@ -1,51 +1,66 @@
-# Hamanaka Software Factory — the ecosystem atlas
+# Mike Hamanaka — software engineering portfolio
 
-[Explore the atlas](https://hamanakam1.github.io/) · [Interactive repository map](https://hamanakam1.github.io/ecosystem.html) · [Suggest a contribution](https://github.com/hamanakam1/hamanakam1.github.io/issues/new?template=ecosystem-idea.yml)
+[Work with Mike](https://hamanakam1.github.io/) · [Repository atlas](https://hamanakam1.github.io/atlas.html) · [Interactive repository map](https://hamanakam1.github.io/ecosystem.html)
 
-One software factory, many entry points. Most systems work comes together in the private [ai-dashboard](https://github.com/hamanakam1/ai-dashboard). Public tools, private components, upstream forks and experiments all belong on the same map. Describing a private repository does not distribute its source; GitHub permissions still govern access.
+The homepage presents paid engineering services, selected software, original software captures and a direct contact route. Hamanaka Software Factory is Mike's independent workshop for AI workflows, developer tools and local systems. The repository catalogue supplies technical evidence for a project or hiring conversation.
 
-The atlas covers the owner's 2026-11-02 GitHub inventory: 41 repositories in seven areas. Each has a role, source-access label, maturity description and suggested contribution surface. These are editorial assessments and invitations, not claims that every adapter is deployed or every contribution is pre-approved.
+`index.html` is the canonical homepage. `work.html` remains an identical compatibility address for existing profile and campaign links. Edit `work.html`, then run `python3 scripts/sync_homepage.py`; the site checker rejects differences between the two files. Both declare the root canonical URL.
 
-## Contribute a useful piece
+## Find the right level of detail
 
-Try a public tool and report a reproducible problem. Improve accessibility, recovery, documentation or failure explanations. Propose a small adapter, portable evidence contract, hardware fixture or synthetic scenario. Public projects can evolve independently; later integration into the private factory is a separate decision. Check each repository's license and contribution guide.
+- **Homepage:** engagement options, screenshots, project evidence and a searchable public catalogue.
+- **Text atlas (`atlas.html`):** the complete reviewed owner inventory grouped into seven areas, with source access, maturity and contribution ideas.
+- **Interactive explorer (`ecosystem.html`):** search and filter the same atlas by project responsibility and access.
+- **Technical diagrams (`diagrams/`):** documented project responsibilities, proposed handoffs, a local systems pattern and an engagement workflow.
 
-For a private component, discuss a generic interface through this repository's public issue tracker. No private access is needed to contribute a useful idea.
+Source access and maturity are separate labels. Private repository links require the appropriate GitHub permissions. Forks credit their upstream authors. Demonstrations, fixtures and learning projects are identified so readers can judge the evidence behind each example.
 
-## The interactive factory floor
+## Software screenshot reel
 
-`ecosystem.html` is a compact, responsive explorer of the same reviewed inventory as the text atlas. Seven station buttons filter projects by responsibility. Search matches names, roles, maturity and contribution ideas; public/private filters describe source access. The details panel always follows the visible results and clears when no projects match.
+`assets/factory-tour.gif` uses published captures of Mike's software. `assets/work/sources.json` records the source URLs, revisions and original file hashes. Original captures remain available alongside the reel; detail crops are labelled. The capture notes and reproduction instructions are in [docs/tour/README.md](docs/tour/README.md).
 
-On desktop, the floor and project details sit side by side. Short laptop screens use a compact layout. Phones use a swipeable area strip and a native modal for project details. Keyboard selection, `/` to focus search, Escape to close details, a motion toggle, reduced-motion preferences, copyable project links (`#project=taskrivet`), surprise selection and a seven-stop guided tour are supported. The tour explains roles, not observed runtime jobs. No analytics, external fonts, provider requests or live telemetry are used.
+Rebuild the current reel with `python3 scripts/build_screenshot_reel.py` (requires Pillow). The older `scripts/build_tour.py` produces the historical seven-area explorer tour; it must not be used to rebuild the current screenshot reel.
 
-The browser reads project descriptions directly from `index.html`; it does not keep a second editorial inventory. Loading and failed requests disable controls, and a text-atlas fallback remains available without JavaScript. Private links remain access-controlled.
+The homepage initially shows the still image and offers explicit play/pause. A change to reduced-motion preferences stops playback. The GitHub profile has a picture-based reduced-motion fallback and a separate still-image link; GitHub Markdown does not run the portfolio's JavaScript.
 
-The original 40-node Archify map remains as an explicitly archived 28 October diagram; the current interactive viewer loads all 41 repository cards. A compact seven-area overview is generated through the Dashboard Archify integration, with the authored and canonical specifications and portable receipt in `assets/factory-overview-*`. Its nine validation gates and canonical browser evidence are separate from the public explorer checks. Both diagram versions group roles; they do not certify integrations.
+## Interactive explorer
 
-`assets/factory-tour.gif` is the 30-second, six-capture software reel used on the homepage and GitHub profile. It links to the interactive page. The homepage has play/pause controls and initially shows the still image when reduced motion is requested; without JavaScript it remains a linked still. Turning on reduced motion while it plays also stops the preview. An explicit Play action can start it afterward. The profile uses a `<picture>` still fallback for reduced-motion preferences and provides a separate still-image link. GitHub README rendering does not run the explorer JavaScript.
+The browser reads project descriptions from `atlas.html`, keeping one editorial source for the atlas and explorer. Seven station buttons filter by responsibility. Search matches names, roles, maturity and contribution ideas; public/private filters describe source access. The details panel follows the visible results and clears when none match.
 
-The [capture notes and seven reviewed frames](docs/tour/README.md) retain provenance and reproduction instructions. Run `python3 scripts/build_tour.py` with FFmpeg installed to rebuild the GIF and still. This is a dated UI tour, not live telemetry. `assets/factory-preview.svg` remains an alternative static card.
+The explorer supports keyboard selection, `/` to focus search, Escape to close details, copyable project links, a motion toggle and a guided tour. The tour describes roles. Its motion is illustrative and does not show live jobs or qualify deployments. No analytics, external fonts, provider requests or live telemetry are used. Loading and failed requests disable controls, and a text-atlas fallback remains available without JavaScript.
 
-## Preview and maintain
+The original 28 October Archify SVG map remains explicitly archived. The interactive explorer uses the current reviewed atlas. Regenerate a current technical diagram through the Dashboard Archify integration when its specification changes, retain the authored and canonical specifications and delivery receipt, and inspect the result separately from the portfolio.
+
+New diagram HTML in `diagrams/` is unchanged registered Archify output. `diagrams/manifest.json` binds each file to its registered hash; the site checker verifies that hash and the local destination. Archify's schema and browser checks are separate from checks of the surrounding website.
+
+## Maintain and preview
 
 ```sh
-python3 -m http.server 8000 --bind 127.0.0.1
+# Review the inventory and editorial roles before refreshing GitHub metadata.
+python3 scripts/build_atlas.py --refresh
+
+# After editing work.html, keep both public entry addresses identical.
+python3 scripts/build_work_catalogue.py
+python3 scripts/sync_homepage.py
+
+# Verify static navigation, inventory coverage and JavaScript syntax.
 python3 scripts/check_site.py
+node --check assets/work.js
 node --check assets/ecosystem-viewer.js
+
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open `/` and `/ecosystem.html`. Assets are local; serving needs no build service, package install, analytics, remote fonts or inference.
+Open `/`, `/atlas.html` and `/ecosystem.html`. Assets are local; serving needs no build service, external fonts or inference.
 
-The reviewed inventory is `assets/repositories.json`. Editorial roles and contribution ideas are in `scripts/build_atlas.py`. Review additions/removals in that mapping, then run `python3 scripts/build_atlas.py --refresh` to read GitHub metadata with gh and rebuild the static page and typed diagram specification. Without `--refresh`, it uses the retained snapshot. Regenerate through the local Archify integration when the specification changes, then run `scripts/export_map.py` against the canonical HTML. Retain the original delivery receipt and inspect the hosted viewer.
+The reviewed snapshot is `assets/repositories.json`. Editorial roles and contribution ideas are in `scripts/build_atlas.py`. Review additions and removals in that mapping before running the refresh; the generator rejects an unexplained inventory change. Without `--refresh`, it uses the retained snapshot. The generator writes `atlas.html` and the typed `assets/ecosystem-spec.json`; it never overwrites the homepage.
 
-The offline checker verifies local links, fragments, duplicate IDs, ARIA targets, headings and image alt attributes. Only the named local viewer and preview scripts are allowed. Inspect desktop/mobile widths, zero horizontal page overflow, all project selections, search/access filters, empty recovery, tour completion, keyboard focus, mobile modal dismissal, deep links, clipboard behavior, motion preferences and fetch-failure fallback. The 404 page keeps root-relative recovery links.
+The offline checker verifies local links and fragments, duplicate IDs, ARIA targets, headings, image alt attributes, homepage parity, atlas inventory coverage and registered diagram hashes. It allows only the named local scripts on each page. Browser review should cover desktop and phone widths, overflow, screenshot navigation, search and empty-result recovery, keyboard focus, the explorer modal, deep links, motion preferences and failed-fetch fallback.
 
-Pages currently publishes from `codex/f07-site-quality` at the repository root. A push and an actual Pages deployment need separate remote readback.
+Publishing requires checking the repository's configured Pages source, completing the required repository checks and reading back the deployed revision and assets. A local preview or push alone does not establish that Pages is current.
 
-## Paid work overview preparation
+## Contribute
 
-`work.html` presents selected software, three scoped engagement options, a screenshot gallery, three interactive diagrams and the complete public repository catalogue. `assets/work/sources.json` pins the original screenshot bytes to public commits. CLI detail crops in the reel are labelled; original screenshots remain available. Public forks are attributed. The complete atlas includes private repository names and descriptions, which need owner review before publication.
+Try a public tool and report a reproducible problem, or propose a small adapter, portable evidence contract or synthetic scenario. Follow each repository's license and contribution guide. Contribution ideas in the atlas are invitations to discuss scope; integration into private components remains a separate decision. For a private component, discuss a generic interface through this repository's public issue tracker.
 
-Prepared locally only. Profile and campaign drafts are outside this repository. The contact route and LinkedIn role facts need correction and authenticated verification before publication.
-
-New diagram HTML is unchanged registered Archify output. `diagrams/manifest.json` binds those files to their registered hashes; the site checker validates the hash and local destination while Archify validates and browser-checks its own embedded viewer.
+The public catalogue in `assets/work/public-repositories.json` retains reviewed category and maturity labels plus upstream links. Refresh it from public GitHub metadata, review additions, and run `scripts/build_work_catalogue.py` to update gallery, chart, catalogue and homepage. Never copy the private owner inventory into that public manifest.

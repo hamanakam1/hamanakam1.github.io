@@ -64,5 +64,16 @@
     "boundary": "Published test/benchmark capture; not fleet deployment evidence.",
     "sha256": "4cea1f32c71733deccdf387e6cd0b55c78dd7174eb32e10b6d4fc5f44fd327a4",
     "source_page": "https://github.com/hamanakam1/lineasflow/blob/1a4cab63e206e160df0dcbdcfe1bdd56a107dad7/README.md"
+  },
+  {
+    "repo": "murmuration",
+    "path": "docs/preview.png",
+    "revision": "25bc42e72a0a4c63ef5e7b280c5d3a0c8a5c9264",
+    "url": "https://raw.githubusercontent.com/hamanakam1/murmuration/25bc42e72a0a4c63ef5e7b280c5d3a0c8a5c9264/docs/preview.png",
+    "file": "murmuration.png",
+    "title": "A living light garden in the browser",
+    "boundary": "Published browser toy preview; artificial-life simulation.",
+    "sha256": "e9ed715390942a9dfd26caaaae27606875c48e3bf2bb892f98959ed8fcfa521c",
+    "source_page": "https://github.com/hamanakam1/murmuration/blob/25bc42e72a0a4c63ef5e7b280c5d3a0c8a5c9264/README.md"
   }
 ]

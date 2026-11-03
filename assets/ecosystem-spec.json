@@ -94,6 +94,12 @@
       "sublabel": "Repository roles \u00b7 not runtime call paths"
     },
     {
+      "id": "repo-counterfactory",
+      "parent": "proof",
+      "label": "counterfactory",
+      "sublabel": "Public \u00b7 Executable failure models"
+    },
+    {
       "id": "repo-agent-recovery-bench",
       "parent": "proof",
       "label": "agent-recovery-bench",
@@ -181,13 +187,19 @@
       "id": "repo-VortexMesh",
       "parent": "edge",
       "label": "VortexMesh",
-      "sublabel": "Public \u00b7 Learning experiment"
+      "sublabel": "Public \u00b7 Learning project / integration incomplete"
     },
     {
       "id": "lab",
       "parent": "factory",
       "label": "Simulation & product experiments",
       "sublabel": "Repository roles \u00b7 not runtime call paths"
+    },
+    {
+      "id": "repo-murmuration",
+      "parent": "lab",
+      "label": "murmuration",
+      "sublabel": "Public \u00b7 Interactive browser toy"
     },
     {
       "id": "repo-scratch-kitchen",

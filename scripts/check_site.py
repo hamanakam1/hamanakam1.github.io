@@ -3,6 +3,7 @@
 
 from collections import Counter
 import json
+import re
 import hashlib
 from html.parser import HTMLParser
 from pathlib import Path
@@ -35,7 +36,7 @@ class Page(HTMLParser):
             self.references.extend((attrs.get(attribute) or "").split())
         if tag == "img" and "alt" not in attrs:
             self.errors.append("image is missing alt text (use alt='' for decoration)")
-        allowed_scripts = {"ecosystem.html": "assets/ecosystem-viewer.js", "index.html": "assets/tour-preview.js", "work.html": "assets/work.js"}
+        allowed_scripts = {"ecosystem.html": "assets/ecosystem-viewer.js", "atlas.html": "assets/tour-preview.js", "index.html": "assets/work.js", "work.html": "assets/work.js"}
         if tag == "script" and (not attrs.get("src") or attrs.get("src") != allowed_scripts.get(self.path.name)):
             self.errors.append("only the named local viewer and preview scripts are allowed")
         for attribute in ("href", "src"):
@@ -71,16 +72,41 @@ def check(root: Path) -> list[str]:
     errors = generated_errors[:]
     if root / "index.html" not in pages:
         errors.append("index.html: homepage is missing")
+    homepage = root / "index.html"
+    source = root / "work.html"
+    if homepage.is_file() and source.is_file() and homepage.read_bytes() != source.read_bytes():
+        errors.append("index.html differs from work.html: run python3 scripts/sync_homepage.py")
+    if source.is_file() and '<link rel="canonical" href="https://hamanakam1.github.io/">' not in source.read_text():
+        errors.append("work.html: canonical homepage URL is missing")
     inventory = root / "assets/repositories.json"
-    if inventory.is_file() and root / "index.html" in pages:
+    if inventory.is_file() and root / "atlas.html" not in pages:
+        errors.append("atlas.html: repository atlas is missing")
+    if inventory.is_file() and root / "atlas.html" in pages:
         names = {r["name"] for r in json.loads(inventory.read_text())["repositories"]}
-        actual = {key[8:] for key in pages[root / "index.html"].ids if key.startswith("project-")}
+        actual = {key[8:] for key in pages[root / "atlas.html"].ids if key.startswith("project-")}
         if names != actual:
             errors.append("Repository inventory and public atlas cards differ")
         spec = json.loads((root / "assets/ecosystem-spec.json").read_text())
         mapped = {n["label"] for n in spec["nodes"] if n["id"].startswith("repo-")}
         if mapped != names:
             errors.append("Diagram specification does not cover the complete repository inventory")
+    public_path = root / "assets/work/public-repositories.json"
+    if public_path.is_file() and source.is_file():
+        public = json.loads(public_path.read_text())["repositories"]
+        public_names = {r["name"] for r in public}
+        expected_public = {r["name"] for r in json.loads(inventory.read_text())["repositories"] if not r["isPrivate"]}
+        card_names = set(re.findall(r'data-repo-name="([^"]+)"', source.read_text()))
+        if public_names != expected_public or card_names != public_names or any(r["private"] for r in public):
+            errors.append("Public catalogue coverage or source-access boundary differs from reviewed inventory")
+        for r in public:
+            if r["fork"] and not (r.get("parent") or {}).get("html_url", "").startswith("https://github.com/"):
+                errors.append(f"Fork lacks upstream attribution: {r['name']}")
+    captures_path = root / "assets/work/sources.json"
+    if captures_path.is_file():
+        for capture in json.loads(captures_path.read_text()):
+            image = root / "assets/work" / capture["file"]
+            if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != capture["sha256"]:
+                errors.append(f"Screenshot provenance mismatch: {capture['file']}")
     for path, page in pages.items():
         problems = list(page.errors)
         if page.headings != 1:

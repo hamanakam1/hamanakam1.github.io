@@ -65,6 +65,13 @@
       "isPrivate": true
     },
     {
+      "name": "counterfactory",
+      "url": "https://github.com/hamanakam1/counterfactory",
+      "homepageUrl": "",
+      "isFork": false,
+      "isPrivate": false
+    },
+    {
       "name": "edgerecord",
       "url": "https://github.com/hamanakam1/edgerecord",
       "homepageUrl": "https://edgerecord.com",
@@ -170,6 +177,13 @@
       "isPrivate": false
     },
     {
+      "name": "murmuration",
+      "url": "https://github.com/hamanakam1/murmuration",
+      "homepageUrl": "https://hamanakam1.github.io/murmuration/",
+      "isFork": false,
+      "isPrivate": false
+    },
+    {
       "name": "muse-connector-tools",
       "url": "https://github.com/hamanakam1/muse-connector-tools",
       "homepageUrl": "",
@@ -270,7 +284,7 @@
     {
       "name": "VortexMesh",
       "url": "https://github.com/hamanakam1/VortexMesh",
-      "homepageUrl": "",
+      "homepageUrl": "https://github.com/hamanakam1/VortexMesh#readme",
       "isFork": false,
       "isPrivate": false
     },

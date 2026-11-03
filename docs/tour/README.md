@@ -1,9 +1,11 @@
-# Software screenshot reel
+# Software in practice — screenshot film
 
-Prepared 2 November 2026. The current `assets/factory-tour.gif` is a 30-second reel of six published software captures. It replaces the older seven-area explorer animation. Source URLs, source commits, original file hashes and evidence boundaries are in `assets/work/sources.json`.
+The current reel is an editorial film with seven projects, a collage opening, fourteen product/detail views, a contact closing and short crossfades. It replaces the older map animation and the initial six-still slideshow.
 
-Taskrivet, Panther, MeterMouseGarden, El Verificador, fluxrecord and LineasFlows appear for five seconds each. Actual published screenshot bytes are retained unchanged in `assets/work/`. The reel scales images to fit; tall CLI images use a labelled top detail crop. These are software demonstrations, fixtures or experiments, not customer case studies.
+The 1280×820 GIF runs for 37.58 seconds. Original screenshot bytes are hash-checked before composition. `assets/work/sources.json` pins each source and `assets/work/reel.json` records timing, hash and output size. The film includes Murmuration, Panther Intent Capture, Taskrivet, MeterMouseGarden, El Verificador, fluxrecord and LineasFlows. CLI panels use detail crops from their original output. Scene motion is editorial; it does not simulate a live integrated run. Demo, fixture and experimental boundaries remain visible.
 
-The reduced-motion still is `assets/factory-tour-still.png`. The portfolio starts on the still and offers explicit play/pause. The profile offers a picture-based reduced-motion fallback and a separate still link.
+`assets/factory-tour-still.png` is the reduced-motion collage. The homepage starts on the still and provides explicit play/pause. The GitHub profile offers a reduced-motion picture source and separate still link. `assets/work/reel-storyboard.jpg` shows all sixteen keyframes.
 
-The historical explorer frames in this folder were captured on 28 October and are retained as historical assets. `scripts/build_tour.py` builds that historical format, not the new screenshot reel. Regenerate the current reel with `python3 scripts/build_screenshot_reel.py` from the site root (requires Pillow).
+Rebuild: `python3 scripts/build_screenshot_reel.py` (Pillow). Uses Arial on macOS or DejaVu Sans on Linux. Font changes can change the resulting image hash.
+
+Historical 28 October frames are retained in this folder. `scripts/build_tour.py` rebuilds that archived format, not the current screenshot film.
