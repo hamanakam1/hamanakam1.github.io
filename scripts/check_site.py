@@ -168,8 +168,12 @@ def check(root: Path) -> list[str]:
                     errors.append(f"Project animation provenance mismatch: {item['name']}")
                 elif asset.stat().st_size >= (3_000_000 if item["name"] == "ai-dashboard" else 1_000_000) or item["frames"] < 10 or item["duration_ms"] < 3000:
                     errors.append(f"Project animation exceeds size budget or lacks motion frames: {item['name']}")
-                if stories.get("motion_revision", 1) >= 2 and item["frames"] < (480 if item["name"] == "ai-dashboard" else 180):
-                    errors.append(f"Project animation lacks the expanded motion frames: {item['name']}")
+                if stories.get("motion_revision", 1) >= 2:
+                    dashboard = item["name"] == "ai-dashboard"
+                    if item["frames"] != (480 if dashboard else 180) or item["duration_ms"] != (16000 if dashboard else 6000) or item.get("loop") != 0:
+                        errors.append(f"Project animation timing differs from the reviewed sequence: {item['name']}")
+                    if dashboard and item.get("chapters") != ["work", "inference", "resources", "review"]:
+                        errors.append("AI Dashboard chapter sequence differs from the reviewed order")
         gif = root / animation.get("file", "MISSING")
         if not gif.is_file() or gif.stat().st_size >= 4_000_000:
             errors.append("Factory GIF is missing or exceeds the 4 MB GitHub delivery budget")
