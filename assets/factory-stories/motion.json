@@ -1,7 +1,7 @@
 {
-  "schema": "project-motion.v1",
-  "generated_at": "2026-11-03T08:35:53.618035+00:00",
-  "boundary": "Conceptual input/process/output conveyor; not software execution footage.",
+  "schema": "project-motion.v2",
+  "generated_at": "2026-11-03T09:13:46.496609+00:00",
+  "boundary": "Conceptual project-specific motion over generated illustrations; not software execution footage or live telemetry.",
   "expected_projects": 39,
   "complete": true,
   "missing_source_images": [],
@@ -11,858 +11,2188 @@
       "file": "assets/factory-stories/ai-dashboard.gif",
       "source_file": "assets/factory-stories/ai-dashboard.png",
       "source_sha256": "3b2f4da1e93c2dde965bf234a8314f007d4551afa885eb93fa5d5cdd2b240f05",
-      "sha256": "6cdf280058e45a936a90a2115fd160141b52aee6155ec1149d947cf45c3bb4d1",
-      "bytes": 116618,
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/details/ai-dashboard-work.png",
+          "sha256": "2855465d10e5578a904cc60e843fc0fd9201e0fc77fd9c4118c42990e2b2e67b"
+        },
+        {
+          "file": "assets/factory-stories/details/ai-dashboard-inference.png",
+          "sha256": "ae5a30481f23a59890a55e62067e49f7c658ddb8531974a017076ad76cf67354"
+        },
+        {
+          "file": "assets/factory-stories/details/ai-dashboard-resources.png",
+          "sha256": "1fe488c324fe65c982583b1b0a0077e68f805530798cfdef597c0074ef4196ed"
+        },
+        {
+          "file": "assets/factory-stories/details/ai-dashboard-review.png",
+          "sha256": "e9f714ef9a27c4543a7859e02a284691274efd27adf1baa92bce7f69dfc1a873"
+        }
+      ],
+      "sha256": "4621ba1d4560fa015fc03bb9754403cb68087c9f0209404215b7cbad7360a280",
+      "bytes": 2936846,
       "width": 720,
       "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 3000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "cd10ce0045c11129e5ddf5cc6a84b0f52d725132e9b784e8e57a35f67b72dd39",
+      "motion_symbols": {
+        "input": "ticket",
+        "output": "dashboard"
+      },
+      "motion_motif": "Four conceptual beats: tickets and agents; inference activity; spend and machine health; evidence and human inspection. Use several parallel card streams and distinct signal pulses, never live-looking numerical telemetry.",
+      "chapters": [
+        "work",
+        "inference",
+        "resources",
+        "review"
+      ],
+      "frames": 480,
+      "duration_ms": 16000,
       "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "taskrivet",
-      "file": "assets/factory-stories/taskrivet.gif",
-      "source_file": "assets/factory-stories/taskrivet.png",
-      "source_sha256": "37c198d781395eea9e800c08c59f5279543883b3a7ee8d1da916965398a6787e",
-      "sha256": "4039fa01b520c5e5e7d082871d00080d951b70682f775a1cb1dc57fa5362de1f",
-      "bytes": 119627,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "panther-intent-capture",
-      "file": "assets/factory-stories/panther-intent-capture.gif",
-      "source_file": "assets/factory-stories/panther-intent-capture.png",
-      "source_sha256": "a533554a4daa357f53cc702c1ef8dba1730de4af80d65a33738c0841cec5088e",
-      "sha256": "2c541bcd1fc08fe73c1740eba7919917cb29feb968742a49d88f7e298effce0b",
-      "bytes": 123164,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "el-hidratador",
-      "file": "assets/factory-stories/el-hidratador.gif",
-      "source_file": "assets/factory-stories/el-hidratador.png",
-      "source_sha256": "3e2c7f5f9d6ca3fbeebdfda87d02e71aae6b3c835d4164aaf4c91e21bc8bb64c",
-      "sha256": "fefcb770acf750ab0215e68dfc54443c9703fa09f6e9fa30e168befd9d061cce",
-      "bytes": 121830,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "fluxrecord",
-      "file": "assets/factory-stories/fluxrecord.gif",
-      "source_file": "assets/factory-stories/fluxrecord.png",
-      "source_sha256": "e80fab04d88be1c75db5c0b364215f90f2cb5cbffb5ee8e2ade8f72d18b3d22a",
-      "sha256": "d173a64ac85712bafdd892ea12d1388b30d06f59996fc382640d1119d4f38803",
-      "bytes": 126476,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "el-verificador",
-      "file": "assets/factory-stories/el-verificador.gif",
-      "source_file": "assets/factory-stories/el-verificador.png",
-      "source_sha256": "254ec068570a5e7cc503150923fd1bf749c7595294d3e259cbd2f2dc80fda7e6",
-      "sha256": "471138ea8a8849783a5e38b1d1d7347c1746e89f29e75f529fd985d2bc59a376",
-      "bytes": 117007,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "the-chronicler",
-      "file": "assets/factory-stories/the-chronicler.gif",
-      "source_file": "assets/factory-stories/the-chronicler.png",
-      "source_sha256": "9767e3c7ca1e1b63c336be8182793392b7a84fa2e51f9079f13858eef7525c38",
-      "sha256": "65a2559564fee0981e5e95cf77109ee390e7c3895295fbb2905793d0475e3d13",
-      "bytes": 122168,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "meter-mouse-garden",
-      "file": "assets/factory-stories/meter-mouse-garden.gif",
-      "source_file": "assets/factory-stories/meter-mouse-garden.png",
-      "source_sha256": "f7754a851c0ab86c6bfb2daf46791b0986877de8a2b7d19bbfc10d3ec5cc8b3a",
-      "sha256": "45645fff33e08fa3baacb1f9ddec96cad0c87a8a763ad3c3a62cb87d59eb307f",
-      "bytes": 157233,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "mockmill",
-      "file": "assets/factory-stories/mockmill.gif",
-      "source_file": "assets/factory-stories/mockmill.png",
-      "source_sha256": "ed2d9338412b7713fb49563cd8f9805c691b349278cc25241898dc9a4951c98a",
-      "sha256": "60ae0999fc243330720d9c37c1137ab4013af4ca11d274728e070f7228467d95",
-      "bytes": 122216,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "agent-recovery-bench",
-      "file": "assets/factory-stories/agent-recovery-bench.gif",
-      "source_file": "assets/factory-stories/agent-recovery-bench.png",
-      "source_sha256": "970bfdf9aabb855ea660c7c4387f1517b7d818427d7bbecacdf33a36db0c9351",
-      "sha256": "a39c88d6b30d39782e348ac6ebe2fa7d7424997607b6c1384f71cd28c509d9f8",
-      "bytes": 120510,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "blessed-edge-deployment",
-      "file": "assets/factory-stories/blessed-edge-deployment.gif",
-      "source_file": "assets/factory-stories/blessed-edge-deployment.png",
-      "source_sha256": "1c20bf92f6ccae59f41f2345bd7d18a15d71e30029ff34b4f16ba141c5cf0ece",
-      "sha256": "c995cc7a9dd9ff8478d922721720cb99bf3d3a2a04ddacba930196173b6ab209",
-      "bytes": 116420,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "bumperfort",
-      "file": "assets/factory-stories/bumperfort.gif",
-      "source_file": "assets/factory-stories/bumperfort.png",
-      "source_sha256": "74a08169bf5b432821c1d06b4620f0e9a578fe549ab4efea4406125ecb8bb52f",
-      "sha256": "fc7b41a2c698d98c4b147da83e35a43190f73bcf47f55f2fb9d79c344516dccf",
-      "bytes": 100664,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "cloudteams-extension-studio",
-      "file": "assets/factory-stories/cloudteams-extension-studio.gif",
-      "source_file": "assets/factory-stories/cloudteams-extension-studio.png",
-      "source_sha256": "c6f91d98c249c84b2c9e492493cffcc476cb2636c996def54bb9af3701969ba6",
-      "sha256": "5354c6828320444d55fb4a449b78c1e783abb3cb74f06d70607555db72da8fe6",
-      "bytes": 118085,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "cloudteams-lunch-break",
-      "file": "assets/factory-stories/cloudteams-lunch-break.gif",
-      "source_file": "assets/factory-stories/cloudteams-lunch-break.png",
-      "source_sha256": "0e2c44a62decd8df2e3222fae2dc9ab79a36e2c7f16c9d9f8623e44c2972b4cd",
-      "sha256": "6660c453d4bd66fe43236523b99b17f13cd1a61ee4e5f6e9afb7bf5f1f9d161b",
-      "bytes": 115769,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "cloudteams-plot-twist",
-      "file": "assets/factory-stories/cloudteams-plot-twist.gif",
-      "source_file": "assets/factory-stories/cloudteams-plot-twist.png",
-      "source_sha256": "6f8f5a04691f1cb5cb3eb506cb10a903ab2b1033632c89b312d23f892fa30521",
-      "sha256": "9a215f2d3edfb23ba180bf16ed7d1bedc98cf5acea47d08232c54bcaef40420e",
-      "bytes": 125865,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
+      "unique_decoded_frames": 480,
+      "moving_frame_transitions": 479,
+      "changed_motion_pixels": 3391055,
+      "motion_region_changed_pixels": {
+        "input": 694755,
+        "processing": 175335,
+        "output": 904308,
+        "conveyor": 294493
+      },
+      "protected_labels_static": false,
+      "protected_artwork_bands": [],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
     },
     {
       "name": "cofoundry",
       "file": "assets/factory-stories/cofoundry.gif",
       "source_file": "assets/factory-stories/cofoundry.png",
       "source_sha256": "8501209208e499073dee1e74936d1afc7b707e8f082363afe2ba1ed24f64938e",
-      "sha256": "478e2a8bc4e492c0ad8a91176a80aa0acd7807f6416b67fbe09bcf4f7cea86be",
-      "bytes": 106509,
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/cofoundry.png",
+          "sha256": "8501209208e499073dee1e74936d1afc7b707e8f082363afe2ba1ed24f64938e"
+        }
+      ],
+      "sha256": "f809ef3dbd0a9bafa9cb71a9b0a6b9b2940e96f40cc695886eaecfc368d5212c",
+      "bytes": 940467,
       "width": 720,
       "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
+      "fps": 30,
+      "palette_colors": 80,
       "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "8eb39e1f276eacbe01c194ffd3bb3a86d2338f8bf90d291ff447e49eb32888be",
+      "motion_symbols": {
+        "input": "job",
+        "output": "receipt"
+      },
+      "motion_motif": "Job cards approach a supervisor station while readiness lights scan; a control record waits for a person rather than implying autonomous approval.",
+      "chapters": [],
+      "frames": 180,
       "duration_ms": 6000,
       "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 835198,
+      "motion_region_changed_pixels": {
+        "input": 242619,
+        "processing": 36770,
+        "output": 335456,
+        "conveyor": 98737
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
     },
     {
-      "name": "counterfactory",
-      "file": "assets/factory-stories/counterfactory.gif",
-      "source_file": "assets/factory-stories/counterfactory.png",
-      "source_sha256": "f8c949a11fa47400eb395f5207ea81d47d8b19b393769cca6823c82e86633261",
-      "sha256": "06ad310f52be81a77be245c5beea6aa2d78077c16cdcdab9a516bdd55216156c",
-      "bytes": 106289,
+      "name": "panther-intent-capture",
+      "file": "assets/factory-stories/panther-intent-capture.gif",
+      "source_file": "assets/factory-stories/panther-intent-capture.png",
+      "source_sha256": "a533554a4daa357f53cc702c1ef8dba1730de4af80d65a33738c0841cec5088e",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/panther-intent-capture.png",
+          "sha256": "a533554a4daa357f53cc702c1ef8dba1730de4af80d65a33738c0841cec5088e"
+        }
+      ],
+      "sha256": "af26807d3f2eb191c4d8c90bfbcc46ecbf6943559bdecc43709d46ed07482578",
+      "bytes": 967006,
       "width": 720,
       "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
+      "fps": 30,
+      "palette_colors": 80,
       "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "81a27999a8868cc8d26df2a6e202c7d3c96ee6fc98281f57ce83a7d9d22a5bdf",
+      "motion_symbols": {
+        "input": "browser",
+        "output": "ticket"
+      },
+      "motion_motif": "Cursor selects a short path; chosen event chips travel into a draft ticket. Pause at review before the request exits; no implementation animation.",
+      "chapters": [],
+      "frames": 180,
       "duration_ms": 6000,
       "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "edgerecord",
-      "file": "assets/factory-stories/edgerecord.gif",
-      "source_file": "assets/factory-stories/edgerecord.png",
-      "source_sha256": "4f328ebea85e28ca7725af0b072e95a6f5f001fe56d243cfac3ab4b718c1454d",
-      "sha256": "3bda57c4536b65038aa342e047d1fc408bcc2f8ca19145e4c50efcc06ca67cf1",
-      "bytes": 110217,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "edgerecord-ai",
-      "file": "assets/factory-stories/edgerecord-ai.gif",
-      "source_file": "assets/factory-stories/edgerecord-ai.png",
-      "source_sha256": "c9ec6b0fe1ea74a7a32a73996a8b31e215beab05f60de61f5513194ee27600a2",
-      "sha256": "d2db6b390422c587769359b5345908dc8942cbb5257038d0c2b933f02e719998",
-      "bytes": 119548,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "edgerecord-com",
-      "file": "assets/factory-stories/edgerecord-com.gif",
-      "source_file": "assets/factory-stories/edgerecord-com.png",
-      "source_sha256": "3b46a696f54ab1ee988f639093534985ebc456a4f9ac17342b887a60eddd21a3",
-      "sha256": "b854c3ed6944452e060ac1a78e22ac4a3ecf1a904e59394f7544f7b5c176b60a",
-      "bytes": 123806,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "edgerecord-core",
-      "file": "assets/factory-stories/edgerecord-core.gif",
-      "source_file": "assets/factory-stories/edgerecord-core.png",
-      "source_sha256": "2c28e12ad19de43536fc4a0c194fe7251c78d039fcd2a190ec60698fb1071902",
-      "sha256": "1e612443097b35cd6bd5e52346f257a0fecb96d1c06dea008a31475be1ab3b8d",
-      "bytes": 109736,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "edgerecord-era",
-      "file": "assets/factory-stories/edgerecord-era.gif",
-      "source_file": "assets/factory-stories/edgerecord-era.png",
-      "source_sha256": "390a20e4e504326d84f13e02f8911014c101e85701627c3da71cbe2d535bc4aa",
-      "sha256": "07725bc0e066aae03a3c15a26580f5349be6d9b9287dc4ed506e7db7a9b3fee6",
-      "bytes": 117004,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "edgerecord-publisher",
-      "file": "assets/factory-stories/edgerecord-publisher.gif",
-      "source_file": "assets/factory-stories/edgerecord-publisher.png",
-      "source_sha256": "95d0a68188fae53147e3392349326a3ab912827f584d48baffd42df96415401b",
-      "sha256": "b3341c980f7a32b15b89c4b0d350633fe65378ab7b3ed7d7ebd4f6f23bd4776e",
-      "bytes": 105371,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "hamanakam1",
-      "file": "assets/factory-stories/hamanakam1.gif",
-      "source_file": "assets/factory-stories/hamanakam1.png",
-      "source_sha256": "14bc4278a3240c5a81dc330d93020b60df938f77b3fe71bdf3e734abb3d8f248",
-      "sha256": "cda8d77a6343fb7a1602e69444ba90e913391b18d785fa233cc57019151be8cf",
-      "bytes": 117985,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "hamanakam1.github.io",
-      "file": "assets/factory-stories/hamanakam1.github.io.gif",
-      "source_file": "assets/factory-stories/hamanakam1.github.io.png",
-      "source_sha256": "302ac478e549036fd614eb827e6e06928473b6e57fb4c90c272c99d4b3ff52c0",
-      "sha256": "e443183822ad13e2287f78ce6c01cc44f0f08292da9897989ce65f007d7b738d",
-      "bytes": 122246,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "horizon-broker",
-      "file": "assets/factory-stories/horizon-broker.gif",
-      "source_file": "assets/factory-stories/horizon-broker.png",
-      "source_sha256": "b34a8b031c085c71aed408c17a67404e1bd5792c06365e03c527c41ec80e3183",
-      "sha256": "212abd5b1e17cec614590865c02042033d9a696972f9dc3193131a886672ceaa",
-      "bytes": 98424,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "lineasflow",
-      "file": "assets/factory-stories/lineasflow.gif",
-      "source_file": "assets/factory-stories/lineasflow.png",
-      "source_sha256": "6b447a738ecbbe5c5aed63588cf538c278a08ce2711f8700109aecb6634230b8",
-      "sha256": "6b5509f38e83fa43bb661590c8a3892973a1cdfded007c00fdd91f9cf011c7f4",
-      "bytes": 127001,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "murmuration",
-      "file": "assets/factory-stories/murmuration.gif",
-      "source_file": "assets/factory-stories/murmuration.png",
-      "source_sha256": "d6aac69cff710dc92f563d19fe32f6937903de64cea7c07fbd3903e360c70e69",
-      "sha256": "158afc31b3fa853b21ce5a61cfec98c1bb17d35e985b85d1a2804c1a6e7d4a1a",
-      "bytes": 116673,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "muse-connector-tools",
-      "file": "assets/factory-stories/muse-connector-tools.gif",
-      "source_file": "assets/factory-stories/muse-connector-tools.png",
-      "source_sha256": "6f515afe7a1c799505bee70fffd374f03b122c75de522ecfafb63bf2c07347fd",
-      "sha256": "ec37dd65ea73c4632fad59e72de4c852cefc97d3905f194b4a2246e39dc18d81",
-      "bytes": 110648,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "onramp-synthetic-company",
-      "file": "assets/factory-stories/onramp-synthetic-company.gif",
-      "source_file": "assets/factory-stories/onramp-synthetic-company.png",
-      "source_sha256": "a81e115ccdf576417a83602dbe29e77f6cc865a84c90fba25a5a1dfae0a8c746",
-      "sha256": "35306c3f6d22e74bf624fddc9fa1968e763af7ee9b6d93aa1b970e16efc4e20b",
-      "bytes": 122957,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "osprey",
-      "file": "assets/factory-stories/osprey.gif",
-      "source_file": "assets/factory-stories/osprey.png",
-      "source_sha256": "eff52c70fb26460f76dac31e1b3f8b576f7320e7351145f9c5c5e68d03966952",
-      "sha256": "debe338731f8305f615a32683f79fbe9060e7bcb37ecd6318a312d2933191620",
-      "bytes": 112001,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 832877,
+      "motion_region_changed_pixels": {
+        "input": 310786,
+        "processing": 37035,
+        "output": 244374,
+        "conveyor": 96692
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
     },
     {
       "name": "panther-companion",
       "file": "assets/factory-stories/panther-companion.gif",
       "source_file": "assets/factory-stories/panther-companion.png",
       "source_sha256": "82970bbe37d84802fa82d95cba8cf58fcb963650d34cfba3433b6d1d9446621e",
-      "sha256": "4ed92089d7670b4b0c5592e104243b51dfe4585f2df167baba3d1b2df728b2aa",
-      "bytes": 109968,
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/panther-companion.png",
+          "sha256": "82970bbe37d84802fa82d95cba8cf58fcb963650d34cfba3433b6d1d9446621e"
+        }
+      ],
+      "sha256": "c498d17f6f40c6d15f8606244864e270d973082e6e2eac02ece3fe21c7ab70f5",
+      "bytes": 971508,
       "width": 720,
       "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
+      "fps": 30,
+      "palette_colors": 64,
       "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "a4dedaa66a0f882d60e3ea5d3ef2d2a900e3b4932c178909c4bb850ad289d864",
+      "motion_symbols": {
+        "input": "evidence",
+        "output": "explanation"
+      },
+      "motion_motif": "Evidence fragments settle around one goal; one explanation card unfolds, retaining small source attachments.",
+      "chapters": [],
+      "frames": 180,
       "duration_ms": 6000,
       "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 912477,
+      "motion_region_changed_pixels": {
+        "input": 307795,
+        "processing": 34367,
+        "output": 331369,
+        "conveyor": 101144
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "muse-connector-tools",
+      "file": "assets/factory-stories/muse-connector-tools.gif",
+      "source_file": "assets/factory-stories/muse-connector-tools.png",
+      "source_sha256": "6f515afe7a1c799505bee70fffd374f03b122c75de522ecfafb63bf2c07347fd",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/muse-connector-tools.png",
+          "sha256": "6f515afe7a1c799505bee70fffd374f03b122c75de522ecfafb63bf2c07347fd"
+        }
+      ],
+      "sha256": "61057af25e00a9abdb678411b95104f2156da4e6cc2c76250ade8ad432b04308",
+      "bytes": 816758,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "97ea06c57cd431a3fea504154e70cb8fb3a0b63475bd65a806509c7d9f9e01bc",
+      "motion_symbols": {
+        "input": "conversation",
+        "output": "bookmark"
+      },
+      "motion_motif": "A conversation card passes through generic host-tool blocks; a bookmark lands on the retained record for resumption.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 648265,
+      "motion_region_changed_pixels": {
+        "input": 207301,
+        "processing": 32924,
+        "output": 206701,
+        "conveyor": 85228
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "el-hidratador",
+      "file": "assets/factory-stories/el-hidratador.gif",
+      "source_file": "assets/factory-stories/el-hidratador.png",
+      "source_sha256": "3e2c7f5f9d6ca3fbeebdfda87d02e71aae6b3c835d4164aaf4c91e21bc8bb64c",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/el-hidratador.png",
+          "sha256": "3e2c7f5f9d6ca3fbeebdfda87d02e71aae6b3c835d4164aaf4c91e21bc8bb64c"
+        }
+      ],
+      "sha256": "3836677b76c5034f3871871950347acff71d51d35fb2ec35d9ba9ce0fa088104",
+      "bytes": 887119,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "2cf5530fa5938029d702298e021917c901ca3e3a8ae3e8a86a4e745f24141347",
+      "motion_symbols": {
+        "input": "ticket",
+        "output": "packet"
+      },
+      "motion_motif": "A short card unfolds into source sheets, scope dividers and a bounded packet; scope bands close around the packet before it advances.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 734578,
+      "motion_region_changed_pixels": {
+        "input": 241455,
+        "processing": 38142,
+        "output": 247787,
+        "conveyor": 84584
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "taskrivet",
+      "file": "assets/factory-stories/taskrivet.gif",
+      "source_file": "assets/factory-stories/taskrivet.png",
+      "source_sha256": "37c198d781395eea9e800c08c59f5279543883b3a7ee8d1da916965398a6787e",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/taskrivet.png",
+          "sha256": "37c198d781395eea9e800c08c59f5279543883b3a7ee8d1da916965398a6787e"
+        }
+      ],
+      "sha256": "f92f9c00fe9420bb03ee0a52436a5a1ff2fdf7bb99ed5be8ebd202295ac3eeeb",
+      "bytes": 975232,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "870fdf62d89283b8ddf747e59f51004fafdb63088fba65c08d8919028a4da412",
+      "motion_symbols": {
+        "input": "terminal",
+        "output": "evidence"
+      },
+      "motion_motif": "Terminal cursors pulse across several persistent panes while task/context cards remain attached; progress and failure slips collect for human review.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 845731,
+      "motion_region_changed_pixels": {
+        "input": 249389,
+        "processing": 39089,
+        "output": 332099,
+        "conveyor": 91643
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "osprey",
+      "file": "assets/factory-stories/osprey.gif",
+      "source_file": "assets/factory-stories/osprey.png",
+      "source_sha256": "eff52c70fb26460f76dac31e1b3f8b576f7320e7351145f9c5c5e68d03966952",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/osprey.png",
+          "sha256": "eff52c70fb26460f76dac31e1b3f8b576f7320e7351145f9c5c5e68d03966952"
+        }
+      ],
+      "sha256": "dbe32ecaec81c228d87d500097a2896c9e35a7baaceaa31d564041cc92fd1997",
+      "bytes": 950896,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "40e8d4b61333cb7cd2b8629c909e339fe9a5494b3b5a9b5bda4bc0336bef6b37",
+      "motion_symbols": {
+        "input": "terminal",
+        "output": "checkpoint"
+      },
+      "motion_motif": "Chosen strips move through a redaction bar sweep, then assemble into a proposal waiting beside an approval control.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 819098,
+      "motion_region_changed_pixels": {
+        "input": 237529,
+        "processing": 37672,
+        "output": 320436,
+        "conveyor": 96465
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "fluxrecord",
+      "file": "assets/factory-stories/fluxrecord.gif",
+      "source_file": "assets/factory-stories/fluxrecord.png",
+      "source_sha256": "e80fab04d88be1c75db5c0b364215f90f2cb5cbffb5ee8e2ade8f72d18b3d22a",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/fluxrecord.png",
+          "sha256": "e80fab04d88be1c75db5c0b364215f90f2cb5cbffb5ee8e2ade8f72d18b3d22a"
+        }
+      ],
+      "sha256": "77b7e271dc99c80dd629d06808bbe86b361d5eb66af7dba5dcd0ace663d32095",
+      "bytes": 979701,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "91a94c6b869cc55c5f9c48e519ca3310af0ed6a05984a96ffa42a941084b8711",
+      "motion_symbols": {
+        "input": "ticket",
+        "output": "ledger"
+      },
+      "motion_motif": "A task gains scope, ownership and checkpoint slips; it visibly waits at review, with a separate human-decision motion before an accepted record appears.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 833638,
+      "motion_region_changed_pixels": {
+        "input": 246549,
+        "processing": 37576,
+        "output": 333952,
+        "conveyor": 95376
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "el-verificador",
+      "file": "assets/factory-stories/el-verificador.gif",
+      "source_file": "assets/factory-stories/el-verificador.png",
+      "source_sha256": "254ec068570a5e7cc503150923fd1bf749c7595294d3e259cbd2f2dc80fda7e6",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/el-verificador.png",
+          "sha256": "254ec068570a5e7cc503150923fd1bf749c7595294d3e259cbd2f2dc80fda7e6"
+        }
+      ],
+      "sha256": "9df71243bc597f6e39fb2d5748e63d98f7a8657a0ddc030eeb5c6ee260aa1d40",
+      "bytes": 982509,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "c973c9c52c0b1d202e4ac9bb536dfc452373e7405b75f48ff0a9f67fa7b3ca26",
+      "motion_symbols": {
+        "input": "code",
+        "output": "verdict"
+      },
+      "motion_motif": "An independent magnifier scans both change and criteria; a correction ribbon can return the parcel. Do not connect the external pipeline or show a production release.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 848493,
+      "motion_region_changed_pixels": {
+        "input": 278072,
+        "processing": 36436,
+        "output": 313068,
+        "conveyor": 98029
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "counterfactory",
+      "file": "assets/factory-stories/counterfactory.gif",
+      "source_file": "assets/factory-stories/counterfactory.png",
+      "source_sha256": "f8c949a11fa47400eb395f5207ea81d47d8b19b393769cca6823c82e86633261",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/counterfactory.png",
+          "sha256": "f8c949a11fa47400eb395f5207ea81d47d8b19b393769cca6823c82e86633261"
+        }
+      ],
+      "sha256": "456cbf05b879fa19ca398c99fbc0a2a9d0b0e8e74edd2e0e4116e2e620ff9eb6",
+      "bytes": 946005,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 64,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "13142aa7ae5ed9739e71a11221a90b8871cc37014b984d389a458f78319d3867",
+      "motion_symbols": {
+        "input": "rules",
+        "output": "trace"
+      },
+      "motion_motif": "A reply token disappears between two worker paths; duplicate-action tokens diverge into a visible trace, followed by a separately labeled corrected-model path.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 916835,
+      "motion_region_changed_pixels": {
+        "input": 304908,
+        "processing": 37243,
+        "output": 336379,
+        "conveyor": 104194
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "agent-recovery-bench",
+      "file": "assets/factory-stories/agent-recovery-bench.gif",
+      "source_file": "assets/factory-stories/agent-recovery-bench.png",
+      "source_sha256": "970bfdf9aabb855ea660c7c4387f1517b7d818427d7bbecacdf33a36db0c9351",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/agent-recovery-bench.png",
+          "sha256": "970bfdf9aabb855ea660c7c4387f1517b7d818427d7bbecacdf33a36db0c9351"
+        }
+      ],
+      "sha256": "0921bc143e8e8f750785ceb6fc6135902d329208bc349a8aa3ecfdac175f6af7",
+      "bytes": 990583,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "405050881f550897884ba88bce7a562df98fdbba7384648d743896df2aaee049",
+      "motion_symbols": {
+        "input": "scenario",
+        "output": "observation"
+      },
+      "motion_motif": "A simulated task pauses, resumes on the exercise bench and leaves observation notes; keep the scene an offline recovery rehearsal.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 854016,
+      "motion_region_changed_pixels": {
+        "input": 246929,
+        "processing": 36897,
+        "output": 351760,
+        "conveyor": 99334
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
     },
     {
       "name": "reality-boundary-standard",
       "file": "assets/factory-stories/reality-boundary-standard.gif",
       "source_file": "assets/factory-stories/reality-boundary-standard.png",
       "source_sha256": "558ca8f2f0ecfee16e52bc6c553ff9341b5b0f53b52765b4c269a98c96983073",
-      "sha256": "5ab13f827a9f03a371e0b7d09e08ffa980a72aae06d72596ef8d7eee77ea7598",
-      "bytes": 103129,
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/reality-boundary-standard.png",
+          "sha256": "558ca8f2f0ecfee16e52bc6c553ff9341b5b0f53b52765b4c269a98c96983073"
+        }
+      ],
+      "sha256": "0fcf3e003b5ad8b13244a60742475863c93b78a501481eeced8237481ab5b415",
+      "bytes": 980220,
       "width": 720,
       "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
+      "fps": 30,
+      "palette_colors": 64,
       "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "2d7d6cc81a7931e0c86a3845b666747ed42046227b2d240e9beff533a1d144f1",
+      "motion_symbols": {
+        "input": "claim",
+        "output": "record"
+      },
+      "motion_motif": "A claim card passes through scope and limitation brackets; evidence stays attached as a precise reviewed statement emerges.",
+      "chapters": [],
+      "frames": 180,
       "duration_ms": 6000,
       "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 912351,
+      "motion_region_changed_pixels": {
+        "input": 302130,
+        "processing": 36814,
+        "output": 336610,
+        "conveyor": 106055
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
     },
     {
-      "name": "scratch-kitchen",
-      "file": "assets/factory-stories/scratch-kitchen.gif",
-      "source_file": "assets/factory-stories/scratch-kitchen.png",
-      "source_sha256": "fc3f14f17420dd0e8f6abf31caafa0f8e910fa1c2f539da45d9381f7ec38f645",
-      "sha256": "4841f279fddbf7795bb55d8e38598347b6b8e7bebbdb382fd3b9e769f43f9c62",
-      "bytes": 124034,
+      "name": "the-chronicler",
+      "file": "assets/factory-stories/the-chronicler.gif",
+      "source_file": "assets/factory-stories/the-chronicler.png",
+      "source_sha256": "9767e3c7ca1e1b63c336be8182793392b7a84fa2e51f9079f13858eef7525c38",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/the-chronicler.png",
+          "sha256": "9767e3c7ca1e1b63c336be8182793392b7a84fa2e51f9079f13858eef7525c38"
+        }
+      ],
+      "sha256": "e8d2280a321cfafe0976420d199ed5fcc49170379c315a85c806866f3898164c",
+      "bytes": 943248,
       "width": 720,
       "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
+      "fps": 30,
+      "palette_colors": 48,
       "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "1420281a95ea569061f50f19ae6f79c45c4ce774ab32745334e0383424e5656c",
+      "motion_symbols": {
+        "input": "failure",
+        "output": "lesson"
+      },
+      "motion_motif": "Repeated failure marks group together, a lesson draft forms, and a review marker precedes a reusable rule/document page. No automatic truth or live integration claim.",
+      "chapters": [],
+      "frames": 180,
       "duration_ms": 6000,
       "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 890676,
+      "motion_region_changed_pixels": {
+        "input": 295989,
+        "processing": 36400,
+        "output": 328402,
+        "conveyor": 104007
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "mockmill",
+      "file": "assets/factory-stories/mockmill.gif",
+      "source_file": "assets/factory-stories/mockmill.png",
+      "source_sha256": "ed2d9338412b7713fb49563cd8f9805c691b349278cc25241898dc9a4951c98a",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/mockmill.png",
+          "sha256": "ed2d9338412b7713fb49563cd8f9805c691b349278cc25241898dc9a4951c98a"
+        }
+      ],
+      "sha256": "437f7073c9954ed12ec8701d917f8c6a230de03ed6f86a68b0a4776b3ffc4f8a",
+      "bytes": 853188,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "fb9cd72f51e986f799a64ff3f0f796a2efe7ae0be3ff0960e42a42a174f0eb16",
+      "motion_symbols": {
+        "input": "seed",
+        "output": "records"
+      },
+      "motion_motif": "Seed token turns a small data mill; account, project and invoice cards emerge with relationship lines and move into offline export trays.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 630986,
+      "motion_region_changed_pixels": {
+        "input": 92795,
+        "processing": 43124,
+        "output": 339595,
+        "conveyor": 71996
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
     },
     {
       "name": "storyfoundry-public-fixture",
       "file": "assets/factory-stories/storyfoundry-public-fixture.gif",
       "source_file": "assets/factory-stories/storyfoundry-public-fixture.png",
       "source_sha256": "1bfac229aa705b89173216f77c24a1ee3d04aeca8403a7d39808e82dace1abd6",
-      "sha256": "ad5cd65c281a34ba1e6ed305cebab07ec08040f478293d5290a72c003d9ce0bd",
-      "bytes": 115568,
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/storyfoundry-public-fixture.png",
+          "sha256": "1bfac229aa705b89173216f77c24a1ee3d04aeca8403a7d39808e82dace1abd6"
+        }
+      ],
+      "sha256": "cf3a54fa1e804fe70131cdd5c0b5333e9dd649726828b43292b4138a4b35dc77",
+      "bytes": 983401,
       "width": 720,
       "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
+      "fps": 30,
+      "palette_colors": 80,
       "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "d1f22710946798a4320003a66d09845ad0170343c461e56181802748afc55bec",
+      "motion_symbols": {
+        "input": "scenario",
+        "output": "records"
+      },
+      "motion_motif": "Fictional scenario cards branch into linked business records; a validation checklist scans them before an offline training tray.",
+      "chapters": [],
+      "frames": 180,
       "duration_ms": 6000,
       "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "the-surveyor",
-      "file": "assets/factory-stories/the-surveyor.gif",
-      "source_file": "assets/factory-stories/the-surveyor.png",
-      "source_sha256": "47d6de3cb4aeae6bae185cbdf07159ee6de8fa506a9076c1a8090f5f9b35434f",
-      "sha256": "1a7c7467d9500dfa84f7259c30fd7ba4b8d7f52a16e1148c8d64729089699f4a",
-      "bytes": 118299,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "the-tower",
-      "file": "assets/factory-stories/the-tower.gif",
-      "source_file": "assets/factory-stories/the-tower.png",
-      "source_sha256": "101f252a2bc729e32987357c859e7a7d438aab81ae4d8367570f250c00d83d0b",
-      "sha256": "88abf4f4df33ef634d9b555d6b418b06c057407abd3c6a483fe7a0bdab1ad182",
-      "bytes": 118551,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
-    },
-    {
-      "name": "VortexMesh",
-      "file": "assets/factory-stories/VortexMesh.gif",
-      "source_file": "assets/factory-stories/VortexMesh.png",
-      "source_sha256": "08fdbf922640092a761676b1560e50c23898b888c5040bf4e4196f0e24e36ac5",
-      "sha256": "c43396fab0e7405244bf0475f76793565f2ca003de59abdcb078a384107fdce0",
-      "bytes": 108967,
-      "width": 720,
-      "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
-      "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
-      "duration_ms": 6000,
-      "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 823762,
+      "motion_region_changed_pixels": {
+        "input": 236455,
+        "processing": 35995,
+        "output": 336352,
+        "conveyor": 95441
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
     },
     {
       "name": "vs-platform-synthetic-fleet",
       "file": "assets/factory-stories/vs-platform-synthetic-fleet.gif",
       "source_file": "assets/factory-stories/vs-platform-synthetic-fleet.png",
       "source_sha256": "32684d3e627665740d7b676fa97e50ed45c6b76e64a4016e9a82abf081aca5a9",
-      "sha256": "691031a110830bdccf2dc26e9ac6d62bab1cd08517cc79bba09577098595e0aa",
-      "bytes": 123445,
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/vs-platform-synthetic-fleet.png",
+          "sha256": "32684d3e627665740d7b676fa97e50ed45c6b76e64a4016e9a82abf081aca5a9"
+        }
+      ],
+      "sha256": "8642b0adb57b2e3dda937ad3047377d9c466960eb0324cda1b5ea8c1d858258e",
+      "bytes": 998118,
       "width": 720,
       "height": 459,
-      "fps": 10,
-      "palette_colors": 96,
+      "fps": 30,
+      "palette_colors": 80,
       "size_limit_bytes": 1000000,
-      "recipe": "conveyor-v1-enter-hold-input-process-output-exit-720x459-10fps-6s",
-      "recipe_sha256": "375ce2017d5a45488247074e5c59b3d126ad0353b9c92364574a8e9c6493a82d",
-      "frames": 60,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "f6517eebf5abc9b5a4056c36d017ed688a7a4475e4a5641c93ff4b6d2e5e4ca9",
+      "motion_symbols": {
+        "input": "node",
+        "output": "observation"
+      },
+      "motion_motif": "Small simulated nodes exchange message chips across a test bench; observed scenario notes collect separately from any real fleet.",
+      "chapters": [],
+      "frames": 180,
       "duration_ms": 6000,
       "loop": 0,
-      "unique_decoded_frames": 34,
-      "moving_frame_transitions": 34,
-      "changed_motion_pixels": 38646,
-      "artwork_region_static": true
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 738813,
+      "motion_region_changed_pixels": {
+        "input": 163301,
+        "processing": 52422,
+        "output": 342810,
+        "conveyor": 86861
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "the-surveyor",
+      "file": "assets/factory-stories/the-surveyor.gif",
+      "source_file": "assets/factory-stories/the-surveyor.png",
+      "source_sha256": "47d6de3cb4aeae6bae185cbdf07159ee6de8fa506a9076c1a8090f5f9b35434f",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/the-surveyor.png",
+          "sha256": "47d6de3cb4aeae6bae185cbdf07159ee6de8fa506a9076c1a8090f5f9b35434f"
+        }
+      ],
+      "sha256": "e44368fce994f9177c042fd36f2b5f507a4dd3abe33c5fa3981a146259ece6de",
+      "bytes": 881407,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "6e9aa756cfb8d8f036e39e112ac6cbbf5f8a718f3de085e37dfa514103e85c56",
+      "motion_symbols": {
+        "input": "scan",
+        "output": "topology"
+      },
+      "motion_motif": "A survey beam scans one machine stack; old and current map cards slide together and a changed connection is highlighted.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 573213,
+      "motion_region_changed_pixels": {
+        "input": 152985,
+        "processing": 54283,
+        "output": 202041,
+        "conveyor": 75363
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "the-tower",
+      "file": "assets/factory-stories/the-tower.gif",
+      "source_file": "assets/factory-stories/the-tower.png",
+      "source_sha256": "101f252a2bc729e32987357c859e7a7d438aab81ae4d8367570f250c00d83d0b",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/the-tower.png",
+          "sha256": "101f252a2bc729e32987357c859e7a7d438aab81ae4d8367570f250c00d83d0b"
+        }
+      ],
+      "sha256": "37a45fe9309bd5f7d90cb2536c9da699aeafe23b1c4f80bcf755afde709fe633",
+      "bytes": 905927,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "d1f6660f49e65c8c2ff73d53dc92f57fbbcc133eb909c922953a0a604d34d307",
+      "motion_symbols": {
+        "input": "telemetry",
+        "output": "clearance"
+      },
+      "motion_motif": "A task card approaches the resource board; abstract thermals, memory and power indicators move without fake readings, and an advisory recommendation waits for a person.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 626050,
+      "motion_region_changed_pixels": {
+        "input": 175432,
+        "processing": 53308,
+        "output": 218124,
+        "conveyor": 84696
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "horizon-broker",
+      "file": "assets/factory-stories/horizon-broker.gif",
+      "source_file": "assets/factory-stories/horizon-broker.png",
+      "source_sha256": "b34a8b031c085c71aed408c17a67404e1bd5792c06365e03c527c41ec80e3183",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/horizon-broker.png",
+          "sha256": "b34a8b031c085c71aed408c17a67404e1bd5792c06365e03c527c41ec80e3183"
+        }
+      ],
+      "sha256": "118d5158db328ad97bd0ca8fa3e4ce5aff85b38fca6414fe831a17ec04f1173d",
+      "bytes": 948186,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "0320a9209e877a1b0b28aaf6cf054edcec9f4ab7cb37a82215a261aabdff9d12",
+      "motion_symbols": {
+        "input": "job",
+        "output": "result"
+      },
+      "motion_motif": "Several job parcels advance independently through a queue; one returns as a result and one stops on a recovery shelf, making failure distinct from success.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 818046,
+      "motion_region_changed_pixels": {
+        "input": 235416,
+        "processing": 35843,
+        "output": 325764,
+        "conveyor": 96414
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "bumperfort",
+      "file": "assets/factory-stories/bumperfort.gif",
+      "source_file": "assets/factory-stories/bumperfort.png",
+      "source_sha256": "74a08169bf5b432821c1d06b4620f0e9a578fe549ab4efea4406125ecb8bb52f",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/bumperfort.png",
+          "sha256": "74a08169bf5b432821c1d06b4620f0e9a578fe549ab4efea4406125ecb8bb52f"
+        }
+      ],
+      "sha256": "7b02e01570b97e2e3b676d758de9f7b08543c3fb6dc4962d4779024f592c191a",
+      "bytes": 858334,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "bdc956de798697515042de0208fed5fe48a1ffb1bf69341e515fcf9e18118b68",
+      "motion_symbols": {
+        "input": "vector",
+        "output": "trajectory"
+      },
+      "motion_motif": "Vector tokens bounce through the educational physics chamber; a moving dot traces a reproducible-looking curve without presenting new benchmark claims.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 613038,
+      "motion_region_changed_pixels": {
+        "input": 172869,
+        "processing": 50742,
+        "output": 210899,
+        "conveyor": 84268
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "lineasflow",
+      "file": "assets/factory-stories/lineasflow.gif",
+      "source_file": "assets/factory-stories/lineasflow.png",
+      "source_sha256": "6b447a738ecbbe5c5aed63588cf538c278a08ce2711f8700109aecb6634230b8",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/lineasflow.png",
+          "sha256": "6b447a738ecbbe5c5aed63588cf538c278a08ce2711f8700109aecb6634230b8"
+        }
+      ],
+      "sha256": "b6c4ad06fa032df8c6b7b67e358085ebec3c428f1c6c41c394dbf5ce719c7820",
+      "bytes": 856313,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "108b70ac8d64559cd43e92794adc5e907bd2dea8bdecab221aefcd4b7f461886",
+      "motion_symbols": {
+        "input": "state",
+        "output": "packet"
+      },
+      "motion_motif": "A state tile is sampled and travels as small binary packets to local mesh symbols; no throughput numbers or observed multi-node deployment claim.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 615524,
+      "motion_region_changed_pixels": {
+        "input": 155919,
+        "processing": 38221,
+        "output": 237081,
+        "conveyor": 82224
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "VortexMesh",
+      "file": "assets/factory-stories/VortexMesh.gif",
+      "source_file": "assets/factory-stories/VortexMesh.png",
+      "source_sha256": "08fdbf922640092a761676b1560e50c23898b888c5040bf4e4196f0e24e36ac5",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/VortexMesh.png",
+          "sha256": "08fdbf922640092a761676b1560e50c23898b888c5040bf4e4196f0e24e36ac5"
+        }
+      ],
+      "sha256": "20eb33b0990774649f99b8877c2b079c4e25ae8de728adde5db08efebadc3c41",
+      "bytes": 935839,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "f9c642cd8e4b72193b44df1836574991d40b79b0cd1a02cbd9b0166f4b3c14a1",
+      "motion_symbols": {
+        "input": "envelope",
+        "output": "event-state"
+      },
+      "motion_motif": "Event envelopes visit separate routing, retained-log and reconciliation illustrations; show a broken-link holding shelf and dashed conceptual joins, since no end-to-end daemon exists.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 711588,
+      "motion_region_changed_pixels": {
+        "input": 254764,
+        "processing": 53736,
+        "output": 198102,
+        "conveyor": 92061
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "edgerecord",
+      "file": "assets/factory-stories/edgerecord.gif",
+      "source_file": "assets/factory-stories/edgerecord.png",
+      "source_sha256": "4f328ebea85e28ca7725af0b072e95a6f5f001fe56d243cfac3ab4b718c1454d",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/edgerecord.png",
+          "sha256": "4f328ebea85e28ca7725af0b072e95a6f5f001fe56d243cfac3ab4b718c1454d"
+        }
+      ],
+      "sha256": "042594c121cd298d68d0cdf87c884e17883d23f1e4d74f505e1135149c7e3faa",
+      "bytes": 932062,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "491af4f1b802eba29c8f6bbca010592a7acd4563c8a8fa4dee64facee3960fc1",
+      "motion_symbols": {
+        "input": "evidence",
+        "output": "folder"
+      },
+      "motion_motif": "Evidence pages move to a verification desk, a magnifier scans them, and an organized folder waits for review. Use only the published general role.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 812132,
+      "motion_region_changed_pixels": {
+        "input": 303088,
+        "processing": 38829,
+        "output": 242607,
+        "conveyor": 95174
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "edgerecord-core",
+      "file": "assets/factory-stories/edgerecord-core.gif",
+      "source_file": "assets/factory-stories/edgerecord-core.png",
+      "source_sha256": "2c28e12ad19de43536fc4a0c194fe7251c78d039fcd2a190ec60698fb1071902",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/edgerecord-core.png",
+          "sha256": "2c28e12ad19de43536fc4a0c194fe7251c78d039fcd2a190ec60698fb1071902"
+        }
+      ],
+      "sha256": "ae8c44c28ac0cd233c189a92351e9cc2be48772542b800a258f4a8429e8d95be",
+      "bytes": 940352,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "46944861ef1ae9cd72004e774124e11bf0567aa34e7c6235b45f53d9d8e68638",
+      "motion_symbols": {
+        "input": "state",
+        "output": "verdict"
+      },
+      "motion_motif": "State cards retain their visible sequence as a verification sweep produces a result sheet; do not invent internal formats or cryptographic claims.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 746748,
+      "motion_region_changed_pixels": {
+        "input": 180192,
+        "processing": 37522,
+        "output": 341788,
+        "conveyor": 89698
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "edgerecord-era",
+      "file": "assets/factory-stories/edgerecord-era.gif",
+      "source_file": "assets/factory-stories/edgerecord-era.png",
+      "source_sha256": "390a20e4e504326d84f13e02f8911014c101e85701627c3da71cbe2d535bc4aa",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/edgerecord-era.png",
+          "sha256": "390a20e4e504326d84f13e02f8911014c101e85701627c3da71cbe2d535bc4aa"
+        }
+      ],
+      "sha256": "2fdfb991b09a84de78557a0d17e3f9cb5a969bfd4a5f7a05b1c399cca2f21a66",
+      "bytes": 999899,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "54afe628d371d8d81a6fac1733f1eb68c48101b33769f5a4457b6f71e2e7e8c8",
+      "motion_symbols": {
+        "input": "evidence",
+        "output": "ledger"
+      },
+      "motion_motif": "Evidence slips advance into ordered ledger pages, then a human inspection marker follows the retained sequence.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 897602,
+      "motion_region_changed_pixels": {
+        "input": 299200,
+        "processing": 36332,
+        "output": 328077,
+        "conveyor": 105883
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "edgerecord-ai",
+      "file": "assets/factory-stories/edgerecord-ai.gif",
+      "source_file": "assets/factory-stories/edgerecord-ai.png",
+      "source_sha256": "c9ec6b0fe1ea74a7a32a73996a8b31e215beab05f60de61f5513194ee27600a2",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/edgerecord-ai.png",
+          "sha256": "c9ec6b0fe1ea74a7a32a73996a8b31e215beab05f60de61f5513194ee27600a2"
+        }
+      ],
+      "sha256": "f4ad598da236d3e6b970e30ac66ce532ef6de35f61379ff85a7a79a85d23581f",
+      "bytes": 951027,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "57f3dac11c984d715784c88829e4cc9ccfca8277e746d917d953059be503ccb0",
+      "motion_symbols": {
+        "input": "packet",
+        "output": "handoff"
+      },
+      "motion_motif": "A context packet travels between two conceptual local workstations while a copy is retained as a handoff record; no provider or private protocol is shown.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 816396,
+      "motion_region_changed_pixels": {
+        "input": 244005,
+        "processing": 34557,
+        "output": 327566,
+        "conveyor": 95233
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "edgerecord-com",
+      "file": "assets/factory-stories/edgerecord-com.gif",
+      "source_file": "assets/factory-stories/edgerecord-com.png",
+      "source_sha256": "3b46a696f54ab1ee988f639093534985ebc456a4f9ac17342b887a60eddd21a3",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/edgerecord-com.png",
+          "sha256": "3b46a696f54ab1ee988f639093534985ebc456a4f9ac17342b887a60eddd21a3"
+        }
+      ],
+      "sha256": "b438ff4ee0fb5bce45bfc0f6049f5833e6ff179592672e2076ea03c9a23bcba4",
+      "bytes": 920907,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "7e69ec8e8469adb75a99a1e0c4f56817f2e074c9603a4e4b8fd9119243f94ce1",
+      "motion_symbols": {
+        "input": "folder",
+        "output": "web-shell"
+      },
+      "motion_motif": "Separate folder trays slide into distinct conceptual workspace panels; keep them visually distinct without implying proven tenant-isolation enforcement.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 796728,
+      "motion_region_changed_pixels": {
+        "input": 243186,
+        "processing": 34528,
+        "output": 312860,
+        "conveyor": 89037
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "edgerecord-publisher",
+      "file": "assets/factory-stories/edgerecord-publisher.gif",
+      "source_file": "assets/factory-stories/edgerecord-publisher.png",
+      "source_sha256": "95d0a68188fae53147e3392349326a3ab912827f584d48baffd42df96415401b",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/edgerecord-publisher.png",
+          "sha256": "95d0a68188fae53147e3392349326a3ab912827f584d48baffd42df96415401b"
+        }
+      ],
+      "sha256": "dfbbb786ed8df43a5b1f232b3f2fb11e99fcc196327733a35c6d5df9b7adec35",
+      "bytes": 980635,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 64,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "ff4fe2990587cb68135307a3b8ae56dbfe7adf1696bd41c97e51c8539c8ceb3f",
+      "motion_symbols": {
+        "input": "receipt",
+        "output": "article"
+      },
+      "motion_motif": "A reviewed receipt unfolds into an article preview; a publication control remains a separate human decision. No real send or live publishing action is depicted.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 910189,
+      "motion_region_changed_pixels": {
+        "input": 299196,
+        "processing": 36860,
+        "output": 338688,
+        "conveyor": 105599
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "hamanakam1",
+      "file": "assets/factory-stories/hamanakam1.gif",
+      "source_file": "assets/factory-stories/hamanakam1.png",
+      "source_sha256": "14bc4278a3240c5a81dc330d93020b60df938f77b3fe71bdf3e734abb3d8f248",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/hamanakam1.png",
+          "sha256": "14bc4278a3240c5a81dc330d93020b60df938f77b3fe71bdf3e734abb3d8f248"
+        }
+      ],
+      "sha256": "13691dfe99095c9f8a4190b3a43c3436c191980b085b6dc563a0a9d8b3cb15ed",
+      "bytes": 993253,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "1f316bb74fd3baedcc732b29f291c10c38f199ef06a6a491d13f04ca1737e32e",
+      "motion_symbols": {
+        "input": "project",
+        "output": "contact"
+      },
+      "motion_motif": "Project cards arrange into a short profile; a speech-bubble contact marker lights after the evidence is visible, without invented inquiries.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 918594,
+      "motion_region_changed_pixels": {
+        "input": 302246,
+        "processing": 36308,
+        "output": 341772,
+        "conveyor": 111751
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "hamanakam1.github.io",
+      "file": "assets/factory-stories/hamanakam1.github.io.gif",
+      "source_file": "assets/factory-stories/hamanakam1.github.io.png",
+      "source_sha256": "302ac478e549036fd614eb827e6e06928473b6e57fb4c90c272c99d4b3ff52c0",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/hamanakam1.github.io.png",
+          "sha256": "302ac478e549036fd614eb827e6e06928473b6e57fb4c90c272c99d4b3ff52c0"
+        }
+      ],
+      "sha256": "61c14f4b32dbf75e46ac409f08b151d89edb0c8f2b21edad05391d8ef689e490",
+      "bytes": 956269,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 48,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "7011bcb97e0010678bcde41bc1dfb75dd2891f465842a8e7ccfd895bc5fa156d",
+      "motion_symbols": {
+        "input": "project",
+        "output": "gallery"
+      },
+      "motion_motif": "Cards sort into a gallery while a search lens visits project titles; a contact marker remains visible as a route, not a customer outcome.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 913662,
+      "motion_region_changed_pixels": {
+        "input": 291258,
+        "processing": 37938,
+        "output": 352740,
+        "conveyor": 103634
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "meter-mouse-garden",
+      "file": "assets/factory-stories/meter-mouse-garden.gif",
+      "source_file": "assets/factory-stories/meter-mouse-garden.png",
+      "source_sha256": "f7754a851c0ab86c6bfb2daf46791b0986877de8a2b7d19bbfc10d3ec5cc8b3a",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/meter-mouse-garden.png",
+          "sha256": "f7754a851c0ab86c6bfb2daf46791b0986877de8a2b7d19bbfc10d3ec5cc8b3a"
+        }
+      ],
+      "sha256": "45027b1b05cc01b825abbd136c7503ed9842d2d30c4aa0f6bd0d22911b6d2ed5",
+      "bytes": 977818,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 48,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "0bcd052c1abe8a2ad1719388ddabe4ebf953e0170be73b6f36cdc519cd59bda0",
+      "motion_symbols": {
+        "input": "usage",
+        "output": "gauge"
+      },
+      "motion_motif": "A mouse carries event tokens to a local ledger; sample gauges animate only as a labeled fixture display across a dashed planned-connection gap.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 880488,
+      "motion_region_changed_pixels": {
+        "input": 298082,
+        "processing": 48805,
+        "output": 317750,
+        "conveyor": 86561
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "blessed-edge-deployment",
+      "file": "assets/factory-stories/blessed-edge-deployment.gif",
+      "source_file": "assets/factory-stories/blessed-edge-deployment.png",
+      "source_sha256": "1c20bf92f6ccae59f41f2345bd7d18a15d71e30029ff34b4f16ba141c5cf0ece",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/blessed-edge-deployment.png",
+          "sha256": "1c20bf92f6ccae59f41f2345bd7d18a15d71e30029ff34b4f16ba141c5cf0ece"
+        }
+      ],
+      "sha256": "8977be414ddf65634b78a9b402b17792dfe3a4177919a856cd74a4d4851ae87f",
+      "bytes": 991777,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "24feda2fbda0473bcfa5f24fa3a33f43f47819338f2474aa87fb056e8be2e29b",
+      "motion_symbols": {
+        "input": "hardware",
+        "output": "bundle"
+      },
+      "motion_motif": "Fictional hardware cards move through local-permission review and pack into a demo handoff bundle; show no actual deployed device.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 885223,
+      "motion_region_changed_pixels": {
+        "input": 339064,
+        "processing": 50256,
+        "output": 248812,
+        "conveyor": 99678
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "onramp-synthetic-company",
+      "file": "assets/factory-stories/onramp-synthetic-company.gif",
+      "source_file": "assets/factory-stories/onramp-synthetic-company.png",
+      "source_sha256": "a81e115ccdf576417a83602dbe29e77f6cc865a84c90fba25a5a1dfae0a8c746",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/onramp-synthetic-company.png",
+          "sha256": "a81e115ccdf576417a83602dbe29e77f6cc865a84c90fba25a5a1dfae0a8c746"
+        }
+      ],
+      "sha256": "68b5a35e6367ecffba4db42cc184e3122e5a2d9bfb078f128778ef5685f045e1",
+      "bytes": 992150,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 64,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "641b6c62e99b3e53d6f518d101a380c74f5f4c1da95944d9730a4db8c84113b0",
+      "motion_symbols": {
+        "input": "records",
+        "output": "observation"
+      },
+      "motion_motif": "Fictional records move around a rehearsal board and collect observation notes; keep synthetic markers visible on every record family.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 906837,
+      "motion_region_changed_pixels": {
+        "input": 296677,
+        "processing": 34095,
+        "output": 339155,
+        "conveyor": 107071
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "cloudteams-extension-studio",
+      "file": "assets/factory-stories/cloudteams-extension-studio.gif",
+      "source_file": "assets/factory-stories/cloudteams-extension-studio.png",
+      "source_sha256": "c6f91d98c249c84b2c9e492493cffcc476cb2636c996def54bb9af3701969ba6",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/cloudteams-extension-studio.png",
+          "sha256": "c6f91d98c249c84b2c9e492493cffcc476cb2636c996def54bb9af3701969ba6"
+        }
+      ],
+      "sha256": "79b65920c8d8e3b473cc05286166ee177884e49dbd7def401d38e5855c823e56",
+      "bytes": 922893,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "23e22e656456db0f49506273499a6d8ff79261412a6ba42acedd7227a3f48567",
+      "motion_symbols": {
+        "input": "idea",
+        "output": "plugin"
+      },
+      "motion_motif": "An idea card unfolds onto a browser-local SDK blueprint; proposed extension tiles assemble beside a human-review note.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 775205,
+      "motion_region_changed_pixels": {
+        "input": 194302,
+        "processing": 35275,
+        "output": 333401,
+        "conveyor": 94716
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "cloudteams-lunch-break",
+      "file": "assets/factory-stories/cloudteams-lunch-break.gif",
+      "source_file": "assets/factory-stories/cloudteams-lunch-break.png",
+      "source_sha256": "0e2c44a62decd8df2e3222fae2dc9ab79a36e2c7f16c9d9f8623e44c2972b4cd",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/cloudteams-lunch-break.png",
+          "sha256": "0e2c44a62decd8df2e3222fae2dc9ab79a36e2c7f16c9d9f8623e44c2972b4cd"
+        }
+      ],
+      "sha256": "75c0438238062ad16dbd2d46230a6253d271dcb71404ccc03fc92832f697d1a6",
+      "bytes": 985598,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "150cc86e284f80182ddfc3795c5feb4c818009c7a1add38f19ee37ab1290707e",
+      "motion_symbols": {
+        "input": "planning",
+        "output": "proposal"
+      },
+      "motion_motif": "Fictional planning cards slide into a proposed arrangement; one gesture-plan card emerges and waits at review. Do not invent real client data.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 896007,
+      "motion_region_changed_pixels": {
+        "input": 300086,
+        "processing": 37104,
+        "output": 327608,
+        "conveyor": 101381
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "cloudteams-plot-twist",
+      "file": "assets/factory-stories/cloudteams-plot-twist.gif",
+      "source_file": "assets/factory-stories/cloudteams-plot-twist.png",
+      "source_sha256": "6f8f5a04691f1cb5cb3eb506cb10a903ab2b1033632c89b312d23f892fa30521",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/cloudteams-plot-twist.png",
+          "sha256": "6f8f5a04691f1cb5cb3eb506cb10a903ab2b1033632c89b312d23f892fa30521"
+        }
+      ],
+      "sha256": "252760fc29f07d08acd40f533b0162e4e5b43ad6dedb8f5627a759181847c810",
+      "bytes": 942748,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 64,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "749d1430f2c2a38c4621adf146808f739fe4e29f5464f2b3de65e9c3db66e9ad",
+      "motion_symbols": {
+        "input": "change",
+        "output": "proposal"
+      },
+      "motion_motif": "A changed-condition card interrupts the original plan, alternate paths fan out, and a person selects a next-step proposal for review.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 887098,
+      "motion_region_changed_pixels": {
+        "input": 289663,
+        "processing": 33793,
+        "output": 332436,
+        "conveyor": 101389
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "murmuration",
+      "file": "assets/factory-stories/murmuration.gif",
+      "source_file": "assets/factory-stories/murmuration.png",
+      "source_sha256": "d6aac69cff710dc92f563d19fe32f6937903de64cea7c07fbd3903e360c70e69",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/murmuration.png",
+          "sha256": "d6aac69cff710dc92f563d19fe32f6937903de64cea7c07fbd3903e360c70e69"
+        }
+      ],
+      "sha256": "58c84189f8e194be1c4f5af5282976f2b5bd096b806ca2adf27a537a45bb1f10",
+      "bytes": 713608,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "934ae4260fbb170255fef1baf3f69cfb0d113485b4bbacddec8c7bcc2a302f9a",
+      "motion_symbols": {
+        "input": "seed",
+        "output": "organism"
+      },
+      "motion_motif": "Food sparks drift, local organisms turn and swarm, and luminous trails bloom inside the browser pond; keep this a playful simulation.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 438029,
+      "motion_region_changed_pixels": {
+        "input": 94153,
+        "processing": 68070,
+        "output": 114543,
+        "conveyor": 60417
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
+    },
+    {
+      "name": "scratch-kitchen",
+      "file": "assets/factory-stories/scratch-kitchen.gif",
+      "source_file": "assets/factory-stories/scratch-kitchen.png",
+      "source_sha256": "fc3f14f17420dd0e8f6abf31caafa0f8e910fa1c2f539da45d9381f7ec38f645",
+      "scene_sources": [
+        {
+          "file": "assets/factory-stories/scratch-kitchen.png",
+          "sha256": "fc3f14f17420dd0e8f6abf31caafa0f8e910fa1c2f539da45d9381f7ec38f645"
+        }
+      ],
+      "sha256": "adccf42624af72b741586457e143b4223ffad7172a3df8d0fb54cff09e7f00b4",
+      "bytes": 889992,
+      "width": 720,
+      "height": 459,
+      "fps": 30,
+      "palette_colors": 80,
+      "size_limit_bytes": 1000000,
+      "recipe": "project-objects-v2-three-active-regions-30fps-six-seconds-four-dashboard-chapters",
+      "recipe_sha256": "d15266ecdff0e8c2a0049bbf76460fdcc969cef2c7ebf6cc2ced0d40a809a1b1",
+      "motion_symbols": {
+        "input": "ingredient",
+        "output": "meal"
+      },
+      "motion_motif": "Ingredient cards slide to the cooking station, roast chicken transforms into soup, and a surplus box waits for specific human approval. Retain product-concept/scaffold labeling.",
+      "chapters": [],
+      "frames": 180,
+      "duration_ms": 6000,
+      "loop": 0,
+      "unique_decoded_frames": 180,
+      "moving_frame_transitions": 179,
+      "changed_motion_pixels": 646260,
+      "motion_region_changed_pixels": {
+        "input": 195095,
+        "processing": 40744,
+        "output": 235199,
+        "conveyor": 75903
+      },
+      "protected_labels_static": true,
+      "protected_artwork_bands": [
+        [
+          0,
+          0,
+          720,
+          145
+        ],
+        [
+          0,
+          280,
+          720,
+          405
+        ]
+      ],
+      "artwork_region_static": false,
+      "source_artwork_files_unchanged": true
     }
   ]
 }

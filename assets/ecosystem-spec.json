@@ -190,6 +190,42 @@
       "sublabel": "Public \u00b7 Learning project / integration incomplete"
     },
     {
+      "id": "surface",
+      "parent": "factory",
+      "label": "Publishing & public entry points",
+      "sublabel": "Repository roles \u00b7 not runtime call paths"
+    },
+    {
+      "id": "repo-meter-mouse-garden",
+      "parent": "surface",
+      "label": "meter-mouse-garden",
+      "sublabel": "Public \u00b7 Prototype"
+    },
+    {
+      "id": "repo-edgerecord-com",
+      "parent": "surface",
+      "label": "edgerecord-com",
+      "sublabel": "Private \u00b7 Private web shell"
+    },
+    {
+      "id": "repo-edgerecord-publisher",
+      "parent": "surface",
+      "label": "edgerecord-publisher",
+      "sublabel": "Private \u00b7 Private publishing adapter"
+    },
+    {
+      "id": "repo-hamanakam1",
+      "parent": "surface",
+      "label": "hamanakam1",
+      "sublabel": "Public \u00b7 Public profile"
+    },
+    {
+      "id": "repo-hamanakam1-github-io",
+      "parent": "surface",
+      "label": "hamanakam1.github.io",
+      "sublabel": "Public \u00b7 Public atlas"
+    },
+    {
       "id": "lab",
       "parent": "factory",
       "label": "Simulation & product experiments",
@@ -254,42 +290,6 @@
       "parent": "lab",
       "label": "blessed-edge-deployment",
       "sublabel": "Private \u00b7 Private local demo"
-    },
-    {
-      "id": "surface",
-      "parent": "factory",
-      "label": "Publishing & public entry points",
-      "sublabel": "Repository roles \u00b7 not runtime call paths"
-    },
-    {
-      "id": "repo-meter-mouse-garden",
-      "parent": "surface",
-      "label": "meter-mouse-garden",
-      "sublabel": "Public \u00b7 Prototype"
-    },
-    {
-      "id": "repo-edgerecord-com",
-      "parent": "surface",
-      "label": "edgerecord-com",
-      "sublabel": "Private \u00b7 Private web shell"
-    },
-    {
-      "id": "repo-edgerecord-publisher",
-      "parent": "surface",
-      "label": "edgerecord-publisher",
-      "sublabel": "Private \u00b7 Private publishing adapter"
-    },
-    {
-      "id": "repo-hamanakam1",
-      "parent": "surface",
-      "label": "hamanakam1",
-      "sublabel": "Public \u00b7 Public profile"
-    },
-    {
-      "id": "repo-hamanakam1-github-io",
-      "parent": "surface",
-      "label": "hamanakam1.github.io",
-      "sublabel": "Public \u00b7 Public atlas"
     }
   ],
   "cards": [

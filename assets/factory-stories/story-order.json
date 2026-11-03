@@ -1,0 +1,1718 @@
+{
+  "schema": "factory-story-order.v2",
+  "scope": "39 selected projects; all forks and portal excluded; AI Dashboard first; product and creative experiments at the end.",
+  "source_policy": "Use only facts retained in the current selected map. Private project concepts rely on already-public atlas descriptions, not private source review.",
+  "ordering_policy": "Sections organize responsibilities editorially. Sequence, adjacency, shared motion and arrow paths do not assert cross-repository runtime integration. EdgeRecord remains a separately labeled venture.",
+  "motion_policy": {
+    "activity_target": "Approximately three times the prior visible activity, achieved through concurrent project-relevant object streams rather than faster flashing.",
+    "meaning": "All motion is illustrative and conceptual; labels for prototype, fixture, private-description concept and human decisions remain visible.",
+    "accessibility": "Retain explicit play/pause and reduced-motion alternatives.",
+    "prohibited_implications": [
+      "invented live metrics",
+      "customer adoption",
+      "automatic authorization",
+      "qualified deployment",
+      "all repositories integrated"
+    ]
+  },
+  "sections": [
+    {
+      "id": "factory-core",
+      "label": "Factory core",
+      "color": "#087F8C",
+      "rationale": "Begin with the published local command center and local supervisor roles; source descriptions do not establish a universal deployed pipeline.",
+      "names": [
+        "ai-dashboard",
+        "cofoundry"
+      ]
+    },
+    {
+      "id": "workflow-sessions",
+      "label": "Workflow and sessions",
+      "color": "#0F9D92",
+      "rationale": "Follow the editorial story from selected intent and evidence to bounded work, persistent sessions and records; adjacency is not a runtime integration claim.",
+      "names": [
+        "panther-intent-capture",
+        "panther-companion",
+        "muse-connector-tools",
+        "el-hidratador",
+        "taskrivet",
+        "osprey",
+        "fluxrecord"
+      ]
+    },
+    {
+      "id": "verification-learning",
+      "label": "Verification and learning",
+      "color": "#6B76D6",
+      "rationale": "Present independent review, bounded failure models and reusable lessons after the work-session tools.",
+      "names": [
+        "el-verificador",
+        "counterfactory",
+        "agent-recovery-bench",
+        "reality-boundary-standard",
+        "the-chronicler"
+      ]
+    },
+    {
+      "id": "testing-fixtures",
+      "label": "Testing fixtures",
+      "color": "#B58B19",
+      "rationale": "Keep documented synthetic data and protocol fixtures with supporting test/rehearsal tools; none is customer evidence.",
+      "names": [
+        "mockmill",
+        "storyfoundry-public-fixture",
+        "vs-platform-synthetic-fleet"
+      ]
+    },
+    {
+      "id": "local-compute",
+      "label": "Local compute and transport",
+      "color": "#1675A8",
+      "rationale": "Group observation, advisory capacity, inference queues, numerical experiments and transport by local-system responsibility. BumperFort precedes LineasFlows because its public description names the numerical state source.",
+      "names": [
+        "the-surveyor",
+        "the-tower",
+        "horizon-broker",
+        "bumperfort",
+        "lineasflow",
+        "VortexMesh"
+      ]
+    },
+    {
+      "id": "edgerecord-separate-venture",
+      "label": "EdgeRecord \u2014 separate venture",
+      "color": "#8765B8",
+      "rationale": "Keep the separately positioned EdgeRecord venture in its own labeled section. Only already-public atlas roles are used; do not imply it is a subsidiary, a deployed factory dependency or part of a new business claim.",
+      "names": [
+        "edgerecord",
+        "edgerecord-core",
+        "edgerecord-era",
+        "edgerecord-ai",
+        "edgerecord-com",
+        "edgerecord-publisher"
+      ]
+    },
+    {
+      "id": "publishing-orientation",
+      "label": "Publishing and orientation",
+      "color": "#54856E",
+      "rationale": "Place the public profile and portfolio after the project evidence they organize; they are communication surfaces, not execution engines.",
+      "names": [
+        "hamanakam1",
+        "hamanakam1.github.io"
+      ]
+    },
+    {
+      "id": "product-creative-experiments",
+      "label": "Product and creative experiments",
+      "color": "#C66A38",
+      "rationale": "Finish with prototype products, fictional concept demonstrations and creative software. These are independent examples, not steps in the factory workflow.",
+      "names": [
+        "meter-mouse-garden",
+        "blessed-edge-deployment",
+        "onramp-synthetic-company",
+        "cloudteams-extension-studio",
+        "cloudteams-lunch-break",
+        "cloudteams-plot-twist",
+        "murmuration",
+        "scratch-kitchen"
+      ]
+    }
+  ],
+  "ai_dashboard_detail_beats": [
+    {
+      "order": 1,
+      "name": "Work and agents",
+      "public_categories": [
+        "tickets",
+        "agents"
+      ],
+      "objects": [
+        "task tickets",
+        "agent cards",
+        "session markers"
+      ],
+      "motion": "Several ticket cards and agent markers move on independent short paths into a shared work overview.",
+      "inspection": "An operator selects one work item."
+    },
+    {
+      "order": 2,
+      "name": "Inference activity",
+      "public_categories": [
+        "inference"
+      ],
+      "objects": [
+        "inference request tokens",
+        "activity pulses"
+      ],
+      "motion": "Multiple request tokens and bounded activity pulses animate around an inference panel, without inventing provider routes, throughput or execution results.",
+      "inspection": "An operator inspects an activity card."
+    },
+    {
+      "order": 3,
+      "name": "Spend and machine health",
+      "public_categories": [
+        "spend",
+        "machine health"
+      ],
+      "objects": [
+        "spend-note cards",
+        "machine-health symbols"
+      ],
+      "motion": "Spend notes arrive while abstract resource indicators gently change; use symbols, not fake live currency, temperatures or utilization numbers.",
+      "inspection": "An operator selects a category to examine."
+    },
+    {
+      "order": 4,
+      "name": "Evidence and human inspection",
+      "public_categories": [
+        "evidence",
+        "local operator overview"
+      ],
+      "objects": [
+        "evidence pages",
+        "source attachments",
+        "inspection cursor"
+      ],
+      "motion": "Evidence pages collect from the conceptual activity lanes; a human inspection cursor follows attached sources and pauses on the review record.",
+      "inspection": "Human inspection is visible; no automatic acceptance or production readiness is implied."
+    }
+  ],
+  "exclusions": [
+    "archify",
+    "cwinvoicer",
+    "node-pty",
+    "wad-sbx-workshop",
+    "portal"
+  ],
+  "counts": {
+    "selected": 39,
+    "public": 23,
+    "private": 16,
+    "forks": 0
+  },
+  "repositories": [
+    {
+      "order": 1,
+      "name": "ai-dashboard",
+      "section": "factory-core",
+      "section_label": "Factory core",
+      "source_access": "private",
+      "motion_input": "Task tickets, agent cards and category signals",
+      "motion_output": "An operator overview with evidence to inspect",
+      "motion_motif": "Four conceptual beats: tickets and agents; inference activity; spend and machine health; evidence and human inspection. Use several parallel card streams and distinct signal pulses, never live-looking numerical telemetry.",
+      "color": "#087F8C",
+      "motion_symbols": {
+        "input": "ticket",
+        "output": "dashboard"
+      },
+      "documented_facts": [
+        "Agents, tickets and signals \u2192 Bring work into view \u2192 Local operator overview",
+        "The local command center where I bring agents, inference, tickets, spend, evidence and machine health together."
+      ],
+      "maturity_label": "Integration hub",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L31",
+        "line_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 2,
+      "name": "cofoundry",
+      "section": "factory-core",
+      "section_label": "Factory core",
+      "source_access": "private",
+      "motion_input": "Job cards and readiness indicators",
+      "motion_output": "Audited control records",
+      "motion_motif": "Job cards approach a supervisor station while readiness lights scan; a control record waits for a person rather than implying autonomous approval.",
+      "color": "#087F8C",
+      "motion_symbols": {
+        "input": "job",
+        "output": "receipt"
+      },
+      "documented_facts": [
+        "Job and readiness signals \u2192 Supervise local work \u2192 Audited control record",
+        "Packaged supervisor, job dispatch, local execution, readiness and audited controls."
+      ],
+      "maturity_label": "Private engine",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L32",
+        "line_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 3,
+      "name": "panther-intent-capture",
+      "section": "workflow-sessions",
+      "section_label": "Workflow and sessions",
+      "source_access": "public",
+      "motion_input": "A selected browser window and cursor-click marks",
+      "motion_output": "An improvement ticket with evidence strips",
+      "motion_motif": "Cursor selects a short path; chosen event chips travel into a draft ticket. Pause at review before the request exits; no implementation animation.",
+      "color": "#0F9D92",
+      "motion_symbols": {
+        "input": "browser",
+        "output": "ticket"
+      },
+      "documented_facts": [
+        "Chosen browser activity \u2192 Capture and review intent \u2192 Improvement request",
+        "Creates tickets, not implementations. Capture is opt-in; hypotheses are not verified defects; unsupported media/browser paths remain excluded."
+      ],
+      "maturity_label": "Browser capture tool",
+      "source": {
+        "commit": "f224402307503afb5a9448e9b80dc78b245fb4f9",
+        "readme_blob_sha": "eb67a815e7f0e5453e06a3bfc2cae109c3a527e7",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/panther-intent-capture/blob/f224402307503afb5a9448e9b80dc78b245fb4f9/README.md",
+        "line_ranges": [
+          [
+            28,
+            32
+          ],
+          [
+            51,
+            69
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 4,
+      "name": "panther-companion",
+      "section": "workflow-sessions",
+      "section_label": "Workflow and sessions",
+      "source_access": "public",
+      "motion_input": "Selected evidence cards beside a goal marker",
+      "motion_output": "An explanation card with a next-check marker",
+      "motion_motif": "Evidence fragments settle around one goal; one explanation card unfolds, retaining small source attachments.",
+      "color": "#0F9D92",
+      "motion_symbols": {
+        "input": "evidence",
+        "output": "explanation"
+      },
+      "documented_facts": [
+        "Selected evidence \u2192 Explain in goal context \u2192 Meaning and next check",
+        "Inputs are selected or explicitly configured. Importing evidence does not authorize execution; optional sources and model use remain separate choices."
+      ],
+      "maturity_label": "Local workspace",
+      "source": {
+        "commit": "e0e62f3a9a9d232a6ab60c1edc1eadba61156f46",
+        "readme_blob_sha": "5c28a1fe6d309736fd6ddc6aa72473daf7f4bd0f",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/panther-companion/blob/e0e62f3a9a9d232a6ab60c1edc1eadba61156f46/README.md",
+        "line_ranges": [
+          [
+            9,
+            40
+          ],
+          [
+            61,
+            65
+          ],
+          [
+            110,
+            118
+          ],
+          [
+            142,
+            148
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 5,
+      "name": "muse-connector-tools",
+      "section": "workflow-sessions",
+      "section_label": "Workflow and sessions",
+      "source_access": "private",
+      "motion_input": "A generic conversation bubble and handoff card",
+      "motion_output": "A bookmarked local record",
+      "motion_motif": "A conversation card passes through generic host-tool blocks; a bookmark lands on the retained record for resumption.",
+      "color": "#0F9D92",
+      "motion_symbols": {
+        "input": "conversation",
+        "output": "bookmark"
+      },
+      "documented_facts": [
+        "Conversation handoff \u2192 Coordinate host tools \u2192 Resumable local record",
+        "Host-assisted conversation tools with a resumable local ledger."
+      ],
+      "maturity_label": "Private workspace",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L26",
+        "line_ranges": [
+          [
+            26,
+            26
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 6,
+      "name": "el-hidratador",
+      "section": "workflow-sessions",
+      "section_label": "Workflow and sessions",
+      "source_access": "public",
+      "motion_input": "An approved task card",
+      "motion_output": "A bounded context packet",
+      "motion_motif": "A short card unfolds into source sheets, scope dividers and a bounded packet; scope bands close around the packet before it advances.",
+      "color": "#0F9D92",
+      "motion_symbols": {
+        "input": "ticket",
+        "output": "packet"
+      },
+      "documented_facts": [
+        "Approved task \u2192 Prepare bounded context \u2192 Staged work packet",
+        "Core has no network or shell execution. It stages and records work; routing eligibility is not execution authorization and a person accepts the result."
+      ],
+      "maturity_label": "Documented local core",
+      "source": {
+        "commit": "681f6c2801dc278114de6f2a97b451b3bd1d11ef",
+        "readme_blob_sha": "d57740c61c9f3d47b4435611b9c2f20a336fadb3",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/el-hidratador/blob/681f6c2801dc278114de6f2a97b451b3bd1d11ef/README.md",
+        "line_ranges": [
+          [
+            25,
+            31
+          ],
+          [
+            86,
+            118
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 7,
+      "name": "taskrivet",
+      "section": "workflow-sessions",
+      "section_label": "Workflow and sessions",
+      "source_access": "public",
+      "motion_input": "A task packet, context sheets and agent-session tabs",
+      "motion_output": "Session evidence containing progress and failure slips",
+      "motion_motif": "Terminal cursors pulse across several persistent panes while task/context cards remain attached; progress and failure slips collect for human review.",
+      "color": "#0F9D92",
+      "motion_symbols": {
+        "input": "terminal",
+        "output": "evidence"
+      },
+      "documented_facts": [
+        "Task, context and agent \u2192 Work in persistent terminals \u2192 Reviewable session evidence",
+        "Mac app is unsigned and unnotarized; supervised selection and review remain explicit. Automated ticket selection, verified routing and autonomous acceptance are proposed."
+      ],
+      "maturity_label": "Desktop alpha",
+      "source": {
+        "commit": "2160f606256edbd38004b6c8693bca8c7497ca9b",
+        "readme_blob_sha": "fca121bc4f69142897cba18dd25603989e698945",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/taskrivet/blob/2160f606256edbd38004b6c8693bca8c7497ca9b/README.md",
+        "line_ranges": [
+          [
+            8,
+            10
+          ],
+          [
+            20,
+            34
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 8,
+      "name": "osprey",
+      "section": "workflow-sessions",
+      "section_label": "Workflow and sessions",
+      "source_access": "public",
+      "motion_input": "Selected terminal-text strips",
+      "motion_output": "A draft checkpoint card",
+      "motion_motif": "Chosen strips move through a redaction bar sweep, then assemble into a proposal waiting beside an approval control.",
+      "color": "#0F9D92",
+      "motion_symbols": {
+        "input": "terminal",
+        "output": "checkpoint"
+      },
+      "documented_facts": [
+        "Selected terminal output \u2192 Redact and draft \u2192 Checkpoint proposal",
+        "Local Taskrivet supervisor; capture is read-only and ledger write requires explicit approval. It does not complete tasks or diagnose failures."
+      ],
+      "maturity_label": "Pre-release",
+      "source": {
+        "commit": "6297ddc49a5b4a7bca1a5a88f8d9a1c8bb79ae82",
+        "readme_blob_sha": "efbfa7f73cf0ec969f7d5e3cbefdd97beb770593",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/osprey/blob/6297ddc49a5b4a7bca1a5a88f8d9a1c8bb79ae82/README.md",
+        "line_ranges": [
+          [
+            26,
+            32
+          ],
+          [
+            49,
+            65
+          ],
+          [
+            76,
+            82
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 9,
+      "name": "fluxrecord",
+      "section": "workflow-sessions",
+      "section_label": "Workflow and sessions",
+      "source_access": "public",
+      "motion_input": "A task card and evidence slips",
+      "motion_output": "A reviewed work record",
+      "motion_motif": "A task gains scope, ownership and checkpoint slips; it visibly waits at review, with a separate human-decision motion before an accepted record appears.",
+      "color": "#0F9D92",
+      "motion_symbols": {
+        "input": "ticket",
+        "output": "ledger"
+      },
+      "documented_facts": [
+        "Task and evidence \u2192 Record work and review \u2192 Accepted work record",
+        "Worker finish creates review; only an operator decision creates done. No automated universal shipping claim is made by this illustration."
+      ],
+      "maturity_label": "Documented local core",
+      "source": {
+        "commit": "1c0708ef422c95d5339958ec45b7ba469dc49fd3",
+        "readme_blob_sha": "7d063dc40285788ee9726fb1a01d4d85db96f680",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/fluxrecord/blob/1c0708ef422c95d5339958ec45b7ba469dc49fd3/README.md",
+        "line_ranges": [
+          [
+            20,
+            22
+          ],
+          [
+            26,
+            56
+          ],
+          [
+            65,
+            88
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 10,
+      "name": "el-verificador",
+      "section": "verification-learning",
+      "section_label": "Verification and learning",
+      "source_access": "public",
+      "motion_input": "A code-change parcel and acceptance checklist",
+      "motion_output": "A verdict sheet and local audit record",
+      "motion_motif": "An independent magnifier scans both change and criteria; a correction ribbon can return the parcel. Do not connect the external pipeline or show a production release.",
+      "color": "#6B76D6",
+      "motion_symbols": {
+        "input": "code",
+        "output": "verdict"
+      },
+      "documented_facts": [
+        "Change and criteria \u2192 Inspect independently \u2192 Verdict and audit record",
+        "Core verification loop is documented as implemented; the wider pipeline is explicitly not connected. Audit ledger is local, not a canonical external receipt."
+      ],
+      "maturity_label": "Alpha; pipeline separate",
+      "source": {
+        "commit": "4a4b3d54fcce529b2f56db4d2fd613d9752c3df9",
+        "readme_blob_sha": "ca7084d25b94dc66a98f36e04163d8b7a4fe2ec3",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/el-verificador/blob/4a4b3d54fcce529b2f56db4d2fd613d9752c3df9/README.md",
+        "line_ranges": [
+          [
+            29,
+            37
+          ],
+          [
+            150,
+            157
+          ],
+          [
+            194,
+            199
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 11,
+      "name": "counterfactory",
+      "section": "verification-learning",
+      "section_label": "Verification and learning",
+      "source_access": "public",
+      "motion_input": "Workflow-rule cards and a lost-reply token",
+      "motion_output": "A counterexample trace",
+      "motion_motif": "A reply token disappears between two worker paths; duplicate-action tokens diverge into a visible trace, followed by a separately labeled corrected-model path.",
+      "color": "#6B76D6",
+      "motion_symbols": {
+        "input": "rules",
+        "output": "trace"
+      },
+      "documented_facts": [
+        "Workflow rules \u2192 Explore failure orders \u2192 Counterexample trace",
+        "Synthetic finite models; a passing model does not prove a production implementation matches its assumptions."
+      ],
+      "maturity_label": "Research preview",
+      "source": {
+        "commit": "c3890d2e85f166a62ef7f83497c41bbeaf52c2c7",
+        "readme_blob_sha": "bc26d7a09eaa68b345e4b6f67f8d385ed0acd895",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/counterfactory/blob/c3890d2e85f166a62ef7f83497c41bbeaf52c2c7/README.md",
+        "line_ranges": [
+          [
+            16,
+            21
+          ],
+          [
+            52,
+            60
+          ],
+          [
+            80,
+            90
+          ],
+          [
+            115,
+            115
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 12,
+      "name": "agent-recovery-bench",
+      "section": "verification-learning",
+      "section_label": "Verification and learning",
+      "source_access": "private",
+      "motion_input": "Fictional interruption-scenario cards",
+      "motion_output": "Recovery-observation notes",
+      "motion_motif": "A simulated task pauses, resumes on the exercise bench and leaves observation notes; keep the scene an offline recovery rehearsal.",
+      "color": "#6B76D6",
+      "motion_symbols": {
+        "input": "scenario",
+        "output": "observation"
+      },
+      "documented_facts": [
+        "Recovery scenarios \u2192 Rehearse interruptions \u2192 Recovery observations",
+        "Offline recovery scenarios for coding workflows; a benchmark workspace, not customer delivery evidence."
+      ],
+      "maturity_label": "Private benchmark",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L22",
+        "line_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 13,
+      "name": "reality-boundary-standard",
+      "section": "verification-learning",
+      "section_label": "Verification and learning",
+      "source_access": "public",
+      "motion_input": "A claim card and evidence attachments",
+      "motion_output": "A bounded claim record",
+      "motion_motif": "A claim card passes through scope and limitation brackets; evidence stays attached as a precise reviewed statement emerges.",
+      "color": "#6B76D6",
+      "motion_symbols": {
+        "input": "claim",
+        "output": "record"
+      },
+      "documented_facts": [
+        "Claim and evidence \u2192 Declare scope and limits \u2192 Reviewable claim record",
+        "0.1.0 draft with no certification program. Structural validation does not establish factual truth or full conformance."
+      ],
+      "maturity_label": "Proposed standard",
+      "source": {
+        "commit": "0b9dc51519e47fd6881ca4a5d5debdf01bb32a8c",
+        "readme_blob_sha": "58251e47035aa41c0ef2a79e061ef225539b3c33",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/reality-boundary-standard/blob/0b9dc51519e47fd6881ca4a5d5debdf01bb32a8c/README.md",
+        "line_ranges": [
+          [
+            3,
+            9
+          ],
+          [
+            20,
+            28
+          ],
+          [
+            47,
+            49
+          ],
+          [
+            61,
+            68
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 14,
+      "name": "the-chronicler",
+      "section": "verification-learning",
+      "section_label": "Verification and learning",
+      "source_access": "public",
+      "motion_input": "Failure-log strips and correction notes",
+      "motion_output": "Lesson cards, rules and documentation pages",
+      "motion_motif": "Repeated failure marks group together, a lesson draft forms, and a review marker precedes a reusable rule/document page. No automatic truth or live integration claim.",
+      "color": "#6B76D6",
+      "motion_symbols": {
+        "input": "failure",
+        "output": "lesson"
+      },
+      "documented_facts": [
+        "Failure history \u2192 Extract reusable lessons \u2192 Rules and documentation",
+        "README describes configured local ledger and model inputs plus repository writes. This review did not establish a live end-to-end factory integration or validate model conclusions."
+      ],
+      "maturity_label": "Documented local daemon",
+      "source": {
+        "commit": "2cd3a0abef694878b5daee0b2e4d23b12840748d",
+        "readme_blob_sha": "40803bae604ab4061c9835f4b89d6240660812c7",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/the-chronicler/blob/2cd3a0abef694878b5daee0b2e4d23b12840748d/README.md",
+        "line_ranges": [
+          [
+            28,
+            46
+          ],
+          [
+            191,
+            208
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 15,
+      "name": "mockmill",
+      "section": "testing-fixtures",
+      "section_label": "Testing fixtures",
+      "source_access": "public",
+      "motion_input": "A fictional scenario recipe and seed token",
+      "motion_output": "Linked fictional records and offline CRM fixtures",
+      "motion_motif": "Seed token turns a small data mill; account, project and invoice cards emerge with relationship lines and move into offline export trays.",
+      "color": "#B58B19",
+      "motion_symbols": {
+        "input": "seed",
+        "output": "records"
+      },
+      "documented_facts": [
+        "Scenario and seed \u2192 Generate linked records \u2192 Offline CRM fixtures",
+        "Every person, company and transaction is fictional. Adapters generate CSV/JSON fixtures and do not perform live CRM imports."
+      ],
+      "maturity_label": "Synthetic; offline",
+      "source": {
+        "commit": "d251c81756eadda08fb2884ea379c5342efffe18",
+        "readme_blob_sha": "439a32dfde973775ec0a9ceec5583ac13a06ba64",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/mockmill/blob/d251c81756eadda08fb2884ea379c5342efffe18/README.md",
+        "line_ranges": [
+          [
+            51,
+            63
+          ],
+          [
+            78,
+            94
+          ],
+          [
+            121,
+            125
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 16,
+      "name": "storyfoundry-public-fixture",
+      "section": "testing-fixtures",
+      "section_label": "Testing fixtures",
+      "source_access": "public",
+      "motion_input": "A fictional-company scenario card",
+      "motion_output": "Validated training records",
+      "motion_motif": "Fictional scenario cards branch into linked business records; a validation checklist scans them before an offline training tray.",
+      "color": "#B58B19",
+      "motion_symbols": {
+        "input": "scenario",
+        "output": "records"
+      },
+      "documented_facts": [
+        "Fictional scenario \u2192 Generate and validate \u2192 Training records",
+        "All company, person and transaction records are fictional. Import preview is a dry run with no target client and no authority to contact or charge anyone."
+      ],
+      "maturity_label": "Synthetic; offline",
+      "source": {
+        "commit": "38b216f0f8b0d780da3e2e0779b2460e4ec3f519",
+        "readme_blob_sha": "d6642312b2486812a6ad29fdbb32064efdf89d66",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/storyfoundry-public-fixture/blob/38b216f0f8b0d780da3e2e0779b2460e4ec3f519/README.md",
+        "line_ranges": [
+          [
+            1,
+            11
+          ],
+          [
+            13,
+            33
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 17,
+      "name": "vs-platform-synthetic-fleet",
+      "section": "testing-fixtures",
+      "section_label": "Testing fixtures",
+      "source_access": "private",
+      "motion_input": "Synthetic node models and sample messages",
+      "motion_output": "Protocol-scenario observations",
+      "motion_motif": "Small simulated nodes exchange message chips across a test bench; observed scenario notes collect separately from any real fleet.",
+      "color": "#B58B19",
+      "motion_symbols": {
+        "input": "node",
+        "output": "observation"
+      },
+      "documented_facts": [
+        "Synthetic nodes and messages \u2192 Exercise protocol fixtures \u2192 Test scenario observations",
+        "Synthetic hardware nodes and protocol fixtures for platform testing."
+      ],
+      "maturity_label": "Private simulation",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L51",
+        "line_ranges": [
+          [
+            51,
+            51
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 18,
+      "name": "the-surveyor",
+      "section": "local-compute",
+      "section_label": "Local compute and transport",
+      "source_access": "public",
+      "motion_input": "Local-machine observation symbols",
+      "motion_output": "A topology change record",
+      "motion_motif": "A survey beam scans one machine stack; old and current map cards slide together and a changed connection is highlighted.",
+      "color": "#1675A8",
+      "motion_symbols": {
+        "input": "scan",
+        "output": "topology"
+      },
+      "documented_facts": [
+        "Local system observations \u2192 Map and compare \u2192 Topology change record",
+        "Observes the box on which it runs; a topology map is not proof that remote services or integrations work. Notifications require configuration."
+      ],
+      "maturity_label": "Read-only survey tool",
+      "source": {
+        "commit": "efadb57be4937b029039726d8732acd7c2d1ecf9",
+        "readme_blob_sha": "f71990b45bf8f272393d0c9b64824ce3da42aff6",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/the-surveyor/blob/efadb57be4937b029039726d8732acd7c2d1ecf9/README.md",
+        "line_ranges": [
+          [
+            24,
+            34
+          ],
+          [
+            55,
+            70
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 19,
+      "name": "the-tower",
+      "section": "local-compute",
+      "section_label": "Local compute and transport",
+      "source_access": "public",
+      "motion_input": "Resource observations and a task request",
+      "motion_output": "A clearance recommendation",
+      "motion_motif": "A task card approaches the resource board; abstract thermals, memory and power indicators move without fake readings, and an advisory recommendation waits for a person.",
+      "color": "#1675A8",
+      "motion_symbols": {
+        "input": "telemetry",
+        "output": "clearance"
+      },
+      "documented_facts": [
+        "Telemetry and task request \u2192 Assess capacity \u2192 Clearance recommendation",
+        "Two of three demo nodes are simulated; macOS temperature is estimated. Fresh installs are advisory; enforcement requires explicit per-node opt-in."
+      ],
+      "maturity_label": "Advisory prototype",
+      "source": {
+        "commit": "2307037cf3ec258984d77f8e329264649a5fcf62",
+        "readme_blob_sha": "a716de380336db00b36f5dbbeced707ee64a63d0",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/the-tower/blob/2307037cf3ec258984d77f8e329264649a5fcf62/README.md",
+        "line_ranges": [
+          [
+            48,
+            61
+          ],
+          [
+            86,
+            88
+          ],
+          [
+            272,
+            286
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 20,
+      "name": "horizon-broker",
+      "section": "local-compute",
+      "section_label": "Local compute and transport",
+      "source_access": "public",
+      "motion_input": "Queued inference-job parcels",
+      "motion_output": "Result cards or retained recovery state",
+      "motion_motif": "Several job parcels advance independently through a queue; one returns as a result and one stops on a recovery shelf, making failure distinct from success.",
+      "color": "#1675A8",
+      "motion_symbols": {
+        "input": "job",
+        "output": "result"
+      },
+      "documented_facts": [
+        "Inference jobs \u2192 Queue and route \u2192 Results or recovery state",
+        "One broker owns one fleet; external ledger adapter is not complete. KV handoff depends on engine support; Ollama degrades to whole-job execution."
+      ],
+      "maturity_label": "Alpha",
+      "source": {
+        "commit": "3e6d69425aa263ef6f4e31589fc74c04120f01de",
+        "readme_blob_sha": "25774cb2bcfe4876367ec404a7223264dcf3b3df",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/horizon-broker/blob/3e6d69425aa263ef6f4e31589fc74c04120f01de/README.md",
+        "line_ranges": [
+          [
+            20,
+            25
+          ],
+          [
+            434,
+            445
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 21,
+      "name": "bumperfort",
+      "section": "local-compute",
+      "section_label": "Local compute and transport",
+      "source_access": "public",
+      "motion_input": "Vector arrows and numerical-state tokens",
+      "motion_output": "Calculated trajectory paths",
+      "motion_motif": "Vector tokens bounce through the educational physics chamber; a moving dot traces a reproducible-looking curve without presenting new benchmark claims.",
+      "color": "#1675A8",
+      "motion_symbols": {
+        "input": "vector",
+        "output": "trajectory"
+      },
+      "documented_facts": [
+        "Vectors and state \u2192 Calculate motion \u2192 Trajectory results",
+        "README calls v0.1.0 an educational and usable core. Wider agent-embedding and hardware metaphors are a vision, not a qualified production claim."
+      ],
+      "maturity_label": "Educational core",
+      "source": {
+        "commit": "b885eb44582104157f2a2bf23fc797ef95fe8433",
+        "readme_blob_sha": "edbed49f4778a9bb4a0803fdd74d4e0e3fc5a7d7",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/bumperfort/blob/b885eb44582104157f2a2bf23fc797ef95fe8433/README.md",
+        "line_ranges": [
+          [
+            21,
+            37
+          ],
+          [
+            53,
+            55
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 22,
+      "name": "lineasflow",
+      "section": "local-compute",
+      "section_label": "Local compute and transport",
+      "source_access": "public",
+      "motion_input": "Shared-memory state tiles",
+      "motion_output": "Binary state updates at mesh nodes",
+      "motion_motif": "A state tile is sampled and travels as small binary packets to local mesh symbols; no throughput numbers or observed multi-node deployment claim.",
+      "color": "#1675A8",
+      "motion_symbols": {
+        "input": "state",
+        "output": "packet"
+      },
+      "documented_facts": [
+        "Shared-memory state \u2192 Broadcast binary updates \u2192 Local mesh state",
+        "README describes shared-memory and UDP multicast components. No live multi-node deployment or benchmark result was verified for this visual."
+      ],
+      "maturity_label": "Documented daemon",
+      "source": {
+        "commit": "1a4cab63e206e160df0dcbdcfe1bdd56a107dad7",
+        "readme_blob_sha": "5b65a4f7440aaaa1a1419056da28e27a56d79068",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/lineasflow/blob/1a4cab63e206e160df0dcbdcfe1bdd56a107dad7/README.md",
+        "line_ranges": [
+          [
+            1,
+            17
+          ],
+          [
+            25,
+            27
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 23,
+      "name": "VortexMesh",
+      "section": "local-compute",
+      "section_label": "Local compute and transport",
+      "source_access": "public",
+      "motion_input": "Validated event envelopes",
+      "motion_output": "Inspectable component event state",
+      "motion_motif": "Event envelopes visit separate routing, retained-log and reconciliation illustrations; show a broken-link holding shelf and dashed conceptual joins, since no end-to-end daemon exists.",
+      "color": "#1675A8",
+      "motion_symbols": {
+        "input": "envelope",
+        "output": "event-state"
+      },
+      "documented_facts": [
+        "Validated event \u2192 Route, retain, reconcile \u2192 Inspectable event state",
+        "Transport, WAL and reconciliation are separately implemented; no daemon connects them end to end. Authorization, discovery adapters and other deployment pieces remain planned."
+      ],
+      "maturity_label": "Learning components",
+      "source": {
+        "commit": "1be6e76488f6afb1a0cc13423e9c391c45c7fd62",
+        "readme_blob_sha": "23b3bcd1e446a23b8e4d71c92bdcea955504d54a",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/VortexMesh/blob/1be6e76488f6afb1a0cc13423e9c391c45c7fd62/README.md",
+        "line_ranges": [
+          [
+            14,
+            30
+          ],
+          [
+            133,
+            160
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 24,
+      "name": "edgerecord",
+      "section": "edgerecord-separate-venture",
+      "section_label": "EdgeRecord \u2014 separate venture",
+      "source_access": "private",
+      "motion_input": "Generic local evidence pages",
+      "motion_output": "Organized reviewable evidence",
+      "motion_motif": "Evidence pages move to a verification desk, a magnifier scans them, and an organized folder waits for review. Use only the published general role.",
+      "color": "#8765B8",
+      "motion_symbols": {
+        "input": "evidence",
+        "output": "folder"
+      },
+      "documented_facts": [
+        "Local evidence \u2192 Organize and verify \u2192 Reviewable evidence",
+        "Local verification and evidence workspace."
+      ],
+      "maturity_label": "Private workspace",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L42",
+        "line_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": "Separate EdgeRecord venture"
+    },
+    {
+      "order": 25,
+      "name": "edgerecord-core",
+      "section": "edgerecord-separate-venture",
+      "section_label": "EdgeRecord \u2014 separate venture",
+      "source_access": "private",
+      "motion_input": "Ordered edge-node state cards",
+      "motion_output": "A verification-result sheet",
+      "motion_motif": "State cards retain their visible sequence as a verification sweep produces a result sheet; do not invent internal formats or cryptographic claims.",
+      "color": "#8765B8",
+      "motion_symbols": {
+        "input": "state",
+        "output": "verdict"
+      },
+      "documented_facts": [
+        "Edge-node state records \u2192 Verify append-only state \u2192 Verification result",
+        "Deterministic append-only state verification for edge nodes."
+      ],
+      "maturity_label": "Private verifier",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L41",
+        "line_ranges": [
+          [
+            41,
+            41
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": "Separate EdgeRecord venture"
+    },
+    {
+      "order": 26,
+      "name": "edgerecord-era",
+      "section": "edgerecord-separate-venture",
+      "section_label": "EdgeRecord \u2014 separate venture",
+      "source_access": "private",
+      "motion_input": "Generic autonomy-evidence slips",
+      "motion_output": "An ordered evidence ledger",
+      "motion_motif": "Evidence slips advance into ordered ledger pages, then a human inspection marker follows the retained sequence.",
+      "color": "#8765B8",
+      "motion_symbols": {
+        "input": "evidence",
+        "output": "ledger"
+      },
+      "documented_facts": [
+        "Autonomy evidence \u2192 Retain ordered records \u2192 Evidence ledger",
+        "Autonomy evidence and records ledger."
+      ],
+      "maturity_label": "Private ledger",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L43",
+        "line_ranges": [
+          [
+            43,
+            43
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": "Separate EdgeRecord venture"
+    },
+    {
+      "order": 27,
+      "name": "edgerecord-ai",
+      "section": "edgerecord-separate-venture",
+      "section_label": "EdgeRecord \u2014 separate venture",
+      "source_access": "private",
+      "motion_input": "An agent-context handoff packet",
+      "motion_output": "A retained local handoff record",
+      "motion_motif": "A context packet travels between two conceptual local workstations while a copy is retained as a handoff record; no provider or private protocol is shown.",
+      "color": "#8765B8",
+      "motion_symbols": {
+        "input": "packet",
+        "output": "handoff"
+      },
+      "documented_facts": [
+        "Agent handoff context \u2192 Prepare a local handoff \u2192 Durable handoff record",
+        "Local AI stack workspace and durable agent handoffs."
+      ],
+      "maturity_label": "Private workspace",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L44",
+        "line_ranges": [
+          [
+            44,
+            44
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": "Separate EdgeRecord venture"
+    },
+    {
+      "order": 28,
+      "name": "edgerecord-com",
+      "section": "edgerecord-separate-venture",
+      "section_label": "EdgeRecord \u2014 separate venture",
+      "source_access": "private",
+      "motion_input": "Separate evidence-workspace folders",
+      "motion_output": "A conceptual web shell with workspace doors",
+      "motion_motif": "Separate folder trays slide into distinct conceptual workspace panels; keep them visually distinct without implying proven tenant-isolation enforcement.",
+      "color": "#8765B8",
+      "motion_symbols": {
+        "input": "folder",
+        "output": "web-shell"
+      },
+      "documented_facts": [
+        "Evidence workspace \u2192 Present tenant workspaces \u2192 Web shell concept",
+        "A multi-tenant web shell for the evidence workspace."
+      ],
+      "maturity_label": "Private web shell",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L57",
+        "line_ranges": [
+          [
+            57,
+            57
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": "Separate EdgeRecord venture"
+    },
+    {
+      "order": 29,
+      "name": "edgerecord-publisher",
+      "section": "edgerecord-separate-venture",
+      "section_label": "EdgeRecord \u2014 separate venture",
+      "source_access": "private",
+      "motion_input": "A reviewed ledger receipt",
+      "motion_output": "An article-preview concept",
+      "motion_motif": "A reviewed receipt unfolds into an article preview; a publication control remains a separate human decision. No real send or live publishing action is depicted.",
+      "color": "#8765B8",
+      "motion_symbols": {
+        "input": "receipt",
+        "output": "article"
+      },
+      "documented_facts": [
+        "Reviewed ledger receipt \u2192 Prepare publication \u2192 Article preview concept",
+        "Publish reviewed ledger receipts through Joomla Web Services."
+      ],
+      "maturity_label": "Private publishing adapter",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L58",
+        "line_ranges": [
+          [
+            58,
+            58
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": "Separate EdgeRecord venture"
+    },
+    {
+      "order": 30,
+      "name": "hamanakam1",
+      "section": "publishing-orientation",
+      "section_label": "Publishing and orientation",
+      "source_access": "public",
+      "motion_input": "Selected project cards and evidence pages",
+      "motion_output": "A concise profile and contact route",
+      "motion_motif": "Project cards arrange into a short profile; a speech-bubble contact marker lights after the evidence is visible, without invented inquiries.",
+      "color": "#54856E",
+      "motion_symbols": {
+        "input": "project",
+        "output": "contact"
+      },
+      "documented_facts": [
+        "Selected project evidence \u2192 Present useful work \u2192 Contact path",
+        "This repository is the profile presentation, not a runtime factory component. Inventory text may lag the refreshed census."
+      ],
+      "maturity_label": "Public profile",
+      "source": {
+        "commit": "97dd09e3ab05c5543fdea831d36894aed2eb2360",
+        "readme_blob_sha": "da4fb231239b2d99371e7493e62c775154638d85",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/hamanakam1/blob/97dd09e3ab05c5543fdea831d36894aed2eb2360/README.md",
+        "line_ranges": [
+          [
+            1,
+            9
+          ],
+          [
+            20,
+            28
+          ],
+          [
+            55,
+            59
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 31,
+      "name": "hamanakam1.github.io",
+      "section": "publishing-orientation",
+      "section_label": "Publishing and orientation",
+      "source_access": "public",
+      "motion_input": "Project stories, pictures and source links",
+      "motion_output": "A searchable portfolio view",
+      "motion_motif": "Cards sort into a gallery while a search lens visits project titles; a contact marker remains visible as a route, not a customer outcome.",
+      "color": "#54856E",
+      "motion_symbols": {
+        "input": "project",
+        "output": "gallery"
+      },
+      "documented_facts": [
+        "Project stories \u2192 Organize and explain \u2192 Searchable portfolio",
+        "Portfolio diagrams describe responsibilities and proposed handoffs; animation is illustrative, not live execution telemetry."
+      ],
+      "maturity_label": "Public website",
+      "source": {
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "readme_blob_sha": "965aff01fae797d12289c836fd194c7acb1e720e",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/README.md",
+        "line_ranges": [
+          [
+            3,
+            16
+          ],
+          [
+            26,
+            34
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 32,
+      "name": "meter-mouse-garden",
+      "section": "product-creative-experiments",
+      "section_label": "Product and creative experiments",
+      "source_access": "public",
+      "motion_input": "Usage-event tokens",
+      "motion_output": "A fixture-backed usage-view prototype",
+      "motion_motif": "A mouse carries event tokens to a local ledger; sample gauges animate only as a labeled fixture display across a dashed planned-connection gap.",
+      "color": "#C66A38",
+      "motion_symbols": {
+        "input": "usage",
+        "output": "gauge"
+      },
+      "documented_facts": [
+        "Usage events \u2192 Store local readings \u2192 Usage view prototype",
+        "Static dashboard currently uses fixture data; Rust daemon and SQLite ledger exist, but the frontend connection is the next increment."
+      ],
+      "maturity_label": "Fixture-backed prototype",
+      "source": {
+        "commit": "582a5e77de7b7fcfc203d800743ce596e7e875f1",
+        "readme_blob_sha": "9bdbe97a7a1faad9d9d02d9b3b92cb975627130a",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/meter-mouse-garden/blob/582a5e77de7b7fcfc203d800743ce596e7e875f1/README.md",
+        "line_ranges": [
+          [
+            8,
+            22
+          ],
+          [
+            40,
+            66
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 33,
+      "name": "blessed-edge-deployment",
+      "section": "product-creative-experiments",
+      "section_label": "Product and creative experiments",
+      "source_access": "private",
+      "motion_input": "A fictional hardware-to-handoff kit",
+      "motion_output": "A reproducible demonstration bundle",
+      "motion_motif": "Fictional hardware cards move through local-permission review and pack into a demo handoff bundle; show no actual deployed device.",
+      "color": "#C66A38",
+      "motion_symbols": {
+        "input": "hardware",
+        "output": "bundle"
+      },
+      "documented_facts": [
+        "Fictional hardware scenario \u2192 Rehearse local handoff \u2192 Reproducible demo bundle",
+        "A fictional hardware-to-handoff rehearsal with local permissions and reproducible bundles."
+      ],
+      "maturity_label": "Private local demo",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L55",
+        "line_ranges": [
+          [
+            55,
+            55
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 34,
+      "name": "onramp-synthetic-company",
+      "section": "product-creative-experiments",
+      "section_label": "Product and creative experiments",
+      "source_access": "private",
+      "motion_input": "Fictional company and workflow cards",
+      "motion_output": "Scenario-observation records",
+      "motion_motif": "Fictional records move around a rehearsal board and collect observation notes; keep synthetic markers visible on every record family.",
+      "color": "#C66A38",
+      "motion_symbols": {
+        "input": "records",
+        "output": "observation"
+      },
+      "documented_facts": [
+        "Fictional company records \u2192 Rehearse business workflows \u2192 Scenario observations",
+        "A fictional company dataset for local business-workflow rehearsals."
+      ],
+      "maturity_label": "Private simulation",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L50",
+        "line_ranges": [
+          [
+            50,
+            50
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 35,
+      "name": "cloudteams-extension-studio",
+      "section": "product-creative-experiments",
+      "section_label": "Product and creative experiments",
+      "source_access": "private",
+      "motion_input": "An extension-idea card",
+      "motion_output": "Plugin-shaped concept tiles",
+      "motion_motif": "An idea card unfolds onto a browser-local SDK blueprint; proposed extension tiles assemble beside a human-review note.",
+      "color": "#C66A38",
+      "motion_symbols": {
+        "input": "idea",
+        "output": "plugin"
+      },
+      "documented_facts": [
+        "Extension idea \u2192 Explore a local SDK \u2192 Extension concept",
+        "Standalone extension concepts and a proposed browser-local SDK."
+      ],
+      "maturity_label": "Private prototype",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L52",
+        "line_ranges": [
+          [
+            52,
+            52
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 36,
+      "name": "cloudteams-lunch-break",
+      "section": "product-creative-experiments",
+      "section_label": "Product and creative experiments",
+      "source_access": "private",
+      "motion_input": "Fictional client-and-talent planning cards",
+      "motion_output": "A gesture plan for human review",
+      "motion_motif": "Fictional planning cards slide into a proposed arrangement; one gesture-plan card emerges and waits at review. Do not invent real client data.",
+      "color": "#C66A38",
+      "motion_symbols": {
+        "input": "planning",
+        "output": "proposal"
+      },
+      "documented_facts": [
+        "Fictional planning scenario \u2192 Explore a gesture plan \u2192 Plan for human review",
+        "A fictional client/talent gesture-planning demo derived from Extension Studio."
+      ],
+      "maturity_label": "Private experiment",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L53",
+        "line_ranges": [
+          [
+            53,
+            53
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 37,
+      "name": "cloudteams-plot-twist",
+      "section": "product-creative-experiments",
+      "section_label": "Product and creative experiments",
+      "source_access": "private",
+      "motion_input": "A project plan and changed-condition card",
+      "motion_output": "A next-step proposal",
+      "motion_motif": "A changed-condition card interrupts the original plan, alternate paths fan out, and a person selects a next-step proposal for review.",
+      "color": "#C66A38",
+      "motion_symbols": {
+        "input": "change",
+        "output": "proposal"
+      },
+      "documented_facts": [
+        "Changed project conditions \u2192 Rehearse a response \u2192 Next-step proposal",
+        "A fictional demo for rehearsing changed project circumstances."
+      ],
+      "maturity_label": "Private experiment",
+      "source": {
+        "repository": "hamanakam1/hamanakam1.github.io",
+        "commit": "549098d56def24511d7b941da31ce5c6875f3df9",
+        "path": "scripts/build_atlas.py",
+        "url": "https://github.com/hamanakam1/hamanakam1.github.io/blob/549098d56def24511d7b941da31ce5c6875f3df9/scripts/build_atlas.py#L54",
+        "line_ranges": [
+          [
+            54,
+            54
+          ]
+        ],
+        "verification": "Concept from public description; private source not reviewed",
+        "source_kind": "Already-public atlas description"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 38,
+      "name": "murmuration",
+      "section": "product-creative-experiments",
+      "section_label": "Product and creative experiments",
+      "source_access": "public",
+      "motion_input": "Food sparks, stirring currents and organism seeds",
+      "motion_output": "A living browser-pond scene",
+      "motion_motif": "Food sparks drift, local organisms turn and swarm, and luminous trails bloom inside the browser pond; keep this a playful simulation.",
+      "color": "#C66A38",
+      "motion_symbols": {
+        "input": "seed",
+        "output": "organism"
+      },
+      "documented_facts": [
+        "Feed, stir and seed \u2192 Simulate local behavior \u2192 Living browser pond",
+        "Simplified artificial-life toy, not biological modeling or trained intelligence. JavaScript, Canvas 2D and WebGL are current; Odin/WASM is proposed."
+      ],
+      "maturity_label": "Browser simulation",
+      "source": {
+        "commit": "25bc42e72a0a4c63ef5e7b280c5d3a0c8a5c9264",
+        "readme_blob_sha": "a42cd06a0b7ea10bd59b02c1185306e25b6efedb",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/murmuration/blob/25bc42e72a0a4c63ef5e7b280c5d3a0c8a5c9264/README.md",
+        "line_ranges": [
+          [
+            5,
+            21
+          ],
+          [
+            42,
+            50
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    },
+    {
+      "order": 39,
+      "name": "scratch-kitchen",
+      "section": "product-creative-experiments",
+      "section_label": "Product and creative experiments",
+      "source_access": "public",
+      "motion_input": "Ingredient cards and a pantry-walkthrough symbol",
+      "motion_output": "A meal, transformed ingredients and a share proposal",
+      "motion_motif": "Ingredient cards slide to the cooking station, roast chicken transforms into soup, and a surplus box waits for specific human approval. Retain product-concept/scaffold labeling.",
+      "color": "#C66A38",
+      "motion_symbols": {
+        "input": "ingredient",
+        "output": "meal"
+      },
+      "documented_facts": [
+        "Kitchen inventory \u2192 Plan, cook and transform \u2192 Meal and approved share",
+        "Illustrated product concept. Elixir/SwiftUI structure is not yet a compiled shippable application; proposed recognition and sharing behavior must be labeled."
+      ],
+      "maturity_label": "MVP scaffold",
+      "source": {
+        "commit": "2a4dcdeb22a7b2e1e4fe1de5a2f46de8a70a9604",
+        "readme_blob_sha": "f6a9156fe1138f8bfb93029963bc0088729ae78a",
+        "path": "README.md",
+        "url": "https://github.com/hamanakam1/scratch-kitchen/blob/2a4dcdeb22a7b2e1e4fe1de5a2f46de8a70a9604/README.md",
+        "line_ranges": [
+          [
+            9,
+            25
+          ],
+          [
+            29,
+            36
+          ]
+        ],
+        "verification": "Current README reviewed; no runtime qualification"
+      },
+      "conceptual": true,
+      "business_boundary": null
+    }
+  ]
+}
