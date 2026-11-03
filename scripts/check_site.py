@@ -36,7 +36,7 @@ class Page(HTMLParser):
             self.references.extend((attrs.get(attribute) or "").split())
         if tag == "img" and "alt" not in attrs:
             self.errors.append("image is missing alt text (use alt='' for decoration)")
-        allowed_scripts = {"ecosystem.html": "assets/ecosystem-viewer.js", "atlas.html": "assets/tour-preview.js", "index.html": "assets/work.js", "work.html": "assets/work.js"}
+        allowed_scripts = {"ecosystem.html": "assets/ecosystem-viewer.js", "atlas.html": "assets/tour-preview.js", "index.html": "assets/work.js", "work.html": "assets/work.js", "factory.html": "assets/factory-stories.js"}
         if tag == "script" and (not attrs.get("src") or attrs.get("src") != allowed_scripts.get(self.path.name)):
             self.errors.append("only the named local viewer and preview scripts are allowed")
         for attribute in ("href", "src"):
@@ -102,6 +102,55 @@ def check(root: Path) -> list[str]:
             if r["fork"] and not (r.get("parent") or {}).get("html_url", "").startswith("https://github.com/"):
                 errors.append(f"Fork lacks upstream attribution: {r['name']}")
     captures_path = root / "assets/work/sources.json"
+    stories_path = root / "assets/factory-stories/stories.json"
+    if stories_path.is_file():
+        stories = json.loads(stories_path.read_text())
+        expected = {r["name"] for r in json.loads(inventory.read_text())["repositories"]}
+        actual = [r["name"] for r in stories["repositories"]]
+        if set(actual) != expected or len(actual) != len(set(actual)):
+            errors.append("Factory illustrations must cover each selected project exactly once")
+        excluded = {"archify", "cwinvoicer", "node-pty", "wad-sbx-workshop", "portal"}
+        if excluded.intersection(actual):
+            errors.append("Excluded projects appear in the factory gallery")
+        if sum(bool(r["fork"]) for r in stories["repositories"]) != sum(bool(r["fork"]) for r in json.loads(public_path.read_text())["repositories"]):
+            errors.append("Factory fork attribution count differs from the public inventory")
+        for story in stories["repositories"]:
+            image = root / story.get("image", {}).get("file", "MISSING")
+            if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != story.get("image", {}).get("sha256"):
+                errors.append(f"Generated image provenance mismatch: {story['name']}")
+            preview = root / story.get("image", {}).get("preview", "MISSING")
+            if not preview.is_file() or hashlib.sha256(preview.read_bytes()).hexdigest() != story.get("image", {}).get("preview_sha256"):
+                errors.append(f"Image preview provenance mismatch: {story['name']}")
+            if story["fork"] and not story.get("upstream"):
+                errors.append(f"Illustrated fork lacks upstream attribution: {story['name']}")
+        cover = stories.get("cover", {})
+        for path_key, hash_key in (("file", "sha256"), ("preview", "preview_sha256")):
+            image = root / cover.get(path_key, "MISSING")
+            if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != cover.get(hash_key):
+                errors.append(f"Factory cover provenance mismatch: {path_key}")
+        animation = stories.get("animation", {})
+        motion_path = root / "assets/factory-stories/motion.json"
+        if not motion_path.is_file():
+            errors.append("Per-project animation manifest is missing")
+        else:
+            motion = json.loads(motion_path.read_text())
+            if {m["name"] for m in motion["projects"]} != expected:
+                errors.append("Every selected project must have its own animated loop")
+            for item in motion["projects"]:
+                asset = root / item["file"]
+                if not asset.is_file() or hashlib.sha256(asset.read_bytes()).hexdigest() != item["sha256"]:
+                    errors.append(f"Project animation provenance mismatch: {item['name']}")
+                elif asset.stat().st_size >= 1_000_000 or item["frames"] < 10 or item["duration_ms"] < 3000:
+                    errors.append(f"Project animation exceeds size budget or lacks motion frames: {item['name']}")
+        gif = root / animation.get("file", "MISSING")
+        if not gif.is_file() or gif.stat().st_size >= 4_000_000:
+            errors.append("Factory GIF is missing or exceeds the 4 MB GitHub delivery budget")
+        elif hashlib.sha256(gif.read_bytes()).hexdigest() != animation.get("sha256"):
+            errors.append("Factory GIF hash differs from its delivery manifest")
+        for name in ("factory-tour.gif", "factory-process-v3.gif"):
+            candidate = root / "assets" / name
+            if not candidate.is_file() or candidate.stat().st_size >= 4_000_000:
+                errors.append(f"Referenced GIF exceeds delivery budget or is missing: {name}")
     if captures_path.is_file():
         for capture in json.loads(captures_path.read_text()):
             image = root / "assets/work" / capture["file"]

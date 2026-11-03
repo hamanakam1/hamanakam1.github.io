@@ -1,11 +1,11 @@
 {
   "version": 2,
   "size": [
-    1280,
-    820
+    768,
+    492
   ],
   "frames": 75,
-  "duration_ms": 37580,
+  "duration_ms": 37570,
   "chapters": [
     "murmuration",
     "panther-intent-capture",
@@ -16,8 +16,8 @@
     "lineasflow"
   ],
   "transitions": "Editorial crossfades and source detail crops; not live application behavior",
-  "gif_bytes": 6734296,
-  "gif_sha256": "be9c339e4eb333bf0e87abfd46014c9faf491c33949995830da931e0811db0f6",
+  "gif_bytes": 3209498,
+  "gif_sha256": "8de656907268e242d2ac04928ce93feb94a55420f5ac8372b99542d4db14130a",
   "keyframes": [
     {
       "label": "cover",
@@ -84,5 +84,8 @@
       "hold_ms": 3500
     }
   ],
-  "authored_frames": 80
+  "authored_frames": 80,
+  "delivery_optimized": true,
+  "original_gif_sha256": "be9c339e4eb333bf0e87abfd46014c9faf491c33949995830da931e0811db0f6",
+  "original_gif_bytes": 6734296
 }

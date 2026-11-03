@@ -24,7 +24,7 @@
   const setPlaying = on => {
     playing = on;
     reel.src = on ? reel.dataset.animation : reel.dataset.still;
-    toggle.textContent = on ? 'Pause screenshot reel' : 'Play screenshot reel';
+    toggle.textContent = on ? 'Pause factory tour' : 'Play factory tour';
     toggle.setAttribute('aria-pressed', String(on));
   };
   if (reel && toggle) {

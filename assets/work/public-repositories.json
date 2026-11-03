@@ -1,37 +1,7 @@
 {
-  "observed_on": "2026-11-02",
-  "scope": "26 public owned repositories; includes three attributed upstream forks",
+  "observed_on": "2026-11-03",
+  "scope": "23 public repositories in the curated portfolio. Excludes forks and client-specific workspaces; not the full GitHub account inventory.",
   "repositories": [
-    {
-      "name": "archify",
-      "full_name": "hamanakam1/archify",
-      "html_url": "https://github.com/hamanakam1/archify",
-      "description": "Fork of tt-a1i/archify: agent-authored interactive diagrams for architecture, workflows, and exploration.",
-      "homepage": "https://archify.si",
-      "private": false,
-      "fork": true,
-      "language": null,
-      "topics": [
-        "agent-skill",
-        "architecture",
-        "diagrams",
-        "mermaid",
-        "svg",
-        "upstream-fork",
-        "visualization"
-      ],
-      "archived": false,
-      "default_branch": "main",
-      "pushed_at": "2026-10-23T20:27:14Z",
-      "created_at": "2026-10-22T13:23:38Z",
-      "stargazers_count": 1,
-      "parent": {
-        "full_name": "tt-a1i/archify",
-        "html_url": "https://github.com/tt-a1i/archify"
-      },
-      "category": "fork",
-      "maturity": "Attributed upstream fork"
-    },
     {
       "name": "bumperfort",
       "full_name": "hamanakam1/bumperfort",
@@ -177,7 +147,7 @@
       ],
       "archived": false,
       "default_branch": "main",
-      "pushed_at": "2026-11-01T07:41:31Z",
+      "pushed_at": "2026-11-03T04:20:54Z",
       "created_at": "2026-10-21T21:46:06Z",
       "stargazers_count": 1,
       "parent": null,
@@ -188,7 +158,7 @@
       "name": "hamanakam1",
       "full_name": "hamanakam1/hamanakam1",
       "html_url": "https://github.com/hamanakam1/hamanakam1",
-      "description": "Hamanaka Software Factory \u2014 Mike Hamanaka's local-first AI tools, evidence systems, and edge experiments.",
+      "description": "Mike Hamanaka | AI workflow tools, local applications, and reviewable software. Available for consulting and contract engineering.",
       "homepage": "https://hamanakam1.github.io/",
       "private": false,
       "fork": false,
@@ -199,11 +169,12 @@
         "developer-tools",
         "evidence-driven",
         "hamanaka-software-factory",
-        "local-first"
+        "local-first",
+        "portfolio"
       ],
       "archived": false,
       "default_branch": "main",
-      "pushed_at": "2026-10-28T14:42:55Z",
+      "pushed_at": "2026-11-03T04:04:09Z",
       "created_at": "2026-10-22T12:49:22Z",
       "stargazers_count": 1,
       "parent": null,
@@ -214,7 +185,7 @@
       "name": "hamanakam1.github.io",
       "full_name": "hamanakam1/hamanakam1.github.io",
       "html_url": "https://github.com/hamanakam1/hamanakam1.github.io",
-      "description": "Local-first AI tools and project guides by Mike Hamanaka \u2014 public repositories, documentation, and reviewable workflows.",
+      "description": "Mike Hamanaka: selected software, real product captures, scoped engineering services, and a searchable repository atlas.",
       "homepage": "https://hamanakam1.github.io/",
       "private": false,
       "fork": false,
@@ -222,13 +193,14 @@
       "topics": [
         "ai-agents",
         "developer-tools",
+        "hamanaka-software-factory",
         "local-first",
         "open-source",
         "portfolio"
       ],
       "archived": false,
       "default_branch": "codex/f07-site-quality",
-      "pushed_at": "2026-10-28T14:22:35Z",
+      "pushed_at": "2026-11-03T02:49:15Z",
       "created_at": "2026-10-22T07:23:53Z",
       "stargazers_count": 1,
       "parent": null,
@@ -316,7 +288,7 @@
       ],
       "archived": false,
       "default_branch": "main",
-      "pushed_at": "2026-11-02T01:19:07Z",
+      "pushed_at": "2026-11-03T02:42:40Z",
       "created_at": "2026-10-28T13:22:03Z",
       "stargazers_count": 1,
       "parent": null,
@@ -376,35 +348,6 @@
       "parent": null,
       "category": "interface",
       "maturity": "Interactive browser toy"
-    },
-    {
-      "name": "node-pty",
-      "full_name": "hamanakam1/node-pty",
-      "html_url": "https://github.com/hamanakam1/node-pty",
-      "description": "Fork of microsoft/node-pty: pseudoterminal bindings for Node.js on Linux, macOS, and Windows.",
-      "homepage": "",
-      "private": false,
-      "fork": true,
-      "language": null,
-      "topics": [
-        "nodejs",
-        "pseudoterminal",
-        "pty",
-        "terminal",
-        "typescript",
-        "upstream-fork"
-      ],
-      "archived": false,
-      "default_branch": "main",
-      "pushed_at": "2026-10-28T14:38:57Z",
-      "created_at": "2026-10-28T14:38:53Z",
-      "stargazers_count": 1,
-      "parent": {
-        "full_name": "microsoft/node-pty",
-        "html_url": "https://github.com/microsoft/node-pty"
-      },
-      "category": "fork",
-      "maturity": "Attributed upstream fork"
     },
     {
       "name": "osprey",
@@ -494,7 +437,7 @@
       ],
       "archived": false,
       "default_branch": "main",
-      "pushed_at": "2026-11-03T02:36:54Z",
+      "pushed_at": "2026-11-03T04:22:26Z",
       "created_at": "2026-10-20T03:31:22Z",
       "stargazers_count": 2,
       "parent": null,
@@ -609,7 +552,7 @@
       ],
       "archived": false,
       "default_branch": "main",
-      "pushed_at": "2026-11-02T10:12:21Z",
+      "pushed_at": "2026-11-03T04:13:40Z",
       "created_at": "2026-10-21T18:25:57Z",
       "stargazers_count": 1,
       "parent": null,
@@ -638,7 +581,7 @@
       ],
       "archived": false,
       "default_branch": "main",
-      "pushed_at": "2026-10-28T00:25:29Z",
+      "pushed_at": "2026-11-03T02:42:31Z",
       "created_at": "2026-10-21T23:09:15Z",
       "stargazers_count": 1,
       "parent": null,
@@ -738,41 +681,12 @@
       ],
       "archived": false,
       "default_branch": "main",
-      "pushed_at": "2026-11-03T02:33:24Z",
+      "pushed_at": "2026-11-03T02:39:55Z",
       "created_at": "2026-10-28T12:23:31Z",
       "stargazers_count": 1,
       "parent": null,
       "category": "edge",
       "maturity": "Learning project"
-    },
-    {
-      "name": "wad-sbx-workshop",
-      "full_name": "hamanakam1/wad-sbx-workshop",
-      "html_url": "https://github.com/hamanakam1/wad-sbx-workshop",
-      "description": "Fork of shelajev/wad-sbx-workshop with a Docker Sandboxes field guide, evidence-backed how-to guides, and host-side connectors.",
-      "homepage": "https://github.com/hamanakam1/wad-sbx-workshop",
-      "private": false,
-      "fork": true,
-      "language": "Python",
-      "topics": [
-        "ai-agents",
-        "docker-sandboxes",
-        "mcp",
-        "sandbox",
-        "upstream-fork",
-        "workshop"
-      ],
-      "archived": false,
-      "default_branch": "main",
-      "pushed_at": "2026-10-23T20:38:59Z",
-      "created_at": "2026-10-22T12:45:13Z",
-      "stargazers_count": 1,
-      "parent": {
-        "full_name": "shelajev/wad-sbx-workshop",
-        "html_url": "https://github.com/shelajev/wad-sbx-workshop"
-      },
-      "category": "fork",
-      "maturity": "Attributed upstream fork"
     }
   ]
 }

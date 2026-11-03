@@ -2,8 +2,8 @@
   "schema_version": 1,
   "diagram_type": "tree",
   "meta": {
-    "title": "Hamanaka Software Factory \u2014 all repository roles",
-    "subtitle": "Owner-described ecosystem. Branches group repositories by role; they do not assert deployed integrations.",
+    "title": "Hamanaka Software Factory \u2014 selected project roles",
+    "subtitle": "Curated owner-described portfolio. Branches group project roles; they do not assert deployed integrations.",
     "output": "ecosystem-map.html",
     "quality_profile": "showcase",
     "locale": "en"
@@ -268,12 +268,6 @@
       "sublabel": "Public \u00b7 Prototype"
     },
     {
-      "id": "repo-portal",
-      "parent": "surface",
-      "label": "portal",
-      "sublabel": "Private \u00b7 Private client workspace"
-    },
-    {
       "id": "repo-edgerecord-com",
       "parent": "surface",
       "label": "edgerecord-com",
@@ -296,30 +290,6 @@
       "parent": "surface",
       "label": "hamanakam1.github.io",
       "sublabel": "Public \u00b7 Public atlas"
-    },
-    {
-      "id": "upstream",
-      "parent": "factory",
-      "label": "Upstream collaborations",
-      "sublabel": "Repository roles \u00b7 not runtime call paths"
-    },
-    {
-      "id": "repo-node-pty",
-      "parent": "upstream",
-      "label": "node-pty",
-      "sublabel": "Public \u00b7 Upstream fork"
-    },
-    {
-      "id": "repo-archify",
-      "parent": "upstream",
-      "label": "archify",
-      "sublabel": "Public \u00b7 Upstream fork"
-    },
-    {
-      "id": "repo-wad-sbx-workshop",
-      "parent": "upstream",
-      "label": "wad-sbx-workshop",
-      "sublabel": "Public \u00b7 Workshop fork"
     }
   ],
   "cards": [
