@@ -4,7 +4,7 @@
     1280,
     820
   ],
-  "frames": 80,
+  "frames": 75,
   "duration_ms": 37580,
   "chapters": [
     "murmuration",
@@ -83,5 +83,6 @@
       "label": "contact",
       "hold_ms": 3500
     }
-  ]
+  ],
+  "authored_frames": 80
 }

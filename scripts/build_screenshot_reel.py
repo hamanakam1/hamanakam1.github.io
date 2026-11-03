@@ -164,6 +164,6 @@ board=Image.new('RGB',(1280,820),PAPER)
 for i,(frame,_,_) in enumerate(keyframes):
     board.paste(frame.resize((320,205)),((i%4)*320,(i//4)*205))
 board.save(out/'reel-storyboard.jpg',quality=94)
-receipt={'version':2,'size':[W,H],'frames':len(frames),'duration_ms':sum(durations),'chapters':[s[0] for s in scenes],'transitions':'Editorial crossfades and source detail crops; not live application behavior','gif_bytes':(ASSETS/'factory-tour.gif').stat().st_size,'gif_sha256':hashlib.sha256((ASSETS/'factory-tour.gif').read_bytes()).hexdigest(),'keyframes':[{'label':label,'hold_ms':ms} for _,ms,label in keyframes]}
+receipt={'version':2,'size':[W,H],'frames':Image.open(ASSETS/'factory-tour.gif').n_frames,'authored_frames':len(frames),'duration_ms':sum(durations),'chapters':[s[0] for s in scenes],'transitions':'Editorial crossfades and source detail crops; not live application behavior','gif_bytes':(ASSETS/'factory-tour.gif').stat().st_size,'gif_sha256':hashlib.sha256((ASSETS/'factory-tour.gif').read_bytes()).hexdigest(),'keyframes':[{'label':label,'hold_ms':ms} for _,ms,label in keyframes]}
 (out/'reel.json').write_text(json.dumps(receipt,indent=2)+'\n')
 print(json.dumps(receipt,indent=2))
