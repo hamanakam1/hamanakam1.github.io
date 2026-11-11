@@ -1,0 +1,12 @@
+[
+  {
+    "file": "glassworks-workshop.png",
+    "kind": "actual public software capture",
+    "data": "fictional sample content",
+    "repository": "https://github.com/hamanakam1/glassworks",
+    "commit": "7d3a995b1088b5e8028c9f92ca6d9ab2f943334d",
+    "source": "https://github.com/hamanakam1/glassworks/blob/7d3a995b1088b5e8028c9f92ca6d9ab2f943334d/docs/workshop.png",
+    "sha256": "8bbb0a78a294a8f3a36bf25bb38d083a47d727d9471d5cbd91456b8edf74e17c",
+    "reviewed_on": "2026-11-10"
+  }
+]
